@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S4xD854L7D0dsG+pHkYglV5Bi74NuVtTuAthy4qSpfZ4nJw9faGjd4iopIyT7//gkcQKfTOUUJfl0IAnzf2/hQ==",
+  "dgSpecHash": "dpzL5QpRMpdY1SxgjQDEoOZoS40eVWZL64n61z1l/zQFliDVZA/1hikxGil7t2lFcKX2HUMkSpz8T/vNK3O5yQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp\\MobileApp.csproj",
+  "projectFilePath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp\\MobileApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aryan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\aryan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

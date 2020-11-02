@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ghqwwQS5fMsz6GvK35D9plewT0+iGAHpLhrbkq09zFR51FG7UDuL7Eo00rw5BQqkDwo9gxgPAnt6pMjkfDY17Q==",
+  "dgSpecHash": "TR8Da7JnEi1xNurvpB5lgfUMcSTIGWhS11Pr8exbkiX09rjoBqLEmFu1Swl5GygHaeGaIXuIQpE03jEMCmSuMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp.Android\\MobileApp.Android.csproj",
+  "projectFilePath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp.Android\\MobileApp.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

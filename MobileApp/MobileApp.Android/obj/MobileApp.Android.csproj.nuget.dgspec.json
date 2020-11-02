@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp.Android\\MobileApp.Android.csproj": {}
+    "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp.Android\\MobileApp.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp.Android\\MobileApp.Android.csproj": {
+    "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp.Android\\MobileApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp.Android\\MobileApp.Android.csproj",
+        "projectUniqueName": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp.Android\\MobileApp.Android.csproj",
         "projectName": "MobileApp.Android",
-        "projectPath": "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp.Android\\MobileApp.Android.csproj",
+        "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp.Android\\MobileApp.Android.csproj",
         "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp.Android\\obj\\",
+        "outputPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp\\MobileApp.csproj": {
-                "projectPath": "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp\\MobileApp.csproj"
+              "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp\\MobileApp.csproj": {
+                "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp\\MobileApp.csproj"
               }
             }
           }
@@ -54,14 +54,14 @@
         }
       }
     },
-    "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp\\MobileApp.csproj": {
+    "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp\\MobileApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp\\MobileApp.csproj",
+        "projectUniqueName": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp\\MobileApp.csproj",
         "projectName": "MobileApp",
-        "projectPath": "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp\\MobileApp.csproj",
+        "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp\\MobileApp.csproj",
         "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aryan\\source\\repos\\IPSCCompanionApp\\MobileApp\\MobileApp\\obj\\",
+        "outputPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\MobileApp\\MobileApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
