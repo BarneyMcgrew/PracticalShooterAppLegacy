@@ -1,0 +1,217 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\CompetitorCompanion.Android.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\CompetitorCompanion.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\CompetitorCompanion.Android.csproj",
+        "projectName": "CompetitorCompanion.Android",
+        "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\CompetitorCompanion.Android.csproj",
+        "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj": {
+                "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj"
+              },
+              "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj": {
+                "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.7.0.1080, )"
+            },
+            "Xamarin.Forms.AnimationNavigation": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          }
+        }
+      }
+    },
+    "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj",
+        "projectName": "IPSCCompanionApp",
+        "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj",
+        "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj": {
+                "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.7.0.1080, )"
+            },
+            "Xamarin.Forms.AnimationNavigation": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj",
+        "projectName": "IPSCCompanionLibrary",
+        "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj",
+        "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.7.0.1080, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:local="clr-namespace:IPSCCompanionLibrary.StaticResources;assembly=IPSCCompanionLibrary"
+             mc:Ignorable="d"
+             iOsSpecific:Page.UseSafeArea="true"
+             BackgroundColor="{Binding MainBackgroundColor, Source={x:Static local:GlobalColor.Current}}"
+             NavigationPage.HasNavigationBar="false"
+             x:Class="IPSCCompanionApp.UserInterfaces.SYSTEM.SettingsPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Frame Grid.Row="0"
+                   BackgroundColor="{Binding SettingsMainColor, Source={x:Static local:GlobalColor.Current}}"/>
+            <Frame Grid.Row="0"
+                   Grid.RowSpan="2"
+                   BackgroundColor="{Binding SettingsMainColor, Source={x:Static local:GlobalColor.Current}}"
+                   CornerRadius="20"/>
+            <StackLayout Grid.Row="0" Grid.RowSpan="2" VerticalOptions="CenterAndExpand">
+                <Label x:Name="HeaderTab"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       TextColor="{Binding MainTextColor, Source={x:Static local:GlobalColor.Current}}"
+                       FontSize="Large"
+                       Text="SETTINGS"/>
+            </StackLayout>
+            <TableView Grid.Row="2" 
+                       Intent="Settings"
+                       HorizontalOptions="Fill"
+                       VerticalOptions="CenterAndExpand"
+                       HasUnevenRows="True">
+                <TableSection x:Name="RangeMasterSettings">
+
+                </TableSection>
+                <TableSection x:Name="RangeOfficerSettings">
+
+                </TableSection>
+                <TableSection>
+                    <SwitchCell x:Name="EnableGlossaryTooltips" OnColor="Gold" Text="Enable Glossary Tooltips" />
+                    <SwitchCell x:Name="InclusiveSearch" OnColor="Gold" Text="Include Chapter Search Criteria In Rules Page"/>
+                    <ViewCell>
+                        <StackLayout HorizontalOptions="Center" Orientation="Vertical" Padding="20, 50, 20, 50" x:Name="WebsiteAddressCell">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Label FontSize="Large">Practipanion Version</Label>
+                                <Label FontSize="Large" TextColor="Gold" Padding="0, 0, 0, 0" x:Name="VersionLabel"/>
+                            </StackLayout>
+                            <Label FontSize="Body" FontAttributes="Italic" HorizontalTextAlignment="Center" Padding="10, 10, 10, 10">
+                                "Your Practical Shooting Companion"
+                            </Label>
+                            <Label FontSize="Body" Padding="10, 10, 10, 10">
+                                Practipanion is dedicated to providing the resources and tools to making the introduction to practical shooting sports easier and provide content for the shooting community as a whole.
+                            </Label>
+                            <Label FontSize="Body" Padding="10, 10, 10, 10">
+                                This app is designed to be the all in one companion to support practical shooters of all levels. 
+                            </Label>
+                            
+                            <Label FontSize="Large" HorizontalTextAlignment="Center" TextColor="Gold" Padding="10, 10, 10, 10">
+                                TAP TO GO TO WEBSITE
+                            </Label>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

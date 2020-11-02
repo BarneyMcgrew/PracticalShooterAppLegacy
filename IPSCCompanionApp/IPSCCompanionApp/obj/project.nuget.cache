@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "5t8nzEGcnQABwpQWIR7YdiOgmq4GYwBE5PEXGemo44F5zzVzrK9SowLBc2qs/ZaRLYahxn5tH0e5/ei/PK/vlQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aryan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\aryan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\aryan\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\aryan\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\aryan\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\aryan\\.nuget\\packages\\xamarin.forms\\4.7.0.1080\\xamarin.forms.4.7.0.1080.nupkg.sha512",
+    "C:\\Users\\aryan\\.nuget\\packages\\xamarin.forms.animationnavigation\\2.0.0\\xamarin.forms.animationnavigation.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

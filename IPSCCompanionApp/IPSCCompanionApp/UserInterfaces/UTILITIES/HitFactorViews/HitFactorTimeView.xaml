@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IPSCCompanionApp.UserInterfaces.UTILITIES.HitFactorViews.HitFactorTimeView">
+  <ContentView.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Vertical" Grid.Row="0">
+                <Label Text="Time Entered:"
+                       Margin="20, 0, 0, 0"
+                       FontSize="Medium"
+                       HorizontalOptions="Fill"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Margin="0, -20, 0, 0"                       
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span x:Name="TimeValue"
+                                  Text="0.00"
+                                  TextColor="#3385ff"
+                                  FontSize="50"/>
+                            <Span Text=" SEC"
+                                  FontSize="Large"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+            <!--This Stack is being used to equalise distancing with other view-->
+            <StackLayout Orientation="Vertical" Grid.Row="0" Margin="0, 0, 15, 0">
+                <Label VerticalOptions="Start" HorizontalOptions="End" Margin="0, 0, 1, -5">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text=" "
+                                  FontSize="Large"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label VerticalOptions="Start" HorizontalOptions="End" Margin="0, -5, 1, -5">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text=" "
+                                  FontSize="Large"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label VerticalOptions="Start" HorizontalOptions="End" Margin="0, -5, 1, -5">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text=" "
+                                  FontSize="Large"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label VerticalOptions="Start" HorizontalOptions="End" Margin="0, -5, 0, -5">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text=" "
+                                  FontSize="Large"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label VerticalOptions="Start" HorizontalOptions="End" Margin="0, -5, 2, -5">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text=" "                                  
+                                  FontSize="Large"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+            <Frame Grid.Row="1" HasShadow="False" Margin="25, 0, 25, 0" CornerRadius="25" VerticalOptions="End" HorizontalOptions="End">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton StyleId="ButtonOne" Clicked="KeypadClicked" Source="one_icon.png" BackgroundColor="White" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonTwo" Clicked="KeypadClicked" Source="two_icon.png" BackgroundColor="White" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonThree" Clicked="KeypadClicked" Source="three_icon.png" BackgroundColor="White" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                    <ImageButton StyleId="ButtonFour" Clicked="KeypadClicked" Source="four_icon.png" BackgroundColor="White" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonFive" Clicked="KeypadClicked" Source="five_icon.png" BackgroundColor="White" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonSix" Clicked="KeypadClicked" Source="six_icon.png" BackgroundColor="White" Grid.Row="1" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                    <ImageButton StyleId="ButtonSeven" Clicked="KeypadClicked" Source="seven_icon.png" BackgroundColor="White" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonEight" Clicked="KeypadClicked" Source="eight_icon.png" BackgroundColor="White" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonNine" Clicked="KeypadClicked" Source="nine_icon.png" BackgroundColor="White" Grid.Row="2" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                    <ImageButton StyleId="ButtonDoubleZero" Clicked="KeypadClicked" Source="doublezero_icon.png" BackgroundColor="White" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonZero" Clicked="KeypadClicked" Source="zero_icon.png" BackgroundColor="White" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonClear" Clicked="KeypadClicked" Source="clear_icon.png" BackgroundColor="White" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Grid>
+            </Frame>
+            <StackLayout VerticalOptions="End" Orientation="Vertical" Grid.Row="2">
+                <Label Text="SWIPE RIGHT TO ENTER SCORE"
+                       Padding="10"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"/>
+            </StackLayout>
+        </Grid>
+  </ContentView.Content>
+</ContentView>

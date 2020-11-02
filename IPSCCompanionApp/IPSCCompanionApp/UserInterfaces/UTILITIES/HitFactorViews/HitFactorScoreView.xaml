@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IPSCCompanionApp.UserInterfaces.UTILITIES.HitFactorViews.HitFactorScoreView">
+    <ContentView.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Vertical" Grid.Row="0">
+                <Label Text="Points Score:"
+                       Margin="20, 0, 0, 0"
+                       FontSize="Medium"
+                       HorizontalOptions="Fill"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label Margin="0, -20, 0, 0"                       
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span x:Name="ScoreValue"
+                                  Text="0"
+                                  TextColor="#3385ff"
+                                  FontSize="50"/>
+                            <Span Text=" PTS"
+                                  FontSize="Large"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Grid.Row="0" Margin="0, 0, 15, 0">
+                <Label VerticalOptions="Start" HorizontalOptions="End" Margin="0, 0, 1, -5">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span x:Name="AlphaValue"
+                                  Text="0"
+                                  FontSize="Large"
+                                  TextColor="#3385ff"/>
+                            <Span Text=" A"
+                                  FontSize="Large"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label VerticalOptions="Start" HorizontalOptions="End" Margin="0, -5, 1, -5">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span x:Name="CharlieValue"
+                                  Text="0"
+                                  FontSize="Large"
+                                  TextColor="#3385ff"/>
+                            <Span Text=" C"
+                                  FontSize="Large"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label VerticalOptions="Start" HorizontalOptions="End" Margin="0, -5, 1, -5">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span x:Name="DeltaValue"
+                                  Text="0"
+                                  FontSize="Large"
+                                  TextColor="#3385ff"/>
+                            <Span Text=" D"
+                                  FontSize="Large"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label VerticalOptions="Start" HorizontalOptions="End" Margin="0, -5, 0, -5">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span x:Name="MikeValue"
+                                  Text="0"
+                                  FontSize="Large"
+                                  TextColor="#3385ff"/>
+                            <Span Text=" M"
+                                  FontSize="Large"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label VerticalOptions="Start" HorizontalOptions="End" Margin="0, -5, 2, -5">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span x:Name="PenaltyValue"
+                                  Text="0"
+                                  FontSize="Large"
+                                  TextColor="#3385ff"/>
+                            <Span Text=" P"                                  
+                                  FontSize="Large"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+            <Frame Grid.Row="1" HasShadow="False" Margin="25, 0, 25, 0" CornerRadius="25" VerticalOptions="End" HorizontalOptions="End">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton StyleId="ButtonAlphaP" Clicked="KeypadClicked" Source="alphaP_icon.png" BackgroundColor="White" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonCharlieP" Clicked="KeypadClicked" Source="charlieP_icon.png" BackgroundColor="White" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonDeltaP" Clicked="KeypadClicked" Source="deltaP_icon.png" BackgroundColor="White" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                    <ImageButton StyleId="ButtonAlphaN" Clicked="KeypadClicked" Source="alphaN_icon.png" BackgroundColor="White" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonCharlieN" Clicked="KeypadClicked" Source="charlieN_icon.png" BackgroundColor="White" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonDeltaN" Clicked="KeypadClicked" Source="deltaN_icon.png" BackgroundColor="White" Grid.Row="1" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                    <ImageButton StyleId="ButtonPenaltyP" Clicked="KeypadClicked" Source="penaltyP_icon.png" BackgroundColor="White" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonMikeP" Clicked="KeypadClicked" Source="mikeP_icon.png" BackgroundColor="White" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonFactor" Clicked="KeypadClicked" Source="minor_icon.png" BackgroundColor="White" Grid.Row="2" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                    <ImageButton StyleId="ButtonPenaltyN" Clicked="KeypadClicked" Source="penaltyN_icon.png" BackgroundColor="White" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonMikeN" Clicked="KeypadClicked" Source="mikeN_icon.png" BackgroundColor="White" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <ImageButton StyleId="ButtonClear" Clicked="KeypadClicked" Source="clear_icon.png" BackgroundColor="White" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Grid>
+            </Frame>
+            <StackLayout VerticalOptions="End" Orientation="Vertical" Grid.Row="2">
+                <Label Text="SWIPE LEFT TO ENTER TIME"
+                       Padding="10"
+                       FontSize="Small"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"/>
+            </StackLayout>
+        </Grid>
+    </ContentView.Content>
+</ContentView>
