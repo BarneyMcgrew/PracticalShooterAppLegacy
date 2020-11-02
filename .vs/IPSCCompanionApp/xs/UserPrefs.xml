@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{265614FD-C538-4E1F-AAD2-BB40652ED027}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IPSCCompanionApp/CompetitorCompanion.iOS/Main.cs">
+    <Files>
+      <File FileName="IPSCCompanionApp/CompetitorCompanion.iOS/Info.plist" />
+      <File FileName="IPSCCompanionApp/CompetitorCompanion.iOS/Main.cs" Line="12" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="IPSCCompanionApp" expanded="True">
+            <Node name="CompetitorCompanion" expanded="True">
+              <Node name="CompetitorCompanion.iOS" expanded="True">
+                <Node name="Resources" expanded="True" />
+                <Node name="Main.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="IPSCCompanionApp" expanded="True" />
+            <Node name="IPSCCompanionLibrary" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CompetitorCompanion.CompetitorCompanion.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0B405D51-AE6F-4599-A9E2-35EDF694D6C4" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

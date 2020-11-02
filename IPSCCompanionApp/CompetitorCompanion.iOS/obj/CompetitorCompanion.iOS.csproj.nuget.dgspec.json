@@ -1,42 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.iOS\\CompetitorCompanion.iOS.csproj": {}
+    "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/CompetitorCompanion.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.iOS\\CompetitorCompanion.iOS.csproj": {
+    "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/CompetitorCompanion.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.iOS\\CompetitorCompanion.iOS.csproj",
+        "projectUniqueName": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/CompetitorCompanion.iOS.csproj",
         "projectName": "CompetitorCompanion.iOS",
-        "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.iOS\\CompetitorCompanion.iOS.csproj",
-        "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.iOS\\obj\\",
+        "projectPath": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/CompetitorCompanion.iOS.csproj",
+        "packagesPath": "/Users/aryanalipour/.nuget/packages/",
+        "outputPath": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/aryanalipour/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj": {
-                "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj"
+              "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp.csproj": {
+                "projectPath": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp.csproj"
               },
-              "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj": {
-                "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj"
+              "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/IPSCCompanionLibrary.csproj": {
+                "projectPath": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/IPSCCompanionLibrary.csproj"
               }
             }
           }
@@ -72,36 +66,29 @@
         }
       }
     },
-    "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj": {
+    "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj",
+        "projectUniqueName": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp.csproj",
         "projectName": "IPSCCompanionApp",
-        "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj",
-        "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\obj\\",
+        "projectPath": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp.csproj",
+        "packagesPath": "/Users/aryanalipour/.nuget/packages/",
+        "outputPath": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/aryanalipour/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj": {
-                "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj"
+              "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/IPSCCompanionLibrary.csproj": {
+                "projectPath": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/IPSCCompanionLibrary.csproj"
               }
             }
           }
@@ -148,33 +135,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj": {
+    "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/IPSCCompanionLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj",
+        "projectUniqueName": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/IPSCCompanionLibrary.csproj",
         "projectName": "IPSCCompanionLibrary",
-        "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj",
-        "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\obj\\",
+        "projectPath": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/IPSCCompanionLibrary.csproj",
+        "packagesPath": "/Users/aryanalipour/.nuget/packages/",
+        "outputPath": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/aryanalipour/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -220,7 +200,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
         }
       }
     }
