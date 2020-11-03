@@ -13,7 +13,7 @@
 namespace IPSCCompanionApp.UserInterfaces.SYSTEM {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces\\SYSTEM\\MainMenu.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces/SYSTEM/MainMenu.xaml")]
     public partial class MainMenu : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

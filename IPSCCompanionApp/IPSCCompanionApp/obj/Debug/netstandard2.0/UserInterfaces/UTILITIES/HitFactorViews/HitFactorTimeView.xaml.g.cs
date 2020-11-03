@@ -13,7 +13,7 @@
 namespace IPSCCompanionApp.UserInterfaces.UTILITIES.HitFactorViews {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces\\UTILITIES\\HitFactorViews\\HitFactorTimeView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces/UTILITIES/HitFactorViews/HitFactorTimeView.xaml")]
     public partial class HitFactorTimeView : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

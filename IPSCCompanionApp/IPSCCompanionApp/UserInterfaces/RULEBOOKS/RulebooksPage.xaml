@@ -8,7 +8,7 @@
              xmlns:customRenderer="clr-namespace:IPSCCompanionApp.CustomRenderers;assembly=IPSCCompanionApp"
              mc:Ignorable="d"
              iOsSpecific:Page.UseSafeArea="true"
-             BackgroundColor="{Binding MainBackgroundColor, Source={x:Static local:GlobalColor.Current}}"
+             BackgroundColor="White"
              NavigationPage.HasNavigationBar="false"
              x:Class="IPSCCompanionApp.UserInterfaces.RULEBOOKS.RulebooksPage">
     <ContentPage.Content>
@@ -26,11 +26,13 @@
             <Frame Grid.Row="0"
                    Grid.Column="0"
                    Grid.ColumnSpan="3"
+                   HasShadow="False"
                    BackgroundColor="{Binding RulebooksColor, Source={x:Static local:GlobalColor.Current}}"/>
             <Frame Grid.Row="0"
                    Grid.Column="0"
                    Grid.ColumnSpan="3"
                    Grid.RowSpan="2"
+                   HasShadow="False"
                    BackgroundColor="{Binding RulebooksColor, Source={x:Static local:GlobalColor.Current}}"
                    CornerRadius="20"/>
             <StackLayout Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="CenterAndExpand">

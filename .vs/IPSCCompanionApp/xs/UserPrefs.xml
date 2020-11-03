@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{265614FD-C538-4E1F-AAD2-BB40652ED027}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="IPSCCompanionApp/CompetitorCompanion.iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IPSCCompanionApp/IPSCCompanionApp/UserInterfaces/RULEBOOKS/SectionsPage.xaml">
     <Files>
       <File FileName="IPSCCompanionApp/CompetitorCompanion.iOS/Info.plist" />
-      <File FileName="IPSCCompanionApp/CompetitorCompanion.iOS/Main.cs" Line="12" Column="1" />
+      <File FileName="IPSCCompanionApp/CompetitorCompanion.iOS/Main.cs" Line="16" Column="1" />
+      <File FileName="IPSCCompanionApp/IPSCCompanionApp/UserInterfaces/LEARN/TutorialsPage.xaml" Line="70" Column="87" />
+      <File FileName="IPSCCompanionApp/IPSCCompanionApp/UserInterfaces/RULEBOOKS/RulebooksPage.xaml" Line="21" Column="37" />
+      <File FileName="IPSCCompanionApp/IPSCCompanionApp/UserInterfaces/RULEBOOKS/SectionsPage.xaml" Line="11" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,11 +13,20 @@
           <Node name="IPSCCompanionApp" expanded="True">
             <Node name="CompetitorCompanion" expanded="True">
               <Node name="CompetitorCompanion.iOS" expanded="True">
+                <Node name="CustomRenderers" expanded="True" />
+                <Node name="Properties" expanded="True" />
                 <Node name="Resources" expanded="True" />
-                <Node name="Main.cs" selected="True" />
               </Node>
             </Node>
-            <Node name="IPSCCompanionApp" expanded="True" />
+            <Node name="IPSCCompanionApp" expanded="True">
+              <Node name="UserInterfaces" expanded="True">
+                <Node name="LEARN" expanded="True" />
+                <Node name="PRACTICE" expanded="True" />
+                <Node name="RULEBOOKS" expanded="True">
+                  <Node name="SectionsPage.xaml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
             <Node name="IPSCCompanionLibrary" expanded="True" />
           </Node>
         </State>

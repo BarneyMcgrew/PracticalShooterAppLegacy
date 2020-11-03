@@ -50,11 +50,6 @@
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/bin/iPhoneSimulator/Debug/IPSCCompanionLibrary.pdb
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/bin/iPhoneSimulator/Debug/IPSCCompanionApp.pdb
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.pdb
-/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/CompetitorCompanion.iOS.csproj.CoreCompileInputs.cache
-/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
-/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/CompetitorCompanion.iOS.csproj.CopyComplete
-/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/CompetitorCompanion.iOS.exe
-/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/CompetitorCompanion.iOS.pdb
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/ibtool/_BundleResourceWithLogicalName.items
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/actool/_PartialAppManifest.items
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/actool/_BundleResourceWithLogicalName.items
@@ -62,3 +57,47 @@
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/coremlc/_BundleResourceWithLogicalName.items
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/CompetitorCompanion.iOS.csprojAssemblyReference.cache
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/CompetitorCompanion.iOS.csproj.CoreCompileInputs.cache
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/CompetitorCompanion.iOS.csproj.CopyComplete
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/CompetitorCompanion.iOS.exe
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/CompetitorCompanion.iOS.pdb
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/alphaP_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/gears.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/alphaN_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/bookmark.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/books.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/charlieN_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/charlieP_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/clear_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/competitoricon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/deltaN_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/deltaP_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/doublezero_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/eight_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/eyereticule.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/five_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/four_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/handgun.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/launcher.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/learning.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/major_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/mikeN_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/mikeP_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/minor_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/nine_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/noshootN_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/noshootP_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/one_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/penaltyN_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/penaltyP_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/search.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/seven_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/six_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/tags.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/targetshooting.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/three_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/timer.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/two_icon.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/weblinks.png
+/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/CompetitorCompanion.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12-14.1/optimized/zero_icon.png

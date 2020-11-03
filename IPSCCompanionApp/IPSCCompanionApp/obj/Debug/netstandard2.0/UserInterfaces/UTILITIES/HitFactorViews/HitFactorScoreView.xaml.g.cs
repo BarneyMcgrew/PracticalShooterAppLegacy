@@ -13,7 +13,7 @@
 namespace IPSCCompanionApp.UserInterfaces.UTILITIES.HitFactorViews {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces\\UTILITIES\\HitFactorViews\\HitFactorScoreView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces/UTILITIES/HitFactorViews/HitFactorScoreView.xaml")]
     public partial class HitFactorScoreView : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
