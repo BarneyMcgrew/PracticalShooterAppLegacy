@@ -13,7 +13,7 @@
 namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces/RULEBOOKS/RulebooksPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces\\RULEBOOKS\\RulebooksPage.xaml")]
     public partial class RulebooksPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

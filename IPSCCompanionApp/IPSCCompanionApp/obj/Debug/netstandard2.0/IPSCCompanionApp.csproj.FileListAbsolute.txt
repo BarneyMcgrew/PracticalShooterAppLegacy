@@ -82,3 +82,32 @@ C:/Users/aryan/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionA
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp/obj/Debug/netstandard2.0/IPSCCompanionApp.dll
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp/obj/Debug/netstandard2.0/ref/IPSCCompanionApp.dll
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionApp/IPSCCompanionApp/obj/Debug/netstandard2.0/IPSCCompanionApp.pdb
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\bin\Debug\netstandard2.0\IPSCCompanionApp.deps.json
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\bin\Debug\netstandard2.0\IPSCCompanionApp.dll
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\bin\Debug\netstandard2.0\ref\IPSCCompanionApp.dll
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\bin\Debug\netstandard2.0\IPSCCompanionApp.pdb
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\bin\Debug\netstandard2.0\IPSCCompanionLibrary.dll
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\bin\Debug\netstandard2.0\IPSCCompanionLibrary.pdb
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\IPSCCompanionApp.csprojAssemblyReference.cache
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\LEARN\TutorialsPage.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\PRACTICE\PracticePage.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\RULEBOOKS\RulebooksPage.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\RULEBOOKS\SectionsPage.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\SYSTEM\MainMenu.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\SYSTEM\SettingsPage.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\UTILITIES\HitFactorCalculator.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\UTILITIES\HitFactorViews\HitFactorScoreView.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\UTILITIES\HitFactorViews\HitFactorTimeView.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\UTILITIES\PDFPage.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\UTILITIES\UtilitiesPage.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\UTILITIES\WebsiteLinks.xaml.g.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\IPSCCompanionApp.AssemblyInfoInputs.cache
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\IPSCCompanionApp.AssemblyInfo.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\IPSCCompanionApp.csproj.CoreCompileInputs.cache
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\IPSCCompanionApp.csproj.CopyComplete
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\IPSCCompanionApp.dll
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\ref\IPSCCompanionApp.dll
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\IPSCCompanionApp.pdb
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionApp\IPSCCompanionApp\obj\Debug\netstandard2.0\UserInterfaces\SYSTEM\MainMenuLight.xaml.g.cs

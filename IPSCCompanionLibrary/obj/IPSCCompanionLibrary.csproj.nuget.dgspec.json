@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/IPSCCompanionLibrary.csproj": {}
+    "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj": {}
   },
   "projects": {
-    "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/IPSCCompanionLibrary.csproj": {
+    "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/IPSCCompanionLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj",
         "projectName": "IPSCCompanionLibrary",
-        "projectPath": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/IPSCCompanionLibrary.csproj",
-        "packagesPath": "/Users/aryanalipour/.nuget/packages/",
-        "outputPath": "/Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/obj/",
+        "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj",
+        "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/aryanalipour/.config/NuGet/NuGet.Config"
+          "C:\\Users\\aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,7 +72,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -37,6 +37,9 @@
     <Compile Update="UserInterfaces\RULEBOOKS\RulebooksPage.xaml.cs">
       <DependentUpon>RulebooksPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="UserInterfaces\SYSTEM\MainMenuLight.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
     <Compile Update="UserInterfaces\SYSTEM\MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>

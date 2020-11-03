@@ -13,7 +13,7 @@
 namespace IPSCCompanionApp.UserInterfaces.UTILITIES {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces/UTILITIES/HitFactorCalculator.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces\\UTILITIES\\HitFactorCalculator.xaml")]
     public partial class HitFactorCalculator : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

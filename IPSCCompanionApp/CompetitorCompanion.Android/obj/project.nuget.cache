@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sM6BtUZ7Ki1y+58JwP1nTUIlnXTJb2grRAKx9TFG20MPg+zMy81kGwqazaz4/LMq4v7dk6hHooz3Me36S7367g==",
+  "dgSpecHash": "NeB+/Snm/K24Jish0dBxRf0JduKhpqnCPkZLH7e2D4WF0bwLZktzoiG93IC0hRyaAwYvzOrkxTSAzZP8DLF/tg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\CompetitorCompanion.Android.csproj",
+  "projectFilePath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\CompetitorCompanion.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aryan\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",

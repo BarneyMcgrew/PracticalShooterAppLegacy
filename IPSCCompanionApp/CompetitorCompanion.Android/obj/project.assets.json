@@ -2033,11 +2033,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\CompetitorCompanion.Android.csproj",
+      "projectUniqueName": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\CompetitorCompanion.Android.csproj",
       "projectName": "CompetitorCompanion.Android",
-      "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\CompetitorCompanion.Android.csproj",
+      "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\CompetitorCompanion.Android.csproj",
       "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\obj\\",
+      "outputPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionApp\\CompetitorCompanion.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2058,11 +2058,11 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj": {
-              "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj"
+            "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj": {
+              "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp\\IPSCCompanionApp.csproj"
             },
-            "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj": {
-              "projectPath": "C:\\Users\\aryan\\Documents\\GitHub\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj"
+            "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj": {
+              "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj"
             }
           }
         }

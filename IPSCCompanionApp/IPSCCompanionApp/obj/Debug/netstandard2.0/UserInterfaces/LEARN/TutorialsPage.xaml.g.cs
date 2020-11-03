@@ -13,7 +13,7 @@
 namespace IPSCCompanionApp.UserInterfaces.PRACTICE {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces/LEARN/TutorialsPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces\\LEARN\\TutorialsPage.xaml")]
     public partial class TutorialsPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

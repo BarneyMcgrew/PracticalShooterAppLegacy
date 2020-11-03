@@ -33,7 +33,7 @@ namespace IPSCCompanionApp
 
             FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
 
-            var mainMenu = new MainMenu();
+            var mainMenu = new MainMenuLight();
 
             var navigation = new AnimationNavigationPage(mainMenu);
 

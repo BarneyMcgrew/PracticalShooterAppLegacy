@@ -27,3 +27,13 @@ C:/Users/aryan/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/obj/Debug/
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/obj/Debug/netstandard2.0/IPSCCompanionLibrary.dll
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/obj/Debug/netstandard2.0/IPSCCompanionLibrary.pdb
 /Users/aryanalipour/Documents/GitHub/IPSCCompanionApp/IPSCCompanionLibrary/obj/Debug/netstandard2.0/IPSCCompanionLibrary.csprojAssemblyReference.cache
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionLibrary\bin\Debug\netstandard2.0\IPSCCompanionLibrary.deps.json
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionLibrary\bin\Debug\netstandard2.0\IPSCCompanionLibrary.dll
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionLibrary\bin\Debug\netstandard2.0\IPSCCompanionLibrary.pdb
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionLibrary\obj\Debug\netstandard2.0\IPSCCompanionLibrary.csprojAssemblyReference.cache
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionLibrary\obj\Debug\netstandard2.0\IPSCCompanionLibrary.AssemblyInfoInputs.cache
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionLibrary\obj\Debug\netstandard2.0\IPSCCompanionLibrary.AssemblyInfo.cs
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionLibrary\obj\Debug\netstandard2.0\IPSCCompanionLibrary.csproj.CoreCompileInputs.cache
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionLibrary\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionLibrary\obj\Debug\netstandard2.0\IPSCCompanionLibrary.dll
+C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\IPSCCompanionLibrary\obj\Debug\netstandard2.0\IPSCCompanionLibrary.pdb

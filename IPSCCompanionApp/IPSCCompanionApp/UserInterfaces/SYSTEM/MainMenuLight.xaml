@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"             
+             xmlns:local="clr-namespace:IPSCCompanionLibrary.StaticResources;assembly=IPSCCompanionLibrary"
+             mc:Ignorable="d"
+             x:Class="IPSCCompanionApp.UserInterfaces.SYSTEM.MainMenuLight"
+             iOsSpecific:Page.UseSafeArea="true" 
+             BackgroundColor="{Binding MainBackgroundColor, Source={x:Static local:GlobalColor.Current}}"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <!--Shell Container-->
+        <Grid>
+            <!--Main Content-->
+            <Grid>
+                <ScrollView BackgroundColor="{Binding SubBackgroundColor, Source={x:Static local:GlobalColor.Current}}">
+                    <Grid RowSpacing="0" ColumnSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="250"/>
+                            <RowDefinition Height="250"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid x:Name="RulebooksTab" 
+                              BackgroundColor="#ffd11a"
+                              Grid.Row="0"
+                              Grid.Column="0"
+                              Grid.ColumnSpan="2">
+                            <StackLayout VerticalOptions="Center" Padding="0, 10, 0, 0">
+                                <Image Aspect="AspectFit" 
+                                       HorizontalOptions="Center"
+                                       Source="books.png"/>
+                                <Label VerticalTextAlignment="Center"
+                                       HorizontalOptions="Center"
+                                       FontAttributes="Bold"
+                                       Padding="20,0,20,20" 
+                                       FontSize="Title" 
+                                       TextColor="{Binding MainTextColor, Source={x:Static local:GlobalColor.Current}}"
+                                       Text="RULEBOOKS"/>
+                            </StackLayout>                            
+                        </Grid>
+
+                        <Grid x:Name="HitFactorTab"
+                              BackgroundColor="#0066ff"
+                              Grid.Row="1"                              
+                              Grid.Column="0">
+                            <StackLayout VerticalOptions="Center" Padding="0, 10, 0, 0">
+                                <Image Aspect="AspectFit" 
+                                       HorizontalOptions="Center"
+                                       Source="eyereticule.png"/>
+                                <Label VerticalTextAlignment="Center" 
+                                       HorizontalTextAlignment="Center"
+                                       FontAttributes="Bold" 
+                                       BackgroundColor="#0066ff" 
+                                       Padding="20,0,20,20" 
+                                       FontSize="Title" 
+                                       TextColor="{Binding MainTextColor, Source={x:Static local:GlobalColor.Current}}"
+                                       Text="HIT FACTOR CAL"/>
+                            </StackLayout>
+                            
+                        </Grid>
+
+                        <Grid x:Name="PowerFactorTab" 
+                              BackgroundColor="#005ce6"
+                              Grid.Row="1"
+                              Grid.Column="1">
+                            <StackLayout VerticalOptions="Center" Padding="0, 10, 0, 0">
+                                <Image Grid.Column="0" 
+                                   Aspect="AspectFit" 
+                                   Source="handgun.png"/>
+                                <Label Grid.Column="1" 
+                                   VerticalTextAlignment="Center" 
+                                       HorizontalTextAlignment="Center"
+                                   FontAttributes="Bold" 
+                                   BackgroundColor="#005ce6" 
+                                   Padding="20,0,20,20" 
+                                   FontSize="Title" 
+                                   TextColor="{Binding MainTextColor, Source={x:Static local:GlobalColor.Current}}"
+                                   Text="POWER FACTOR CAL"/>
+                            </StackLayout>                            
+                        </Grid>
+
+                        <Grid x:Name="ParTimerTab" 
+                              BackgroundColor="#88cc00"
+                              Grid.Row="2">
+
+                            <StackLayout VerticalOptions="Center" Padding="0, 10, 0, 0">
+                                <Image Aspect="AspectFit" 
+                                   Source="timer.png"/>
+                                <Label VerticalTextAlignment="Center" 
+                                       HorizontalTextAlignment="Center"
+                                   FontAttributes="Bold" 
+                                   BackgroundColor="#88cc00" 
+                                   Padding="20,0,20,20" 
+                                   FontSize="Title" 
+                                   TextColor="{Binding MainTextColor, Source={x:Static local:GlobalColor.Current}}"
+                                   Text="PAR TIMER"/>
+                            </StackLayout>                            
+                        </Grid>
+
+                        <Grid x:Name="WebLinksTab" 
+                              BackgroundColor="#77b300"
+                              Grid.Row="2"
+                              Grid.Column="1">
+
+                            <StackLayout VerticalOptions="Center" Padding="0, 10, 0, 0">
+                                <Image Aspect="AspectFit" 
+                                       Source="weblinks.png"/>
+                                <Label VerticalTextAlignment="Center" 
+                                       HorizontalTextAlignment="Center"
+                                       FontAttributes="Bold" 
+                                       BackgroundColor="#77b300" 
+                                       Padding="20,0,20,20" 
+                                       FontSize="Title" 
+                                       TextColor="{Binding MainTextColor, Source={x:Static local:GlobalColor.Current}}"
+                                       Text="WEBSITES"/>
+                            </StackLayout>                            
+                        </Grid>
+
+                        <Grid x:Name="SettingsTab" 
+                              BackgroundColor="#8c8c8c"
+                              Grid.Row="3"
+                              Grid.Column="0"
+                              Grid.ColumnSpan="2">
+
+                            <StackLayout VerticalOptions="Center" Padding="0, 10, 0, 0">
+                                <Image Grid.Column="0" 
+                                   Aspect="AspectFit" 
+                                   Source="gears.png"/>
+                                <Label Grid.Column="1" 
+                                   VerticalTextAlignment="Center"
+                                       HorizontalTextAlignment="Center"
+                                   FontAttributes="Bold" 
+                                   BackgroundColor="#8c8c8c" 
+                                   Padding="20,0,20,20" 
+                                   FontSize="Title" 
+                                   TextColor="{Binding MainTextColor, Source={x:Static local:GlobalColor.Current}}"
+                                   Text="SETTINGS"/>
+                            </StackLayout>                            
+                        </Grid>
+                    </Grid>
+                </ScrollView>
+            </Grid>
+            <!--Pop Up Content-->
+            <Grid x:Name="PopUpLayer"
+                  IsVisible="false">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="25"/>
+                </Grid.ColumnDefinitions>
+                <Frame HasShadow="False" 
+                       Grid.Column="0" 
+                       Grid.Row="0" 
+                       Grid.ColumnSpan="3" 
+                       Grid.RowSpan="3"
+                       BackgroundColor="Black"
+                       Opacity="0.7"/>
+                <Frame HasShadow="False" 
+                       Grid.Column="1" 
+                       Grid.Row="1" 
+                       BackgroundColor="{Binding RulebooksColor, Source={x:Static local:GlobalColor.Current}}">
+                    <ScrollView>
+                        <StackLayout Orientation="Vertical">
+                            <Label x:Name="LoadingTitle" 
+                                   HorizontalTextAlignment="Center" 
+                                   VerticalTextAlignment="Center" 
+                                   FontSize="Large" 
+                                   TextType="Html" 
+                                   FontAttributes="Bold" 
+                                   Padding="0, 0, 0, 10">
+                                Calculating Hit Factor...
+                            </Label>
+                            <Label x:Name="LoadingDescription" 
+                                   FontSize="Medium" 
+                                   TextType="Html" 
+                                   HorizontalTextAlignment="Center" 
+                                   VerticalTextAlignment="Center">
+                                Hold Your Breath to Load Faster
+                            </Label>
+                        </StackLayout>
+                    </ScrollView>
+                </Frame>
+            </Grid>
+            <!--Pop Up Advert Content-->
+            <Grid x:Name="AdvertLayer"
+                  IsVisible="False">
+                
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

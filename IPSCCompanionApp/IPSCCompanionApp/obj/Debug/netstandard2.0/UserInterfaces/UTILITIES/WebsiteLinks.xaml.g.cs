@@ -13,7 +13,7 @@
 namespace IPSCCompanionApp.UserInterfaces.UTILITIES {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces/UTILITIES/WebsiteLinks.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("UserInterfaces\\UTILITIES\\WebsiteLinks.xaml")]
     public partial class WebsiteLinks : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
