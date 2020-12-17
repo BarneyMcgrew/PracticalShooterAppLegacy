@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\DataManipulationTools\\DataManipulationLibrary\\DataManipulationLibrary.csproj": {}
+    "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\DataManipulationTools\\DataManipulationLibrary\\DataManipulationLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\DataManipulationTools\\DataManipulationLibrary\\DataManipulationLibrary.csproj": {
+    "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\DataManipulationTools\\DataManipulationLibrary\\DataManipulationLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\DataManipulationTools\\DataManipulationLibrary\\DataManipulationLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\DataManipulationTools\\DataManipulationLibrary\\DataManipulationLibrary.csproj",
         "projectName": "DataManipulationLibrary",
-        "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\DataManipulationTools\\DataManipulationLibrary\\DataManipulationLibrary.csproj",
+        "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\DataManipulationTools\\DataManipulationLibrary\\DataManipulationLibrary.csproj",
         "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\DataManipulationTools\\DataManipulationLibrary\\obj\\",
+        "outputPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\DataManipulationTools\\DataManipulationLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -31,9 +31,10 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj": {
-                "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj"
+              "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\IPSCCompanionLibrary\\PracticalShooterLibrary.csproj": {
+                "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\IPSCCompanionLibrary\\PracticalShooterLibrary.csproj"
               }
             }
           }
@@ -46,6 +47,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -76,18 +78,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj": {
+    "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\IPSCCompanionLibrary\\PracticalShooterLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj",
-        "projectName": "IPSCCompanionLibrary",
-        "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\IPSCCompanionLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\IPSCCompanionLibrary\\PracticalShooterLibrary.csproj",
+        "projectName": "PracticalShooterLibrary",
+        "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\IPSCCompanionLibrary\\PracticalShooterLibrary.csproj",
         "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\IPSCCompanionApp\\IPSCCompanionLibrary\\obj\\",
+        "outputPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\IPSCCompanionLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -107,6 +109,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -118,6 +121,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -148,7 +152,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
