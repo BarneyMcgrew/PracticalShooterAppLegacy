@@ -1,4 +1,4 @@
-# IPSCCompanionApp
+# Practical Shooter App
 
 The IPSC Companion App to end the need for all other apps on your phone.
 
