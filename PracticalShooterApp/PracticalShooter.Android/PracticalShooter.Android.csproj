@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{523EF0B1-28F2-4263-835B-6CA59E23E47B}</ProjectGuid>
+    <ProjectGuid>{33601F28-33F5-4A4B-A11B-254E832FED8D}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6968b3a4-1835-46a3-ac5c-1ae33b475983}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -90,7 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PracticalShooter\PracticalShooter.csproj">
-      <Project>{30B4877B-1524-4F8C-99D7-761209203CBF}</Project>
+      <Project>{0DC561B8-C727-4222-A43A-1A625116AD33}</Project>
       <Name>PracticalShooter</Name>
     </ProjectReference>
   </ItemGroup>

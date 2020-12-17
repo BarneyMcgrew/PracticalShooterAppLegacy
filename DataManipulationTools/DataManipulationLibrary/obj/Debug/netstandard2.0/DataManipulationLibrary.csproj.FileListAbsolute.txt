@@ -50,3 +50,9 @@ C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\DataManipulationTools\Da
 C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.csproj.CopyComplete
 C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.dll
 C:\Users\aryan\Documents\Barney Mcgrew\IPSCCompanionApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.pdb
+C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.csprojAssemblyReference.cache
+C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.AssemblyInfoInputs.cache
+C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.AssemblyInfo.cs
+C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.csproj.CoreCompileInputs.cache
+C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.dll
+C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.pdb
