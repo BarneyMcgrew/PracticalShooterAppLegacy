@@ -1,6 +1,6 @@
 ﻿using System.Net;
 using CompetitorCompanion.Droid.CustomRenderers;
-using IPSCCompanionApp.CustomRenderers;
+using IPSCCompanionAppLegacy.CustomRenderers;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 

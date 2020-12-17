@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IPSCCompanionLibrary.ObjectClasses.Learn
+namespace PracticalShooterLibrary.ObjectClasses.Learn
 {
     public class Paragraph : Section
     {

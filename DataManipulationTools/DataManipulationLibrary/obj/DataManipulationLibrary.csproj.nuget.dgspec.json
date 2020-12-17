@@ -33,8 +33,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\IPSCCompanionLibrary\\PracticalShooterLibrary.csproj": {
-                "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\IPSCCompanionLibrary\\PracticalShooterLibrary.csproj"
+              "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\PracticalShooterApp\\PracticalShooterLibrary\\PracticalShooterLibrary.csproj": {
+                "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\PracticalShooterApp\\PracticalShooterLibrary\\PracticalShooterLibrary.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\IPSCCompanionLibrary\\PracticalShooterLibrary.csproj": {
+    "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\PracticalShooterApp\\PracticalShooterLibrary\\PracticalShooterLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\IPSCCompanionLibrary\\PracticalShooterLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\PracticalShooterApp\\PracticalShooterLibrary\\PracticalShooterLibrary.csproj",
         "projectName": "PracticalShooterLibrary",
-        "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\IPSCCompanionLibrary\\PracticalShooterLibrary.csproj",
+        "projectPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\PracticalShooterApp\\PracticalShooterLibrary\\PracticalShooterLibrary.csproj",
         "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\IPSCCompanionLibrary\\obj\\",
+        "outputPath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\PracticalShooterApp\\PracticalShooterLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -152,7 +152,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

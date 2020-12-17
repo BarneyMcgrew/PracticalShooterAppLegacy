@@ -8,7 +8,7 @@ using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 using IPSCCompanionApp;
-using IPSCCompanionLibrary.GlobalResources;
+using PracticalShooterLibrary.GlobalResources;
 
 namespace CompetitorCompanion.Droid
 {

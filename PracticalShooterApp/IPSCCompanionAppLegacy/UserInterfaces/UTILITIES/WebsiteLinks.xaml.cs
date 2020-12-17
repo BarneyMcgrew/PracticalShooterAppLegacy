@@ -1,4 +1,4 @@
-﻿using IPSCCompanionLibrary.StaticResources;
+﻿using PracticalShooterLibrary.StaticResources;
 using System;
 using System.Collections.Generic;
 using System.Linq;

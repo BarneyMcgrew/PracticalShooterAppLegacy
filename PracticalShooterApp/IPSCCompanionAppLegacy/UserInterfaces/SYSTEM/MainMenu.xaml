@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"             
-             xmlns:local="clr-namespace:IPSCCompanionLibrary.StaticResources;assembly=IPSCCompanionLibrary"
+             xmlns:local="clr-namespace:PracticalShooterLibrary.StaticResources;assembly=PracticalShooterLibrary"
              mc:Ignorable="d"
              x:Class="IPSCCompanionApp.UserInterfaces.SYSTEM.MainMenu"
              iOsSpecific:Page.UseSafeArea="true" 

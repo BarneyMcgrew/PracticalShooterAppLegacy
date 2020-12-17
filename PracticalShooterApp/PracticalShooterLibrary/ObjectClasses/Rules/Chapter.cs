@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace IPSCCompanionLibrary.ObjectClasses.Rules
+namespace PracticalShooterLibrary.ObjectClasses.Rules
 {
     public class Chapter
     {

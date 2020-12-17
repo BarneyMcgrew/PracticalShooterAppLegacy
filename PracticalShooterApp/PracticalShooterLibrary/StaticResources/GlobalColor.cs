@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
 
-namespace IPSCCompanionLibrary.StaticResources
+namespace PracticalShooterLibrary.StaticResources
 {
     public class GlobalColor
     {

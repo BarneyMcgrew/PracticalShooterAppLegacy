@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using IPSCCompanionLibrary.ObjectClasses.Rules;
+using PracticalShooterLibrary.ObjectClasses.Rules;
 
 namespace DataManipulationLibrary.Helpers
 {

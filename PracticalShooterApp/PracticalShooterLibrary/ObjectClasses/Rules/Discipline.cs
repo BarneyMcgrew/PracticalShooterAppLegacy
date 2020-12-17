@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using static IPSCCompanionLibrary.GlobalResources.GlobalEnums;
+using static PracticalShooterLibrary.GlobalResources.GlobalEnums;
 
-namespace IPSCCompanionLibrary.ObjectClasses.Rules
+namespace PracticalShooterLibrary.ObjectClasses.Rules
 {
     public class Discipline
     {

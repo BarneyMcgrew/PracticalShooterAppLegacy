@@ -1,12 +1,12 @@
-﻿using IPSCCompanionLibrary.ObjectClasses.Utilities;
-using IPSCCompanionLibrary.StaticResources;
+﻿using PracticalShooterLibrary.ObjectClasses.Utilities;
+using PracticalShooterLibrary.StaticResources;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace IPSCCompanionLibrary.Services
+namespace PracticalShooterLibrary.Services
 {
     public class WebsitesReader
     {

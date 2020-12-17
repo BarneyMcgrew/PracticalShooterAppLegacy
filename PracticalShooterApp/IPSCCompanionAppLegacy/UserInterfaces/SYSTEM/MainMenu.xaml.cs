@@ -2,8 +2,8 @@
 using IPSCCompanionApp.UserInterfaces.PRACTICE;
 using IPSCCompanionApp.UserInterfaces.RULEBOOKS;
 using IPSCCompanionApp.UserInterfaces.UTILITIES;
-using IPSCCompanionLibrary.ObjectClasses.Rules;
-using IPSCCompanionLibrary.StaticResources;
+using PracticalShooterLibrary.ObjectClasses.Rules;
+using PracticalShooterLibrary.StaticResources;
 using System;
 using System.Collections.Generic;
 using System.Linq;

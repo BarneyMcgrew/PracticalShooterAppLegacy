@@ -1,5 +1,5 @@
-﻿using IPSCCompanionLibrary.ObjectClasses.Rules;
-using IPSCCompanionLibrary.StaticResources;
+﻿using PracticalShooterLibrary.ObjectClasses.Rules;
+using PracticalShooterLibrary.StaticResources;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace IPSCCompanionLibrary.Services
+namespace PracticalShooterLibrary.Services
 {
     public class RulebookReader
     {

@@ -1,4 +1,4 @@
-﻿using IPSCCompanionLibrary.ObjectClasses.Learn;
+﻿using PracticalShooterLibrary.ObjectClasses.Learn;
 using System;
 using System.Collections.Generic;
 using System.IO;

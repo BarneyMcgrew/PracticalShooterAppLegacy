@@ -4,7 +4,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace IPSCCompanionLibrary.StaticResources
+namespace PracticalShooterLibrary.StaticResources
 {
     public static class UtilityHelper
     {

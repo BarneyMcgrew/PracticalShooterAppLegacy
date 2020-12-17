@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IPSCCompanionLibrary.ObjectClasses.Utilities
+namespace PracticalShooterLibrary.ObjectClasses.Utilities
 {
     public class WebsiteCollection
     {

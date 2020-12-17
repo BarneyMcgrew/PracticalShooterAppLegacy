@@ -2,8 +2,8 @@
 using System.IO;
 using FormsControls.Base;
 using IPSCCompanionApp.UserInterfaces.SYSTEM;
-using IPSCCompanionLibrary.GlobalResources;
-using IPSCCompanionLibrary.StaticResources;
+using PracticalShooterLibrary.GlobalResources;
+using PracticalShooterLibrary.StaticResources;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using static IPSCCompanionLibrary.GlobalResources.GlobalEnums;
+using static PracticalShooterLibrary.GlobalResources.GlobalEnums;
 
 namespace DataManipulationLibrary.ObjectClasses.Rules
 {

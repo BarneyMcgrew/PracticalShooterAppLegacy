@@ -1,13 +1,13 @@
 ﻿using FormsControls.Base;
 using IPSCCompanionApp.UserInterfaces.RULEBOOKS;
 using IPSCCompanionApp.UserInterfaces.UTILITIES;
-using IPSCCompanionLibrary.StaticResources;
+using PracticalShooterLibrary.StaticResources;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using static IPSCCompanionLibrary.GlobalResources.GlobalEnums;
+using static PracticalShooterLibrary.GlobalResources.GlobalEnums;
 
 namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
 {
@@ -118,14 +118,14 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
             searchResults.ItemsSource = viewChapters;
         }
 
-        public List<IPSCCompanionLibrary.ObjectClasses.Rules.Section> LoadSections()
+        public List<PracticalShooterLibrary.ObjectClasses.Rules.Section> LoadSections()
         {
             return GlobalResourceCache.Current.DisciplinesDictionary.Values
                 .First(o => Enum.GetName(typeof(DisciplineTypes), o.DisciplineType) == GlobalSettings.Current.SelectedDiscipline.Replace(" ", ""))
                 .Chapters.SelectMany(o => o.Sections).ToList();
         }
 
-        public List<IPSCCompanionLibrary.ObjectClasses.Rules.Section> SearchSections(string query)
+        public List<PracticalShooterLibrary.ObjectClasses.Rules.Section> SearchSections(string query)
         {
             var searchCriteria = query.ToLowerInvariant();
 
@@ -171,7 +171,7 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
 
         public class Section
         {
-            public Section(IPSCCompanionLibrary.ObjectClasses.Rules.Section section)
+            public Section(PracticalShooterLibrary.ObjectClasses.Rules.Section section)
             {
                 SectionId = section.SectionId;
                 Name = $"{section.Numeric} - {section.Name}";
@@ -187,7 +187,7 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
         {
             public Chapter() { }
 
-            public Chapter(IPSCCompanionLibrary.ObjectClasses.Rules.Chapter chapter)
+            public Chapter(PracticalShooterLibrary.ObjectClasses.Rules.Chapter chapter)
             {
                 Name = $"{chapter.Numeric} - {chapter.Name}";
                 Description = chapter.Description;

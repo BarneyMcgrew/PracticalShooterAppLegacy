@@ -1,12 +1,12 @@
 ﻿using DataManipulationLibrary.ObjectClasses.Rules;
-using IPSCCompanionLibrary.ObjectClasses.Rules;
+using PracticalShooterLibrary.ObjectClasses.Rules;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using static IPSCCompanionLibrary.GlobalResources.GlobalEnums;
+using static PracticalShooterLibrary.GlobalResources.GlobalEnums;
 
 namespace DataManipulationLibrary.Services
 {

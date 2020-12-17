@@ -1,7 +1,7 @@
 ﻿using System;
 using Foundation;
 using IPSCCompanionApp;
-using IPSCCompanionLibrary.GlobalResources;
+using PracticalShooterLibrary.GlobalResources;
 using UIKit;
 
 namespace CompetitorCompanion.iOS

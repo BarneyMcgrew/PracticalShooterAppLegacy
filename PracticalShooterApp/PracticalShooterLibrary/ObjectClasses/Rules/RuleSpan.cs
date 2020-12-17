@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using static IPSCCompanionLibrary.GlobalResources.GlobalEnums;
+using static PracticalShooterLibrary.GlobalResources.GlobalEnums;
 
-namespace IPSCCompanionLibrary.ObjectClasses.Rules
+namespace PracticalShooterLibrary.ObjectClasses.Rules
 {
     public class RuleSpan
     {

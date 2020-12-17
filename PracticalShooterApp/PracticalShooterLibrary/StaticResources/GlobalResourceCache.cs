@@ -1,13 +1,13 @@
-﻿using IPSCCompanionLibrary.ObjectClasses.Rules;
-using IPSCCompanionLibrary.ObjectClasses.Utilities;
-using IPSCCompanionLibrary.Services;
+﻿using PracticalShooterLibrary.ObjectClasses.Rules;
+using PracticalShooterLibrary.ObjectClasses.Utilities;
+using PracticalShooterLibrary.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using static IPSCCompanionLibrary.GlobalResources.GlobalEnums;
+using static PracticalShooterLibrary.GlobalResources.GlobalEnums;
 
-namespace IPSCCompanionLibrary.StaticResources
+namespace PracticalShooterLibrary.StaticResources
 {
     public class GlobalResourceCache
     {

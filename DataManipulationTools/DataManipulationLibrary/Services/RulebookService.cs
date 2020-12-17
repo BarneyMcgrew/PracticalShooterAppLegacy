@@ -1,6 +1,6 @@
 ﻿using DataManipulationLibrary.Helpers;
 using DataManipulationLibrary.ObjectClasses.Rules;
-using IPSCCompanionLibrary.ObjectClasses.Rules;
+using PracticalShooterLibrary.ObjectClasses.Rules;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using Xamarin.Forms.Internals;
-using static IPSCCompanionLibrary.GlobalResources.GlobalEnums;
+using static PracticalShooterLibrary.GlobalResources.GlobalEnums;
 
 namespace DataManipulationLibrary.Services
 {

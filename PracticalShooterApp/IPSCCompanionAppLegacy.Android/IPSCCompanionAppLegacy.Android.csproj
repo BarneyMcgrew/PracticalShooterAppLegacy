@@ -377,16 +377,6 @@
     <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\IPSCCompanionLibrary\PracticalShooterLibrary.csproj">
-      <Project>{94ae0c74-91e3-4d3f-a8c8-2cc5fe82a631}</Project>
-      <Name>PracticalShooterLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IPSCCompanionApp\IPSCCompanionAppLegacy.csproj">
-      <Project>{1D0D3731-1493-43C4-9638-E85C821EA71E}</Project>
-      <Name>IPSCCompanionAppLegacy</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\splash_centered.xml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
@@ -746,6 +736,16 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\minor_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IPSCCompanionAppLegacy\IPSCCompanionAppLegacy.csproj">
+      <Project>{9c85b4e1-f6a4-42ab-86b7-b2ad2ac0c1b6}</Project>
+      <Name>IPSCCompanionAppLegacy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PracticalShooterLibrary\PracticalShooterLibrary.csproj">
+      <Project>{7d32aec3-b9c6-4de1-bd73-80930596251c}</Project>
+      <Name>PracticalShooterLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

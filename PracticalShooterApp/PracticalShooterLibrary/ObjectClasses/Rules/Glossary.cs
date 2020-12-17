@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IPSCCompanionLibrary.ObjectClasses.Rules
+namespace PracticalShooterLibrary.ObjectClasses.Rules
 {
     public class Glossary
     {

@@ -1,7 +1,7 @@
 ﻿using IPSCCompanionApp.UserInterfaces.UTILITIES;
-using IPSCCompanionLibrary.GlobalResources;
-using IPSCCompanionLibrary.ObjectClasses.Rules;
-using IPSCCompanionLibrary.StaticResources;
+using PracticalShooterLibrary.GlobalResources;
+using PracticalShooterLibrary.ObjectClasses.Rules;
+using PracticalShooterLibrary.StaticResources;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +16,10 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SectionsPage : ContentPage
     {
-        private IPSCCompanionLibrary.ObjectClasses.Rules.Section _section;
+        private PracticalShooterLibrary.ObjectClasses.Rules.Section _section;
         private string _searchQuery;
         private string _sectionDescription;
-        private IPSCCompanionLibrary.ObjectClasses.Rules.Rule rule;
+        private PracticalShooterLibrary.ObjectClasses.Rules.Rule rule;
 
         public SectionsPage()
         {
@@ -28,7 +28,7 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
             InitialisePage();
         }
 
-        public SectionsPage(IPSCCompanionLibrary.ObjectClasses.Rules.Section section, string searchQuery)
+        public SectionsPage(PracticalShooterLibrary.ObjectClasses.Rules.Section section, string searchQuery)
         {
             InitializeComponent();
 
@@ -38,7 +38,7 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
             InitialisePage();
         }
 
-        public SectionsPage(IPSCCompanionLibrary.ObjectClasses.Rules.Rule rule)
+        public SectionsPage(PracticalShooterLibrary.ObjectClasses.Rules.Rule rule)
         {
             this.rule = rule;
 
@@ -153,7 +153,7 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
             }            
         }
 
-        private List<IPSCCompanionLibrary.ObjectClasses.Rules.Rule> SearchRules(IPSCCompanionLibrary.ObjectClasses.Rules.Section section, string searchQuery)
+        private List<PracticalShooterLibrary.ObjectClasses.Rules.Rule> SearchRules(PracticalShooterLibrary.ObjectClasses.Rules.Section section, string searchQuery)
         {
             var searchCriteria = searchQuery.ToLowerInvariant();
 
@@ -423,17 +423,17 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
             return formattedString;
         }
 
-        private IPSCCompanionLibrary.ObjectClasses.Rules.SubRule GetSubRule(Guid referenceId)
+        private PracticalShooterLibrary.ObjectClasses.Rules.SubRule GetSubRule(Guid referenceId)
         {
             return GlobalResourceCache.Current.GetSubRule(referenceId);
         }
 
-        private IPSCCompanionLibrary.ObjectClasses.Rules.Rule GetRule(Guid referenceId)
+        private PracticalShooterLibrary.ObjectClasses.Rules.Rule GetRule(Guid referenceId)
         {
             return GlobalResourceCache.Current.GetRule(referenceId);
         }
 
-        private IPSCCompanionLibrary.ObjectClasses.Rules.Section GetSection(Guid referenceId)
+        private PracticalShooterLibrary.ObjectClasses.Rules.Section GetSection(Guid referenceId)
         {
             return GlobalResourceCache.Current.GetSection(referenceId);
         }
@@ -443,28 +443,28 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
             return GlobalResourceCache.Current.GetGlossary(referenceId);
         }
 
-        private void GoToSection(IPSCCompanionLibrary.ObjectClasses.Rules.Section section)
+        private void GoToSection(PracticalShooterLibrary.ObjectClasses.Rules.Section section)
         {
             Navigation.PushModalAsync(new SectionsPage(section, ""));
         }
 
-        private void GoToRule(IPSCCompanionLibrary.ObjectClasses.Rules.Rule rule)
+        private void GoToRule(PracticalShooterLibrary.ObjectClasses.Rules.Rule rule)
         {
             Navigation.PushModalAsync(new SectionsPage(rule));
         }
 
-        private void GoToSubRule(IPSCCompanionLibrary.ObjectClasses.Rules.SubRule subRule)
+        private void GoToSubRule(PracticalShooterLibrary.ObjectClasses.Rules.SubRule subRule)
         {
             var rule = GetRule(subRule.RuleId);
 
             rule.SpanList.Clear();
-            rule.SubRules = new List<IPSCCompanionLibrary.ObjectClasses.Rules.SubRule>();
+            rule.SubRules = new List<PracticalShooterLibrary.ObjectClasses.Rules.SubRule>();
             rule.SubRules.Add(subRule);
 
             Navigation.PushModalAsync(new SectionsPage(rule));
         }
 
-        private void ShowSubRuleReference(IPSCCompanionLibrary.ObjectClasses.Rules.SubRule subrule)
+        private void ShowSubRuleReference(PracticalShooterLibrary.ObjectClasses.Rules.SubRule subrule)
         {
             PopUpTitle.Text = $"{subrule.Numeric} {subrule.Name}";
             PopUpDescription.Text = subrule.Description;
@@ -477,7 +477,7 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
             Navigation.PushModalAsync(new PDFPage(pdfName, friendlyName));
         }
 
-        private void ShowRuleReference(IPSCCompanionLibrary.ObjectClasses.Rules.Rule rule)
+        private void ShowRuleReference(PracticalShooterLibrary.ObjectClasses.Rules.Rule rule)
         {
             PopUpTitle.Text = $"{rule.Numeric} {rule.Name}";
             PopUpDescription.Text = rule.Description;
@@ -495,7 +495,7 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
 
         public class SubRule
         {
-            public SubRule(IPSCCompanionLibrary.ObjectClasses.Rules.SubRule subRule)
+            public SubRule(PracticalShooterLibrary.ObjectClasses.Rules.SubRule subRule)
             {
                 Name = $"{subRule.Numeric} {subRule.Name}";
                 Description = subRule.Description.Replace("\\r\\n", Environment.NewLine + Environment.NewLine);
@@ -512,7 +512,7 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
         {
             public Rule() { }
 
-            public Rule(IPSCCompanionLibrary.ObjectClasses.Rules.Rule rule)
+            public Rule(PracticalShooterLibrary.ObjectClasses.Rules.Rule rule)
             {
                 if (string.IsNullOrWhiteSpace(rule.Numeric))
                 {
@@ -543,7 +543,7 @@ namespace IPSCCompanionApp.UserInterfaces.RULEBOOKS
 
         public class Section
         {
-            public Section(IPSCCompanionLibrary.ObjectClasses.Rules.Section section)
+            public Section(PracticalShooterLibrary.ObjectClasses.Rules.Section section)
             {
                 SectionId = section.SectionId;
                 Name = $"{section.Numeric} - {section.Name}";

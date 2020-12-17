@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IPSCCompanionLibrary.ObjectClasses.Rules
+namespace PracticalShooterLibrary.ObjectClasses.Rules
 {
     public class SubRule
     {

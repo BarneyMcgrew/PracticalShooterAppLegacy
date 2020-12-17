@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\IPSCCompanionLibrary\PracticalShooterLibrary.csproj" />
+    <ProjectReference Include="..\..\PracticalShooterApp\PracticalShooterLibrary\PracticalShooterLibrary.csproj" />
   </ItemGroup>
 
 </Project>

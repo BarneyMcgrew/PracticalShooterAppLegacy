@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IPSCCompanionLibrary.GlobalResources
+namespace PracticalShooterLibrary.GlobalResources
 {
     public class GlobalEnums
     {
