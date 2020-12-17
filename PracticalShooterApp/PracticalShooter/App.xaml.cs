@@ -14,7 +14,7 @@ namespace PracticalShooter
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new LoadingPage();
         }
 
         protected override void OnStart()
