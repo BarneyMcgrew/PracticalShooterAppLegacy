@@ -30,6 +30,17 @@
     </Shell.Resources>
 
     <TabBar>
+        <ShellContent Route="LoadingPage" ContentTemplate="{DataTemplate local:LoadingPage}" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Title="Home" Icon="" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}"/>
+        <ShellContent Title="Rules" Icon="" Route="RulesPage" ContentTemplate="{DataTemplate local:RulesPage}"/>
+        <ShellContent Title="Utility" Icon="" Route="UtilityPage" ContentTemplate="{DataTemplate local:UtilityPage}"/>
+        <ShellContent Title="Setting" Icon="" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}"/>
+    </TabBar>
+
+    <TabBar>        
         <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
         <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </TabBar>

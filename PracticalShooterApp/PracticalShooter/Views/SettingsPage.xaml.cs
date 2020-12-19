@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace PracticalShooter.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoadingPage : ContentPage
+    public partial class SettingsPage : ContentPage
     {
-        public LoadingPage()
+        public SettingsPage()
         {
             InitializeComponent();
-        }
-
-        protected async override void OnAppearing()
-        {
-            base.OnAppearing();            
         }
     }
 }

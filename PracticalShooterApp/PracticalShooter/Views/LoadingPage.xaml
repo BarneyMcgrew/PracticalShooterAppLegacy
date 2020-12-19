@@ -1,12 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:PracticalShooter.ViewModels"
              x:Class="PracticalShooter.Views.LoadingPage">
+    <ContentPage.BindingContext>
+        <vm:LoadingViewModel />
+    </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Loading Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label
+                Text="{Binding LoadingTitle}"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Center" 
+                FontSize="Large" 
+                TextType="Html" 
+                FontAttributes="Bold" 
+                Padding="0, 0, 0, 10"/>
+            <Label 
+                Text="{Binding LoadingText}"
+                FontSize="Medium" 
+                TextType="Html" 
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
