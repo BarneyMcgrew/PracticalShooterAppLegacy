@@ -1,12 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:PracticalShooter.ViewModels"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"  
+             iOsSpecific:Page.UseSafeArea="true" 
+             Shell.NavBarIsVisible="False"
              x:Class="PracticalShooter.Views.HomePage">
+    <ContentPage.BindingContext>
+        <vm:HomeViewModel />
+    </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Homepage!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Margin="10">
+            <Label 
+               Text="Welcome to the Beta"
+               FontSize="24"/>
+            <Label
+                Text="{Binding InfoText}"/>
+            <Label 
+               Text="Updates"
+               FontSize="20"/>
+            <Label
+                Text="{Binding UpdateText}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

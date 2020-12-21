@@ -1,12 +1,144 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:PracticalShooter.ViewModels"
+             xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"  
+             iOsSpecific:Page.UseSafeArea="true" 
+             Shell.NavBarIsVisible="False"
+             xmlns:local="clr-namespace:PracticalShooterLibrary.StaticResources;assembly=PracticalShooterLibrary"
+             xmlns:customRenderer="clr-namespace:PracticalShooter.CustomRenderers;assembly=PracticalShooter"
              x:Class="PracticalShooter.Views.RulesPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Rules!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid RowSpacing="0" ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+            <BoxView Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   Grid.RowSpan="2"
+                   BackgroundColor="{StaticResource Primary}"/>
+            <StackLayout Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="CenterAndExpand">
+                <Label x:Name="HeaderTab"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       TextColor="White"
+                       FontSize="Large"                       
+                       Text="{Binding SelectedRulebook}"/>
+
+            </StackLayout>
+            <ImageButton x:Name="SearchButton" 
+                         Grid.Row="0"
+                         Grid.RowSpan="2"
+                         Grid.Column="0"
+                         Aspect="AspectFit"
+                         Margin="5"
+                         Command="{Binding SearchButtonTapped}"
+                         BackgroundColor="{StaticResource Primary}"
+                         Source="icons8_search.png"/>
+            <ImageButton x:Name="BookmarkButton" 
+                         Grid.Row="0"
+                         Grid.RowSpan="2"
+                         Grid.Column="2"
+                         Aspect="AspectFit"
+                         Margin="5"                    
+                         BackgroundColor="{StaticResource Primary}"
+                         Source="icons8_bookmark.png"/>
+            <StackLayout Grid.Row="2" 
+                         Padding="10"
+                         Grid.Column="0"
+                         Grid.ColumnSpan="3">
+                <!--Disciplines Section Deprecated-->
+                <StackLayout IsVisible="{Binding DisciplineSectionVisible}" Orientation="Vertical">
+                    <Label Text="Tap to change shooting disciplines."
+                           FontSize="Small"
+                           TextColor="Black"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="CenterAndExpand" />
+                    <!--Add combobox here-->
+                    <Frame HasShadow="False" CornerRadius="10" x:Name="DisciplineHeader">
+                        <StackLayout Orientation="Vertical" >
+                            <Label x:Name="DisciplineName"
+                                Text="Handgun"
+                                HorizontalOptions="Fill"
+                                VerticalOptions="CenterAndExpand"
+                                FontAttributes ="Bold"
+                                TextColor="Black"
+                                HorizontalTextAlignment="Center"
+                                FontSize="Large"/>
+                            <Picker x:Name="SelectedDisciplinePicker" SelectedItem="{Binding SelectedRulebook}" VerticalOptions="Center" HorizontalOptions="FillAndExpand" FontAttributes="Bold" Title="Select Discipline To View" IsVisible="False" SelectedIndexChanged="SelectedDisciplinePicker_OnSelectedIndexChanged">
+                                <Picker.Items>
+                                    <x:String>Handgun</x:String>
+                                    <x:String>Action Air</x:String>
+                                    <x:String>Shotgun</x:String>
+                                    <x:String>Rifle</x:String>
+                                    <x:String>Mini Rifle</x:String>
+                                    <x:String>PCC</x:String>
+                                </Picker.Items>
+                            </Picker>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <!--Search Bar Section-->
+                <StackLayout IsVisible="{Binding SearchSectionVisible}" Orientation="Vertical">
+                    <Label Text="Type in the searchbox to filter results in realtime."
+                           FontSize="Small"
+                           TextColor="Black"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="CenterAndExpand" />
+                    <SearchBar x:Name="SearchBarOnly"
+                               HorizontalOptions="Fill"
+                               VerticalOptions="CenterAndExpand"
+                               Placeholder="Search Rules..."                               
+                               CancelButtonColor="{StaticResource Primary}"
+                               TextColor="{StaticResource Primary}"
+                               Text="{Binding SearchQuery}"
+                               PlaceholderColor="{StaticResource Primary}"
+                               HorizontalTextAlignment="Start"
+                               TextChanged="SearchBarOnly_TextChanged">
+                        <SearchBar.Effects>
+                            <customRenderer:SearchBarBackgroundEffect />
+                        </SearchBar.Effects>
+                    </SearchBar>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="10,0,0,0" IsVisible="{Binding SearchFlagVisible}">
+                    <Label Text="{Binding SearchNameText}" VerticalTextAlignment="Center" FontSize="Medium" TextColor="{Binding BackgroundColor, Source={x:Static local:GlobalColor.Current}}" FontAttributes="Bold"/>
+                </StackLayout>
+                <ListView x:Name="searchResults"
+                      HorizontalOptions="FillAndExpand"
+                      VerticalOptions="FillAndExpand" 
+                      HasUnevenRows="True"
+                      SeparatorColor="{Binding BackgroundColor, Source={x:Static local:GlobalColor.Current}}"
+                      SelectionMode="Single"
+                      IsGroupingEnabled="True"
+                      ItemsSource="{Binding Chapters}"
+                      SelectedItem="{Binding SelectedSection, Mode=TwoWay}"
+                      ItemSelected="SectionSelected">
+                    <ListView.GroupHeaderTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Label TextColor="{Binding BackgroundColor, Source={x:Static local:GlobalColor.Current}}" VerticalTextAlignment="Center" FontSize="Large" Text="{Binding Name}" Padding="10,10,10,10" FontAttributes="Bold"/>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.GroupHeaderTemplate>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical" Padding="20,10,10,10">
+                                    <Label VerticalTextAlignment="Center" FontSize="Medium" Text="{Binding Name}" VerticalOptions="FillAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -63,6 +63,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CustomRenderers\CustomWebViewRenderer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
@@ -141,6 +142,24 @@
       <Project>{0DC561B8-C727-4222-A43A-1A625116AD33}</Project>
       <Name>PracticalShooter</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8_automation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8_rules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8_timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8_bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8_search.png" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>

@@ -34,10 +34,10 @@
     </TabBar>
 
     <TabBar>
-        <ShellContent Title="Home" Icon="" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}"/>
-        <ShellContent Title="Rules" Icon="" Route="RulesPage" ContentTemplate="{DataTemplate local:RulesPage}"/>
-        <ShellContent Title="Utility" Icon="" Route="UtilityPage" ContentTemplate="{DataTemplate local:UtilityPage}"/>
-        <ShellContent Title="Setting" Icon="" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}"/>
+        <ShellContent Title="Home" Icon="icons8_home.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}"/>
+        <ShellContent Title="Rules" Icon="icons8_rules.png" Route="RulesPage" ContentTemplate="{DataTemplate local:RulesPage}"/>
+        <ShellContent Title="Utility" Icon="icons8_timer.png" Route="UtilityPage" ContentTemplate="{DataTemplate local:UtilityPage}"/>
+        <ShellContent Title="Setting" Icon="icons8_automation.png" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}"/>
     </TabBar>
 
     <TabBar>        
