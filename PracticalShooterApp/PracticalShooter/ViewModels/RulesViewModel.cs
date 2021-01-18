@@ -1,4 +1,5 @@
 ﻿using PracticalShooter.Models;
+using PracticalShooter.Views;
 using PracticalShooterLibrary.StaticResources;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,9 @@ namespace PracticalShooter.ViewModels
 
         private List<Chapter> _chapters;
 
-        private Section _selectedSection;
+        private Chapter.Section _selectedSection;
+
+        private bool _bookmarkButtonVisible = false;
 
         private bool _searchSectionVisible = false;
 
@@ -72,10 +75,16 @@ namespace PracticalShooter.ViewModels
             set => SetProperty(ref _chapters, value);
         }
 
-        public Section SelectedSection
+        public Chapter.Section SelectedSection
         {
             get => _selectedSection;
             set => SetProperty(ref _selectedSection, value);
+        }
+
+        public bool BookmarkButtonVisible
+        {
+            get => _bookmarkButtonVisible;
+            set => SetProperty(ref _bookmarkButtonVisible, value);
         }
 
         public bool SearchSectionVisible
@@ -148,7 +157,7 @@ namespace PracticalShooter.ViewModels
 
                 foreach (var section in searchedSections)
                 {
-                    chapter.Add(new Section(section));
+                    chapter.Add(new Chapter.Section(section));
                 }
 
                 var chapters = new List<Chapter>();
@@ -161,6 +170,9 @@ namespace PracticalShooter.ViewModels
 
         private async Task SectionSelectedCommand()
         {
+            if (SelectedSection == null)
+                return;
+
             if (SelectedSection.Name == "12.1 - Appendices")
             {
                 var selectedDiscipline = GlobalSettings.Current.SelectedDiscipline;
@@ -169,8 +181,12 @@ namespace PracticalShooter.ViewModels
             }
             else
             {
-                var sectionFull = GlobalResourceCache.Current.GetSection(SelectedSection.SectionId);
-                //await Shell.Current.GoToAsync($"{nameof(SectionPage)}?{nameof(SectionViewModel.SectionId)}={_selectedSection.SectionId}");
+                var section = GlobalResourceCache.Current.GetSection(SelectedSection.SectionId);
+
+                RulebookSession.Current.CurrentSection = section;
+                RulebookSession.Current.SearchQuery = SearchQuery;
+
+                await Shell.Current.GoToAsync($"{nameof(SectionsPage)}");
             }
 
             SelectedSection = null;

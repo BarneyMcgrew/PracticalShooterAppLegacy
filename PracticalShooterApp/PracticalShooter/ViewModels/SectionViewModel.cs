@@ -4,7 +4,10 @@ using System.Text;
 
 namespace PracticalShooter.ViewModels
 {
-    public class SectionViewModel
+    public class SectionViewModel : BaseViewModel
     {
+
+        public SectionViewModel()
+        { }
     }
 }

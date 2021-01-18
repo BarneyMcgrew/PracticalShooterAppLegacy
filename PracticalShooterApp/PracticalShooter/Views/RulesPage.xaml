@@ -44,6 +44,7 @@
                          BackgroundColor="{StaticResource Primary}"
                          Source="icons8_search.png"/>
             <ImageButton x:Name="BookmarkButton" 
+                         IsVisible="{Binding BookmarkButtonVisible}"
                          Grid.Row="0"
                          Grid.RowSpan="2"
                          Grid.Column="2"
