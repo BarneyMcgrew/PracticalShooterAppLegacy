@@ -49,11 +49,11 @@ namespace PracticalShooterLibrary.GlobalResources
 
         public enum DisciplineTypes
         {
-            ActionAir,
-            Handgun,
-            Shotgun,
-            Rifle,
-            MiniRifle,
+            ACTIONAIR,
+            HANDGUN,
+            SHOTGUN,
+            RIFLE,
+            MINIRIFLE,
             PCC
         }
 

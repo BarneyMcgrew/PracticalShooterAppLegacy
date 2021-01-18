@@ -28,7 +28,7 @@ namespace PracticalShooterLibrary.StaticResources
                 ShowGoBackButton = true;
                 InclusiveSearch = true;
                 ShowDisciplineSelectorOnMainScreen = true;
-                SelectedDiscipline = "Handgun";
+                SelectedDiscipline = "HANDGUN";
                 AppVersion = 0;
                 AppLaunchCount = 0;
                 EnableDisciplineColorCoding = false;

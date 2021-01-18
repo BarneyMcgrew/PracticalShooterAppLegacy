@@ -67,7 +67,7 @@
                     <Frame HasShadow="False" CornerRadius="10" x:Name="DisciplineHeader">
                         <StackLayout Orientation="Vertical" >
                             <Label x:Name="DisciplineName"
-                                Text="Handgun"
+                                Text="HANDGUN"
                                 HorizontalOptions="Fill"
                                 VerticalOptions="CenterAndExpand"
                                 FontAttributes ="Bold"
@@ -76,11 +76,11 @@
                                 FontSize="Large"/>
                             <Picker x:Name="SelectedDisciplinePicker" SelectedItem="{Binding SelectedRulebook}" VerticalOptions="Center" HorizontalOptions="FillAndExpand" FontAttributes="Bold" Title="Select Discipline To View" IsVisible="False" SelectedIndexChanged="SelectedDisciplinePicker_OnSelectedIndexChanged">
                                 <Picker.Items>
-                                    <x:String>Handgun</x:String>
-                                    <x:String>Action Air</x:String>
-                                    <x:String>Shotgun</x:String>
-                                    <x:String>Rifle</x:String>
-                                    <x:String>Mini Rifle</x:String>
+                                    <x:String>HANDGUN</x:String>
+                                    <x:String>ACTION AIR</x:String>
+                                    <x:String>SHOTGUN</x:String>
+                                    <x:String>RIFLE</x:String>
+                                    <x:String>MINI RIFLE</x:String>
                                     <x:String>PCC</x:String>
                                 </Picker.Items>
                             </Picker>
