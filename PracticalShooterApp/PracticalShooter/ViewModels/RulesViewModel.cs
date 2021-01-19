@@ -51,6 +51,8 @@ namespace PracticalShooter.ViewModels
             SearchBarTextChanged = new Command(async () => SearchBarTextChangedCommand());
             SectionSelected = new Command(async () => await SectionSelectedCommand());
 
+            SearchQuery = "";
+
             LoadChapters();
         }
 
@@ -59,7 +61,6 @@ namespace PracticalShooter.ViewModels
             var selectedDiscipline = GlobalSettings.Current.SelectedDiscipline;
             SelectedRulebook = selectedDiscipline;
 
-            SearchQuery = "";
             SearchBarTextChangedCommand();
         }
 
