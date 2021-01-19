@@ -336,7 +336,7 @@ namespace PracticalShooter.Views
                                 formattedString.Spans.Add(new Span()
                                 {
                                     Text = ruleSpan.Text,
-                                    TextColor = Color.Gold,
+                                    TextColor = (Color)Application.Current.Resources["Secondary"],
                                     GestureRecognizers = { new TapGestureRecognizer((view) => GoToSection(section)) }
                                 });
                             }
@@ -361,7 +361,7 @@ namespace PracticalShooter.Views
                                 formattedString.Spans.Add(new Span()
                                 {
                                     Text = ruleSpan.Text,
-                                    TextColor = Color.Gold,
+                                    TextColor = (Color)Application.Current.Resources["Secondary"],
                                     GestureRecognizers = { new TapGestureRecognizer((view) => ShowRuleReference(rule)) }
                                 });
                             }
@@ -386,7 +386,7 @@ namespace PracticalShooter.Views
                                 formattedString.Spans.Add(new Span()
                                 {
                                     Text = ruleSpan.Text,
-                                    TextColor = Color.Gold,
+                                    TextColor = (Color)Application.Current.Resources["Secondary"],
                                     GestureRecognizers = { new TapGestureRecognizer((view) => ShowSubRuleReference(subRule)) }
                                 });
                             }
@@ -407,7 +407,7 @@ namespace PracticalShooter.Views
                             formattedString.Spans.Add(new Span()
                             {
                                 Text = ruleSpan.Text,
-                                TextColor = Color.Gold,
+                                TextColor = (Color)Application.Current.Resources["Secondary"],
                                 GestureRecognizers = { new TapGestureRecognizer((view) => ShowPdfReference(referenceText, ruleSpan.Text.ToUpper())) }
                             });
 

@@ -7,21 +7,51 @@
     -->
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary">#404040</Color>
-            <Color x:Key="Secondary">#f2f2f2</Color>
+            <Color x:Key="Primary">#f2f2f2</Color>
+            <Color x:Key="Secondary">#ff8000</Color>
+            <Color x:Key="BackgroundPrimary">#404040</Color>
+            <Color x:Key="BackgroundSecondary">#ff8000</Color>
+            <!--The content page setter is not working-->
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{StaticResource BackgroundPrimary}"></Setter>
+            </Style>
+            <Style TargetType="ListView">
+                <Setter Property="SeparatorColor" Value="{StaticResource Primary}"></Setter>
+            </Style>
+            <Style TargetType="TableView">
+                <Setter Property="BackgroundColor" Value="{StaticResource BackgroundPrimary}"></Setter>
+            </Style>
+            <Style TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="{StaticResource BackgroundSecondary}"></Setter>
+            </Style>
+            <Style TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="{StaticResource BackgroundSecondary}"></Setter>
+            </Style>
+            <Style TargetType="SearchBar">
+                <Setter Property="PlaceholderColor" Value="{StaticResource Primary}"></Setter>
+                <Setter Property="CancelButtonColor" Value="{StaticResource Secondary}"></Setter>
+                <Setter Property="TextColor" Value="{StaticResource Primary}"></Setter>
+            </Style>
+            <Style TargetType="ImageButton">
+                <Setter Property="BackgroundColor" Value="{StaticResource BackgroundSecondary}"></Setter>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource Primary}"></Setter>
+            </Style>
             <Style TargetType="Button">
-                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="TextColor" Value="{StaticResource Primary}"></Setter>
+                <Setter Property="BackgroundColor" Value="{StaticResource BackgroundPrimary}"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                    <Setter Property="BackgroundColor" Value="{StaticResource BackgroundPrimary}" />
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Disabled">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="#332196F3" />
+                                    <Setter Property="BackgroundColor" Value="{StaticResource BackgroundPrimary}" />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>

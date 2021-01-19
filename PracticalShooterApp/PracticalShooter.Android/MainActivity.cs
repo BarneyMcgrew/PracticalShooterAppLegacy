@@ -22,6 +22,12 @@ namespace PracticalShooter.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
+            if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.Lollipop)
+            {
+                Window.SetStatusBarColor(Android.Graphics.Color.Black);
+                Window.SetNavigationBarColor(Android.Graphics.Color.Black);
+            }
+
             try
             {
                 LoadApplication(new App());

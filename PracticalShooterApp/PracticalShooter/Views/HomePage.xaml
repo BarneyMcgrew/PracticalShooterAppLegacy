@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:PracticalShooter.ViewModels"
              xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"  
-             iOsSpecific:Page.UseSafeArea="true" 
+             iOsSpecific:Page.UseSafeArea="true"
+             BackgroundColor="{StaticResource BackgroundPrimary}"
              Shell.NavBarIsVisible="False"
              x:Class="PracticalShooter.Views.HomePage">
     <ContentPage.BindingContext>
