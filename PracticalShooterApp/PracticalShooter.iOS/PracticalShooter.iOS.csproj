@@ -165,6 +165,9 @@
   <ItemGroup>
     <BundleResource Include="Resources\icons8_book.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\splash.png" />
+  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
       <UserProperties TriggeredFromHotReload="False" />
