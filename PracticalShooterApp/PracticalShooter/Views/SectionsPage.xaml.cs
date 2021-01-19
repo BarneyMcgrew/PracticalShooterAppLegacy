@@ -78,8 +78,7 @@ namespace PracticalShooter.Views
 
         private void DisciplineButton_Clicked(object sender, System.EventArgs e)
         {
-            DisciplineSection.IsVisible = !DisciplineSection.IsVisible;
-            SearchSection.IsVisible = false;
+            DisciplineNameClicked();
         }
 
         private void SearchButton_Clicked(object sender, System.EventArgs e)

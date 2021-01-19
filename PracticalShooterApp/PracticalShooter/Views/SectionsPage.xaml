@@ -52,7 +52,7 @@
                          Aspect="AspectFit"
                          Margin="5"               
                          Clicked="DisciplineButton_Clicked"
-                         Source="icons8_bookmark.png"/>                
+                         Source="icons8_book.png"/>                
                 <StackLayout Grid.Row="2" 
                              Padding="10"
                              Grid.Column="0"

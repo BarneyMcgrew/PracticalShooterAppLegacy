@@ -106,6 +106,7 @@
                       HorizontalOptions="FillAndExpand"
                       VerticalOptions="FillAndExpand" 
                       HasUnevenRows="True"
+                          BackgroundColor="{StaticResource BackgroundPrimary}"
                       SelectionMode="Single"
                       IsGroupingEnabled="True"
                       ItemsSource="{Binding Chapters}"
@@ -114,7 +115,7 @@
                     <ListView.GroupHeaderTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <Label VerticalTextAlignment="Center" FontSize="Large" Text="{Binding Name}" Padding="10,10,10,10" FontAttributes="Bold"/>
+                                <Label BackgroundColor="{StaticResource BackgroundPrimary}" VerticalTextAlignment="Center" FontSize="Large" Text="{Binding Name}" Padding="10,10,10,10" FontAttributes="Bold"/>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.GroupHeaderTemplate>
