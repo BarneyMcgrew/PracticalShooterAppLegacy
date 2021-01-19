@@ -100,7 +100,7 @@
                     </SearchBar>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" Padding="10,0,0,0" IsVisible="{Binding SearchFlagVisible}">
-                    <Label Text="{Binding SearchNameText}" VerticalTextAlignment="Center" FontSize="Medium" TextColor="{Binding BackgroundColor, Source={x:Static local:GlobalColor.Current}}" FontAttributes="Bold"/>
+                    <Label Text="{Binding SearchNameText}" VerticalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold"/>
                 </StackLayout>
                 <ListView x:Name="searchResults"
                       HorizontalOptions="FillAndExpand"

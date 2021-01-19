@@ -156,7 +156,7 @@ namespace PracticalShooter.Views
             var searchableRules = section.Rules.Where(o => o.SearchableString != null);
 
             var searchResults = searchableRules
-                .Where(o => o.SearchableString.Contains(searchCriteria));
+                .Where(o => o.SearchableString.Contains(searchCriteria) || string.Join("", o.SubRules.SelectMany(x => x.SearchableString)).Contains(searchCriteria));
 
             return searchResults.ToList();
         }

@@ -134,10 +134,12 @@
                 </Grid.ColumnDefinitions>
                 <Frame HasShadow="False" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="3" Opacity="0.7" BackgroundColor="{StaticResource BackgroundPrimary}"/>
                 <Frame HasShadow="False" Grid.Column="1" Grid.Row="1">
-                    <StackLayout Orientation="Vertical">
-                        <Label VerticalTextAlignment="Center" FontSize="Large" TextType="Html" FontAttributes="Bold" Padding="0, 0, 0, 10" x:Name="PopUpTitle"/>
-                        <Label FontSize="Medium" TextType="Html" x:Name="PopUpDescription"/>
-                    </StackLayout>
+                    <ScrollView Orientation="Vertical">
+                        <StackLayout Orientation="Vertical">
+                            <Label VerticalTextAlignment="Center" FontSize="Large" TextType="Html" FontAttributes="Bold" Padding="0, 0, 0, 10" x:Name="PopUpTitle"/>
+                            <Label FontSize="Medium" TextType="Html" x:Name="PopUpDescription"/>
+                        </StackLayout>
+                    </ScrollView>                    
                 </Frame>
                 <Label VerticalOptions="End" HorizontalOptions="Center" Grid.Column="1" Grid.Row="2" Text="TAP ANYWHERE TO CLOSE" Padding="0, 0, 0, 10"/>
             </Grid>
