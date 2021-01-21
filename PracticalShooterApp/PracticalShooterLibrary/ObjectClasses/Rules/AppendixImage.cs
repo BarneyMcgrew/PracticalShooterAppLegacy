@@ -4,9 +4,9 @@ using System.Text;
 
 namespace PracticalShooterLibrary.ObjectClasses.Rules
 {
-    public class AppendixPage
+    public class AppendixImage
     {
-        public AppendixPage() { }
+        public AppendixImage() { }
 
         public string Filename;
         public string SearchableString;

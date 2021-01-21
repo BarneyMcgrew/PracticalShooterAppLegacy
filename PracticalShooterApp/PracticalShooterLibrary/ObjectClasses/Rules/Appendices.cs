@@ -10,6 +10,6 @@ namespace PracticalShooterLibrary.ObjectClasses.Rules
         public Appendices() { }
 
         public DisciplineTypes DisciplineType;
-        public List<AppendixPage> AppendixList;
+        public List<AppendixImage> AppendixList;
     }
 }
