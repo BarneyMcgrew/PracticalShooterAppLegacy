@@ -19,6 +19,12 @@ namespace PracticalShooter.Droid
 
         public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
         {
+            if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.Lollipop)
+            {
+                Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#404040"));
+                Window.SetNavigationBarColor(Android.Graphics.Color.ParseColor("#404040"));
+            }
+
             base.OnCreate(savedInstanceState, persistentState);
             Log.Debug(TAG, "SplashActivity.OnCreate");
         }
@@ -38,7 +44,7 @@ namespace PracticalShooter.Droid
         async void SimulateStartup()
         {
             Log.Debug(TAG, "Performing some startup work that takes a bit of time.");
-            await Task.Delay(8000); // Simulate a bit of startup work.
+            //await Task.Delay(8000); // Simulate a bit of startup work.
             Log.Debug(TAG, "Startup work is finished - starting MainActivity.");
             StartActivity(new Intent(Application.Context, typeof(MainActivity)));
         }

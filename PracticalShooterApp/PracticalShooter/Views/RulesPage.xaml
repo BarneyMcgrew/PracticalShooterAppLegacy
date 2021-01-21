@@ -5,12 +5,20 @@
              xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"  
              iOsSpecific:Page.UseSafeArea="true" 
              Shell.NavBarIsVisible="False"
-             BackgroundColor="{StaticResource BackgroundPrimary}"
              xmlns:local="clr-namespace:PracticalShooterLibrary.StaticResources;assembly=PracticalShooterLibrary"
              xmlns:customRenderer="clr-namespace:PracticalShooter.CustomRenderers;assembly=PracticalShooter"
              x:Class="PracticalShooter.Views.RulesPage">
+    <ContentPage.BackgroundColor>
+        <OnPlatform x:TypeArguments="Color"
+                    iOS="{StaticResource BackgroundSecondary}"
+                    Android="{StaticResource BackgroundPrimary}"
+                    />
+    </ContentPage.BackgroundColor>
     <ContentPage.Content>
         <Grid RowSpacing="0" ColumnSpacing="0">
+            <Grid.BackgroundColor>
+                <OnPlatform x:TypeArguments="Color" iOS="{StaticResource BackgroundPrimary}"/>
+            </Grid.BackgroundColor>
             <Grid.RowDefinitions>
                 <RowDefinition Height="5"/>
                 <RowDefinition Height="40"/>
@@ -89,7 +97,7 @@
                            VerticalOptions="CenterAndExpand" />
                     <SearchBar x:Name="SearchBarOnly"
                                HorizontalOptions="Fill"
-                               VerticalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"                               
                                Placeholder="Search Rules..."             
                                Text="{Binding SearchQuery}"
                                HorizontalTextAlignment="Start"

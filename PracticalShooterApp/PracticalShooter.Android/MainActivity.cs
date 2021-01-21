@@ -24,8 +24,8 @@ namespace PracticalShooter.Droid
 
             if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.Lollipop)
             {
-                Window.SetStatusBarColor(Android.Graphics.Color.Black);
-                Window.SetNavigationBarColor(Android.Graphics.Color.Black);
+                Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#ff8000"));
+                Window.SetNavigationBarColor(Android.Graphics.Color.ParseColor("#ff8000"));
             }
 
             try
@@ -40,6 +40,12 @@ namespace PracticalShooter.Droid
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.Lollipop)
+            {
+                Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#ff8000"));
+                Window.SetNavigationBarColor(Android.Graphics.Color.ParseColor("#ff8000"));
+            }
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }

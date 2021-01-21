@@ -177,8 +177,9 @@ namespace PracticalShooter.ViewModels
             if (SelectedSection.Name == "12.1 - Appendices")
             {
                 var selectedDiscipline = GlobalSettings.Current.SelectedDiscipline;
+                RulebookSession.Current.SearchQuery = SearchQuery;
 
-                //await Shell.Current.GoToAsync($"{nameof(AppendixPage)}?{nameof(AppendixViewModel.SectionId)}={_selectedSection.SectionId}");
+                await Shell.Current.GoToAsync($"{nameof(AppendixPage)}");
             }
             else
             {

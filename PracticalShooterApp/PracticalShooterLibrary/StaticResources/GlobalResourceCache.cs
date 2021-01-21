@@ -17,6 +17,8 @@ namespace PracticalShooterLibrary.StaticResources
 
         public Dictionary<Guid, Discipline> DisciplinesDictionary;
 
+        public Dictionary<string, Appendices> AppendicesDictionary;
+
         public WebsiteCollection WebsitesCollection;
 
         public bool ResourcesLoaded { get; set; }
@@ -38,6 +40,17 @@ namespace PracticalShooterLibrary.StaticResources
             DisciplineNameDictionary = rulebook.Disciplines.ToDictionary(o => Enum.GetName(typeof(DisciplineTypes), o.DisciplineType), o => o.DisciplineId);
 
             DisciplinesDictionary = rulebook.Disciplines.ToDictionary(o => o.DisciplineId, o => o);
+
+            ResourcesLoaded = true;
+        }
+
+        public void LoadAppendices()
+        {
+            var appendicesReader = new AppendixReader();
+
+            var appendixLibrary = appendicesReader.ReadAppendixResource();
+
+            AppendicesDictionary = appendixLibrary.Disciplines.ToDictionary(o => Enum.GetName(typeof(DisciplineTypes), o.DisciplineType), o => o);
 
             ResourcesLoaded = true;
         }
@@ -76,6 +89,11 @@ namespace PracticalShooterLibrary.StaticResources
             var disciplineId = DisciplineNameDictionary[GlobalSettings.Current.SelectedDiscipline.Replace(" ", "")];
 
             return DisciplinesDictionary[disciplineId];
+        }
+
+        public Appendices GetAppendices()
+        {
+            return AppendicesDictionary[GlobalSettings.Current.SelectedDiscipline.Replace(" ", "")];
         }
 
         public Section GetSection(Guid referenceId)

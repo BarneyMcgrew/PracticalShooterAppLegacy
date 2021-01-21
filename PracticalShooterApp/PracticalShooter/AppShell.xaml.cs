@@ -15,6 +15,7 @@ namespace PracticalShooter
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
 
             Routing.RegisterRoute(nameof(SectionsPage), typeof(SectionsPage));
+            Routing.RegisterRoute(nameof(PDFPage), typeof(PDFPage));
         }
 
     }

@@ -472,7 +472,10 @@ namespace PracticalShooter.Views
 
         private void ShowPdfReference(string pdfName, string friendlyName)
         {
-            Navigation.PushModalAsync(new PDFPage(pdfName, friendlyName));
+            RulebookSession.Current.CurrentPDFFileName = pdfName;
+            RulebookSession.Current.CurrentPDFFriendlyName = friendlyName;
+
+            Shell.Current.GoToAsync($"{nameof(PDFPage)}");
         }
 
         private void ShowRuleReference(PracticalShooterLibrary.ObjectClasses.Rules.Rule rule)

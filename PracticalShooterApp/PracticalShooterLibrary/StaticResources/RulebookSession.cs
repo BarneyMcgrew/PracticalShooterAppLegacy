@@ -9,6 +9,8 @@ namespace PracticalShooterLibrary.StaticResources
     {
         private string _searchQuery;
         private Section _currentSection;
+        private string _currentPDFFileName;
+        private string _currentPDFFriendlyName;
 
         public static RulebookSession Current = new RulebookSession();
 
@@ -25,6 +27,18 @@ namespace PracticalShooterLibrary.StaticResources
         {
             get => _currentSection;
             set => _currentSection = value;
+        }
+
+        public string CurrentPDFFileName
+        {
+            get => _currentPDFFileName;
+            set => _currentPDFFileName = value;
+        }
+
+        public string CurrentPDFFriendlyName
+        {
+            get => _currentPDFFriendlyName;
+            set => _currentPDFFriendlyName = value;
         }
     }
 }

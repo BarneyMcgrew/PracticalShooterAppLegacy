@@ -4,6 +4,8 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
 
 namespace PracticalShooter.iOS
 {
@@ -28,7 +30,7 @@ namespace PracticalShooter.iOS
             try
             {
                 LoadApplication(new App());
-
+                
                 return base.FinishedLaunching(app, options);
             }
             catch(Exception ex)

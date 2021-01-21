@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PracticalShooter.ViewModels;
+using PracticalShooterLibrary.StaticResources;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,11 +14,16 @@ namespace PracticalShooter.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PDFPage : ContentPage
     {
-        public PDFPage(string fileName, string friendlyName)
+        public PDFViewModel _viewModel;
+
+        public PDFPage()
         {
             InitializeComponent();
 
-            HeaderTab.Text = friendlyName;
+            BindingContext = _viewModel = new PDFViewModel();
+
+            HeaderTab.Text = RulebookSession.Current.CurrentPDFFriendlyName;
+            var fileName = RulebookSession.Current.CurrentPDFFileName;
 
             var pdfName = $"{fileName}.pdf";
             PDFView.Uri = pdfName;
@@ -26,7 +33,7 @@ namespace PracticalShooter.Views
 
         private void GoBackClicked()
         {
-            Navigation.PopModalAsync();
+            AppShell.Current.Navigation.PopAsync();
         }
     }
 }

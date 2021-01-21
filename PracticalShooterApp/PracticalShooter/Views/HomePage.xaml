@@ -11,17 +11,48 @@
         <vm:HomeViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout Margin="10">
-            <Label 
-               Text="Welcome to the Beta"
-               FontSize="24"/>
-            <Label
-                Text="{Binding InfoText}"/>
-            <Label 
-               Text="Updates"
-               FontSize="20"/>
-            <Label
-                Text="{Binding UpdateText}"/>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Margin="20">
+                <Frame CornerRadius="10" Margin="20">
+                    <StackLayout>
+                        <Label 
+                            HorizontalTextAlignment="Center"
+                            Text="ALPHA BUILD 0.2"
+                            TextColor="{StaticResource Primary}"
+                            FontAttributes="Bold"
+                            FontSize="32"/>
+                        <BoxView BackgroundColor="{StaticResource Primary}" HeightRequest="3"/>
+                        <Label
+                            Text="{Binding InfoText}"/>
+                    </StackLayout>                
+                </Frame>
+
+                <Frame CornerRadius="10"
+                       BackgroundColor="{StaticResource Primary}">
+                    <StackLayout>
+                        <Label 
+                            Text="UPDATES"
+                            FontAttributes="Bold"
+                            TextColor="{StaticResource BackgroundSecondary}"
+                            FontSize="24"/>
+                        <Label
+                            TextColor="{StaticResource BackgroundPrimary}"
+                            Text="{Binding UpdateText}"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame CornerRadius="10" Margin="20">
+                    <StackLayout>
+                        <Label 
+                            Text="TEST FEATURES"
+                            TextColor="{StaticResource Primary}"
+                            FontAttributes="Bold"
+                            FontSize="24"/>
+                        <Label
+                            Text="{Binding TestText}"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

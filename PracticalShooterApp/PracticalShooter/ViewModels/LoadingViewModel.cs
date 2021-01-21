@@ -44,6 +44,10 @@ namespace PracticalShooter.ViewModels
             await UpdateLoadingText("Loading Rulebooks...", "Is this a shortcut?");
             GlobalResourceCache.Current.LoadRulebooks();
 
+            // Load Rulebooks
+            await UpdateLoadingText("Loading Appendices...", "Check out your Allied Equipment!");
+            GlobalResourceCache.Current.LoadAppendices();
+
             // Load Calculators
             await UpdateLoadingText("Loading Calculators...", "Adding that coefficient you always wanted!");
             GlobalResourceCache.Current.LoadCalculators();

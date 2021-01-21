@@ -4,5 +4,6 @@
     <SelectedDevice>iPhone 12 iOS 14.3</SelectedDevice>
     <DefaultDevice>iPhone 12 iOS 14.3</DefaultDevice>
     <ProjectView>ShowAllFiles</ProjectView>
+    <HasIOSDesignerOverlayBeenDismissed>True</HasIOSDesignerOverlayBeenDismissed>
   </PropertyGroup>
 </Project>

@@ -7,9 +7,10 @@
              xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             BackgroundColor="{StaticResource BackgroundPrimary}"
+             BackgroundColor="{StaticResource BackgroundSecondary}"
              iOsSpecific:Page.UseSafeArea="true"
              NavigationPage.HasNavigationBar="false"
+             Shell.NavBarIsVisible="False"
              x:Class="PracticalShooter.Views.PDFPage">
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness" iOS="0, 30, 0, 0" />

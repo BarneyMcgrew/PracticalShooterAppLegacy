@@ -8,12 +8,20 @@
              xmlns:customRenderer="clr-namespace:PracticalShooter.CustomRenderers;assembly=PracticalShooter"
              mc:Ignorable="d"
              iOsSpecific:Page.UseSafeArea="true"
-             BackgroundColor="{StaticResource BackgroundPrimary}"
              NavigationPage.HasNavigationBar="false"
              x:Class="PracticalShooter.Views.SectionsPage"
              Shell.NavBarIsVisible="False">
+    <ContentPage.BackgroundColor>
+        <OnPlatform x:TypeArguments="Color"
+                    iOS="{StaticResource BackgroundSecondary}"
+                    Android="{StaticResource BackgroundPrimary}"
+                    />
+    </ContentPage.BackgroundColor>
     <ContentPage.Content>
         <Grid>
+            <Grid.BackgroundColor>
+                <OnPlatform x:TypeArguments="Color" iOS="{StaticResource BackgroundPrimary}"/>
+            </Grid.BackgroundColor>
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="5"/>
