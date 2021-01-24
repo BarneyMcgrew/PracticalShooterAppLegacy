@@ -27,6 +27,9 @@ namespace PracticalShooter.iOS
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
 
+            App.ScreenWidth = UIScreen.MainScreen.Bounds.Width;
+            App.ScreenHeight = UIScreen.MainScreen.Bounds.Height;
+
             try
             {
                 LoadApplication(new App());

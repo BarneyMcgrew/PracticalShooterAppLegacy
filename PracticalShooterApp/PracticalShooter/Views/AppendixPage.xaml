@@ -119,16 +119,21 @@
                         <Label x:Name="SearchName" VerticalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold"/>
                     </StackLayout>
                     <TableView
+                          x:Name="TableView"
                           Intent="Menu"
                           HorizontalOptions="Fill"
                           VerticalOptions="CenterAndExpand"
                           HasUnevenRows="True">
-                        <TableSection x:Name="SearchResults">
-                        </TableSection>
+                            <TableSection x:Name="SearchResults">
+                            </TableSection>
                     </TableView>
                 </StackLayout>
             </Grid>
-            <Grid x:Name="PopUpGrid" IsVisible="False">
+            <Grid x:Name="PopUpImage" IsVisible="false">
+                <Frame HasShadow="False" Opacity="0.7" BackgroundColor="{StaticResource BackgroundPrimary}"/>
+                <Image x:Name="ImageOverlay" Margin="5"/>
+            </Grid>
+            <Grid x:Name="PopUpGrid" IsVisible="false">
                 <!--Pop Up Layout-->
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>

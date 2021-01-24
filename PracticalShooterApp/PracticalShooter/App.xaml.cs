@@ -11,6 +11,9 @@ namespace PracticalShooter
     {
         public static string FolderPath;
 
+        public static double ScreenWidth;
+        public static double ScreenHeight;
+
         public App(Exception ex)
         {
             InitializeComponent();
