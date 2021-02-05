@@ -12,8 +12,8 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Margin="20">
-                <Frame CornerRadius="10" Margin="20">
+            <StackLayout>
+                <Frame>
                     <StackLayout>
                         <Label 
                             HorizontalTextAlignment="Center"
@@ -28,6 +28,7 @@
                 </Frame>
 
                 <Frame CornerRadius="10"
+                       Margin="10"
                        BackgroundColor="{StaticResource Primary}">
                     <StackLayout>
                         <Label 
@@ -41,7 +42,7 @@
                     </StackLayout>
                 </Frame>
 
-                <Frame CornerRadius="10" Margin="20">
+                <Frame BackgroundColor="Transparent" CornerRadius="10">
                     <StackLayout>
                         <Label 
                             Text="TEST FEATURES"
