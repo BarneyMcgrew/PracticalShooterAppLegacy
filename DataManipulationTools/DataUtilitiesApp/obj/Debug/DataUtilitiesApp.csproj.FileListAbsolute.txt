@@ -154,7 +154,7 @@ C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.UserInterfaces.frmTools.resources
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.csproj.GenerateResource.cache
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.csproj.CoreCompileInputs.cache
-C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\XamlC.stamp
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.csproj.CopyComplete
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.exe
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.pdb
+C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\XamlC.stamp

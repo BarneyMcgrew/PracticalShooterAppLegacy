@@ -15,7 +15,9 @@ namespace PracticalShooter.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
+
+            // For some reason this doesn't work on new Android API
+            //ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
 
