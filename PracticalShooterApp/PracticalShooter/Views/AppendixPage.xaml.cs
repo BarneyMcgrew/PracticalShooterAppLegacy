@@ -157,6 +157,8 @@ namespace PracticalShooter.Views
             {
                 SearchResults.Add(CreateImageViewCell(appendixImage));
             }
+
+            HasNoSearchResults.IsVisible = !SearchResults.Any();
         }
 
         private ViewCell CreateImageViewCell(AppendixImage appendix)

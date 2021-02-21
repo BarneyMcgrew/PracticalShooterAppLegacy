@@ -52,6 +52,14 @@ namespace PracticalShooterLibrary.StaticResources
 
             AppendicesDictionary = appendixLibrary.Disciplines.ToDictionary(o => Enum.GetName(typeof(DisciplineTypes), o.DisciplineType), o => o);
 
+            foreach (var discipline in DisciplinesDictionary.Values)
+            {
+                var appendixRef = discipline.Chapters.First(o => o.Numeric == "12").Sections.First(o => o.Numeric == "12.1");
+                var appendix = AppendicesDictionary[Enum.GetName(typeof(DisciplineTypes), discipline.DisciplineType)];
+
+                appendixRef.SearchableString += string.Join(" , ", appendix.AppendixList.Select(o => o.SearchableString));
+            }
+
             ResourcesLoaded = true;
         }
 

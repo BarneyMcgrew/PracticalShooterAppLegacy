@@ -118,6 +118,9 @@
                     <StackLayout Orientation="Vertical" Padding="10,0,0,0" x:Name="SearchFlag">
                         <Label x:Name="SearchName" VerticalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold"/>
                     </StackLayout>
+                    <StackLayout Orientation="Vertical" Padding="20,60,10,10" x:Name="HasNoSearchResults">
+                        <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" Text="No Results Found" VerticalOptions="FillAndExpand"/>
+                    </StackLayout>
                     <TableView
                           x:Name="TableView"
                           Intent="Menu"
