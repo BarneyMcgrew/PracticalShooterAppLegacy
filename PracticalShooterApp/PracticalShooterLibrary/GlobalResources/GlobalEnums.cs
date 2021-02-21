@@ -6,6 +6,14 @@ namespace PracticalShooterLibrary.GlobalResources
 {
     public class GlobalEnums
     {
+        public enum AppTabs
+        {
+            Home = 1,
+            Rules = 2,
+            Utility = 3,
+            Settings = 4
+        }
+
         public enum AppVersions
         {
             Competitor = 1,
