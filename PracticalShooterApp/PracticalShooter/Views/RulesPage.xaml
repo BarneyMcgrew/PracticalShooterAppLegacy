@@ -110,6 +110,9 @@
                 <StackLayout Orientation="Vertical" Padding="10,0,0,0" IsVisible="{Binding SearchFlagVisible}">
                     <Label Text="{Binding SearchNameText}" VerticalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold"/>
                 </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="20,60,10,10" IsVisible="{Binding HasNoSearchResults}">
+                    <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" Text="No Results Found" VerticalOptions="FillAndExpand"/>
+                </StackLayout>
                 <ListView x:Name="searchResults"
                       HorizontalOptions="FillAndExpand"
                       VerticalOptions="FillAndExpand" 

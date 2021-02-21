@@ -157,4 +157,3 @@ C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.csproj.CopyComplete
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.exe
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.pdb
-C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\XamlC.stamp

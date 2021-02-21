@@ -31,6 +31,8 @@ namespace PracticalShooter.ViewModels
 
         private string _searchNameText;
 
+        private bool _hasNoSearchResults;
+
         public Command SearchButtonTapped { get; }
 
         public Command DisciplineNameTapped { get; }
@@ -74,6 +76,12 @@ namespace PracticalShooter.ViewModels
         {
             get => _chapters;
             set => SetProperty(ref _chapters, value);
+        }
+
+        public bool HasNoSearchResults
+        {
+            get => _hasNoSearchResults;
+            set => SetProperty(ref _hasNoSearchResults, value); 
         }
 
         public Chapter.Section SelectedSection
@@ -166,6 +174,8 @@ namespace PracticalShooter.ViewModels
                 chapters.Add(chapter);
 
                 Chapters = chapters;
+
+                HasNoSearchResults = !Chapters.First().Any();
             }
         }
 
@@ -205,6 +215,8 @@ namespace PracticalShooter.ViewModels
             }
 
             Chapters = viewChapters;
+
+            HasNoSearchResults = !Chapters.First().Any();
         }
 
         public List<PracticalShooterLibrary.ObjectClasses.Rules.Section> SearchSections(string query)

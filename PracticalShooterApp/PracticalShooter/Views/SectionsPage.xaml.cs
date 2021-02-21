@@ -195,6 +195,8 @@ namespace PracticalShooter.Views
                     SearchResults.Add(CreateSubRuleViewCell(subRule));
                 }
             }
+
+            HasNoSearchResults.IsVisible = !SearchResults.Any();
         }
 
         private ViewCell CreateDescriptionCell(string description)
