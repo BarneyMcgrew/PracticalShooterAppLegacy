@@ -51,6 +51,7 @@ namespace PracticalShooter.Views
             var selectedDiscipline = GlobalSettings.Current.SelectedDiscipline;
             DisciplineName.Text = selectedDiscipline;
             SelectedDisciplinePicker.SelectedItem = selectedDiscipline;
+            HeaderTabDiscipline.Text = selectedDiscipline;
 
             HeaderTab.Text = "APPENDICES";
             SearchBarOnly.Text = _searchQuery;
@@ -88,6 +89,7 @@ namespace PracticalShooter.Views
             var selectedDiscipline = (string)SelectedDisciplinePicker.SelectedItem;
             DisciplineName.Text = selectedDiscipline;
             GlobalSettings.Current.SelectedDiscipline = selectedDiscipline;
+            HeaderTabDiscipline.Text = selectedDiscipline;
 
             GlobalSettings.Current.UpdateSettings();
 
