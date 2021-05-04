@@ -10,7 +10,7 @@
             <Color x:Key="Primary">#f2f2f2</Color>
             <Color x:Key="Secondary">#ff8000</Color>
             <Color x:Key="BackgroundPrimary">#404040</Color>
-            <Color x:Key="BackgroundSecondary">#ff8000</Color>
+            <Color x:Key="BackgroundSecondary">#666666</Color>
             <!--The content page setter is not working-->
             <Style TargetType="ContentPage">
                 <Setter Property="BackgroundColor" Value="{StaticResource BackgroundPrimary}"></Setter>

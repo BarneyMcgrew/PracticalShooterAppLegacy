@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qy3S/AiumShTa7dmFosTnrYuub4ltPh35a5LNAgaws5EOROViuxPw3+g/eNmbrhVZPJeKSGS69iI/PMMjXuoFQ==",
+  "dgSpecHash": "yru6trNJ3Nhon4VUlI4cyob2mIRJ2VjHbCmls9J3n9kLO6EtjdILqylzcoX3rwK1ZspJEhAdEJouPQvNbenpoQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aryan\\Documents\\Barney Mcgrew\\PracticalShooterApp\\DataManipulationTools\\DataManipulationLibrary\\DataManipulationLibrary.csproj",
+  "projectFilePath": "D:\\Git\\PracticalShooterApp\\DataManipulationTools\\DataManipulationLibrary\\DataManipulationLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aryan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\aryan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

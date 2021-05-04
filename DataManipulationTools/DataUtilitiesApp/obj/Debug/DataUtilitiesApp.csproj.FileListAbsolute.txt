@@ -157,3 +157,34 @@ C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.csproj.CopyComplete
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.exe
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.pdb
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\DataUtilitiesApp.exe.config
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\DataUtilitiesApp.exe
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\DataUtilitiesApp.pdb
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\DataManipulationLibrary.dll
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\Newtonsoft.Json.dll
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\System.Numerics.Vectors.dll
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\Xamarin.Essentials.dll
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\Xamarin.Forms.Core.dll
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\PracticalShooterLibrary.dll
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\DataManipulationLibrary.pdb
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\Newtonsoft.Json.xml
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\System.Numerics.Vectors.xml
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\Xamarin.Essentials.pdb
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\Xamarin.Essentials.xml
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\Xamarin.Forms.Core.xml
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\bin\Debug\PracticalShooterLibrary.pdb
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.csprojAssemblyReference.cache
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.Properties.Resources.resources
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.UserInterfaces.frmMainMenu.resources
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.UserInterfaces.frmRulebooks.resources
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.UserInterfaces.frmTools.resources
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.csproj.GenerateResource.cache
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.csproj.CoreCompileInputs.cache
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.csproj.CopyComplete
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.exe
+D:\Git\PracticalShooterApp\DataManipulationTools\DataUtilitiesApp\obj\Debug\DataUtilitiesApp.pdb

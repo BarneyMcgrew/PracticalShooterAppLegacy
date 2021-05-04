@@ -41,7 +41,8 @@
                     <Label x:Name="HeaderTabDiscipline"
                        HorizontalTextAlignment="End"
                        VerticalTextAlignment="Start"                       
-                       FontSize="Micro"                       
+                       FontSize="Micro"      
+                       TextColor="{StaticResource Secondary}"
                        Text="Discipline Name"/>
                 </StackLayout>
                 <StackLayout Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" VerticalOptions="CenterAndExpand">
@@ -159,7 +160,7 @@
                         </StackLayout>
                     </ScrollView>                    
                 </Frame>
-                <Label VerticalOptions="End" HorizontalOptions="Center" Grid.Column="1" Grid.Row="2" Text="TAP ANYWHERE TO CLOSE" Padding="0, 0, 0, 10"/>
+                <Label VerticalOptions="End" HorizontalOptions="Center" Grid.Column="1" Grid.Row="2" Text="TAP ANYWHERE TO CLOSE" Padding="0, 0, 0, 10" TextColor="{StaticResource Secondary}"/>
             </Grid>
             <!--Loading Layout-->
             <Grid x:Name="LoadingDisplay">

@@ -62,3 +62,15 @@ C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.csproj.CopyComplete
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.dll
 C:\Users\aryan\Documents\Barney Mcgrew\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.pdb
+D:\Git\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\bin\Debug\netstandard2.0\DataManipulationLibrary.deps.json
+D:\Git\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\bin\Debug\netstandard2.0\DataManipulationLibrary.dll
+D:\Git\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\bin\Debug\netstandard2.0\DataManipulationLibrary.pdb
+D:\Git\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\bin\Debug\netstandard2.0\PracticalShooterLibrary.dll
+D:\Git\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\bin\Debug\netstandard2.0\PracticalShooterLibrary.pdb
+D:\Git\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.csprojAssemblyReference.cache
+D:\Git\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.AssemblyInfoInputs.cache
+D:\Git\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.AssemblyInfo.cs
+D:\Git\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.csproj.CoreCompileInputs.cache
+D:\Git\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.csproj.CopyComplete
+D:\Git\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.dll
+D:\Git\PracticalShooterApp\DataManipulationTools\DataManipulationLibrary\obj\Debug\netstandard2.0\DataManipulationLibrary.pdb

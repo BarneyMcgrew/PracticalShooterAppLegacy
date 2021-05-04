@@ -33,8 +33,8 @@ namespace PracticalShooter.Droid
 
             if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.Lollipop)
             {
-                Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#ff8000"));
-                Window.SetNavigationBarColor(Android.Graphics.Color.ParseColor("#ff8000"));
+                Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#666666"));
+                Window.SetNavigationBarColor(Android.Graphics.Color.ParseColor("#666666"));
             }
 
             try
@@ -52,8 +52,8 @@ namespace PracticalShooter.Droid
 
             if (Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.Lollipop)
             {
-                Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#ff8000"));
-                Window.SetNavigationBarColor(Android.Graphics.Color.ParseColor("#ff8000"));
+                Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#666666"));
+                Window.SetNavigationBarColor(Android.Graphics.Color.ParseColor("#666666"));
             }
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
