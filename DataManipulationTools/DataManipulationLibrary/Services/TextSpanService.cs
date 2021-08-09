@@ -87,7 +87,7 @@ namespace DataManipulationLibrary.Services
                 }
             }
 
-            var externalRegex = new Regex($"<(?<type>((External)|(Articles)|(Drills)):\"(?< ref>.+)\",\"(?< name >.+)\")>", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+            var externalRegex = new Regex($"<(?<type>((External)|(Articles)|(Drills)):\"(?<ref>.+)\",\"(?<name>.+)\")>", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
             foreach (Match match in externalRegex.Matches(paragraph))
             {

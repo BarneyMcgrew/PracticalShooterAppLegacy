@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "yru6trNJ3Nhon4VUlI4cyob2mIRJ2VjHbCmls9J3n9kLO6EtjdILqylzcoX3rwK1ZspJEhAdEJouPQvNbenpoQ==",
+  "dgSpecHash": "ZSUKi9n1hIlLfeDrMRouiykQwH5yfsLWAcg3rwhYZ8Gwgx4V9qFwLNQAJ8qATG32CWVKVPUbj4veneMhcTShuQ==",
   "success": true,
-  "projectFilePath": "D:\\Git\\PracticalShooterApp\\DataManipulationTools\\DataManipulationLibrary\\DataManipulationLibrary.csproj",
+  "projectFilePath": "F:\\Github\\PracticalShooterApp\\DataManipulationTools\\DataManipulationLibrary\\DataManipulationLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aryan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\aryan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\aryan\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\aryan\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\aryan\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\aryan\\.nuget\\packages\\xamarin.forms\\5.0.0.1931\\xamarin.forms.5.0.0.1931.nupkg.sha512"
   ],
   "logs": []
