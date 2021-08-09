@@ -5,3 +5,4 @@ Debug/
 Release/
 *.nuget.dgspec.json
 PracticalShooterApp/.vs/PracticalShooterApp/DesignTimeBuild/.dtbcache.v2
+.idea/
