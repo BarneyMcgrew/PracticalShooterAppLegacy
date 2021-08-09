@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalShooterApp.Android
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalShooterApp.iOS", "PracticalShooterApp\PracticalShooterApp.iOS\PracticalShooterApp.iOS.csproj", "{601C066B-7A18-4364-893A-C25EEE8E19CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalShooterApp", "PracticalShooterApp\PracticalShooterApp\PracticalShooterApp.csproj", "{CF6A0900-ED8F-4977-B314-75F999071B8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticalShooterApp", "PracticalShooterApp\PracticalShooterApp\PracticalShooterApp.csproj", "{CF6A0900-ED8F-4977-B314-75F999071B8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalShooterApp.Shared", "PracticalShooterApp.Shared\PracticalShooterApp.Shared.csproj", "{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticalShooterApp.Shared", "PracticalShooterApp\PracticalShooterApp.Shared\PracticalShooterApp.Shared.csproj", "{A84B185C-6BCF-45C8-B851-E1399B572C8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,18 +75,18 @@ Global
 		{CF6A0900-ED8F-4977-B314-75F999071B8E}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{CF6A0900-ED8F-4977-B314-75F999071B8E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{CF6A0900-ED8F-4977-B314-75F999071B8E}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
-		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Release|iPhone.Build.0 = Release|Any CPU
-		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{A84B185C-6BCF-45C8-B851-E1399B572C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A84B185C-6BCF-45C8-B851-E1399B572C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A84B185C-6BCF-45C8-B851-E1399B572C8E}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{A84B185C-6BCF-45C8-B851-E1399B572C8E}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{A84B185C-6BCF-45C8-B851-E1399B572C8E}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{A84B185C-6BCF-45C8-B851-E1399B572C8E}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{A84B185C-6BCF-45C8-B851-E1399B572C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A84B185C-6BCF-45C8-B851-E1399B572C8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A84B185C-6BCF-45C8-B851-E1399B572C8E}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{A84B185C-6BCF-45C8-B851-E1399B572C8E}.Release|iPhone.Build.0 = Release|Any CPU
+		{A84B185C-6BCF-45C8-B851-E1399B572C8E}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{A84B185C-6BCF-45C8-B851-E1399B572C8E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
