@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalShooterApp.iOS", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalShooterApp", "PracticalShooterApp\PracticalShooterApp\PracticalShooterApp.csproj", "{CF6A0900-ED8F-4977-B314-75F999071B8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticalShooterApp.Shared", "PracticalShooterApp.Shared\PracticalShooterApp.Shared.csproj", "{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,18 @@ Global
 		{CF6A0900-ED8F-4977-B314-75F999071B8E}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{CF6A0900-ED8F-4977-B314-75F999071B8E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{CF6A0900-ED8F-4977-B314-75F999071B8E}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Release|iPhone.Build.0 = Release|Any CPU
+		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{3B6A3AA7-62AD-4C88-A011-017B58F1D0BF}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
