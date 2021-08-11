@@ -1,4 +1,5 @@
 ﻿using PracticalShooterApp.Services;
+using PracticalShooterApp.Shared.Services;
 using PracticalShooterApp.Views;
 using System;
 using Xamarin.Forms;
@@ -14,6 +15,11 @@ namespace PracticalShooterApp
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
+
+            var databaseService = new DatabaseService();
+
+            databaseService.TestDatabaseConnection();
+
             MainPage = new AppShell();
         }
 

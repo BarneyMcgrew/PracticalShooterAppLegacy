@@ -65,9 +65,11 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Repositories\DatabaseRepository.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\rulesData.db" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -132,11 +134,18 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.7.335</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\PracticalShooterApp.Shared\PracticalShooterApp.Shared.csproj">
+      <Project>{A84B185C-6BCF-45C8-B851-E1399B572C8E}</Project>
+      <Name>PracticalShooterApp.Shared</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PracticalShooterApp\PracticalShooterApp.csproj">
       <Project>{C2499BB1-7BCC-4187-BF14-93267FFDADCB}</Project>
       <Name>PracticalShooterApp</Name>
