@@ -19,26 +19,12 @@ namespace PracticalShooterApp
 
             var databaseService = new DatabaseService();
 
-            var chapters = databaseService.GetChapters(Discipline.Handgun, Language.English);
+            var rulesResults = databaseService.SearchRules("barrier", Discipline.Handgun, Language.English);
 
-            var sections = databaseService.GetSections(24);
+            var appendixResults = databaseService.SearchAppendices("allied", Discipline.Handgun, Language.English);
 
-            var rules = databaseService.GetRules(2);
-
-            var glossaries = databaseService.GetGlossaries(Discipline.Handgun, Language.English);
-
-            var appendices = databaseService.GetAppendices(Discipline.Handgun, Language.English);
-
-            var settingsService = new SettingsService();
-
-            var setting = settingsService.DefaultDiscipline;
-
-            setting = Discipline.ActionAir;
-
-            settingsService.DefaultDiscipline = setting;
-
-            var newSetting = settingsService.DefaultDiscipline;
-
+            var glossaryResults = databaseService.SearchGlossaries("aim", Discipline.Handgun, Language.English);
+            
             MainPage = new AppShell();
         }
 

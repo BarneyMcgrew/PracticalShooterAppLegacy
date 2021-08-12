@@ -8,6 +8,12 @@ namespace PracticalShooterApp.Shared.Interfaces.Services
 {
     public interface IDatabaseService
     {
+        List<Glossary> SearchGlossaries(string searchCriteria, Discipline discipline, Language language);
+
+        List<Appendix> SearchAppendices(string searchCriteria, Discipline discipline, Language language);
+
+        List<Rule> SearchRules(string searchCriteria, Discipline discipline, Language language);
+        
         List<Glossary> GetGlossaries(Discipline discipline, Language language);
 
         List<Appendix> GetAppendices(Discipline discipline, Language language);
