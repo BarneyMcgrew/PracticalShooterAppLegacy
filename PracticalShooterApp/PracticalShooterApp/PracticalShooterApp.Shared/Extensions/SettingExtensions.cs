@@ -12,11 +12,6 @@ namespace PracticalShooterApp.Shared.Extensions
             return setting.GetAttribute<SettingAttribute>().Name;
         }
 
-        public static Type GetType(this Setting setting)
-        {
-            return setting.GetAttribute<SettingAttribute>().Type;
-        }
-
         public static T GetDefaultValue<T>(this Setting setting)
         {
             return (T)setting.GetAttribute<SettingAttribute>().DefaultValue;

@@ -5,15 +5,15 @@ namespace PracticalShooterApp.Shared.Enums
 {
     public enum Setting
     {
-        [Setting("Welcome Name", typeof(string), "Shooter")]
+        [Setting(defaultValue: "Shooter")]
         WelcomeName,
-        [Setting("Show Tooltips", typeof(bool), true)]
+        [Setting(defaultValue: true)]
         ShowTooltips,
-        [Setting("Show References", typeof(bool), true)]
+        [Setting(defaultValue: true)]
         ShowReferences,
-        [Setting("Show All Rulebooks", typeof(bool), false)]
+        [Setting(defaultValue: false)]
         ShowAllRulebooks,
-        [Setting("Default Discipline", typeof(Discipline), Discipline.Handgun)]
+        [Setting(defaultValue: Discipline.Handgun)]
         DefaultDiscipline
     }
 }

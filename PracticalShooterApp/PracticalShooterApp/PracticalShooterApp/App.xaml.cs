@@ -29,6 +29,16 @@ namespace PracticalShooterApp
 
             var appendices = databaseService.GetAppendices(Discipline.Handgun, Language.English);
 
+            var settingsService = new SettingsService();
+
+            var setting = settingsService.DefaultDiscipline;
+
+            setting = Discipline.ActionAir;
+
+            settingsService.DefaultDiscipline = setting;
+
+            var newSetting = settingsService.DefaultDiscipline;
+
             MainPage = new AppShell();
         }
 
