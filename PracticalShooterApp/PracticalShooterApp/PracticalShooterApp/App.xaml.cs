@@ -2,6 +2,7 @@
 using PracticalShooterApp.Shared.Services;
 using PracticalShooterApp.Views;
 using System;
+using PracticalShooterApp.Shared.Enums;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,7 +19,15 @@ namespace PracticalShooterApp
 
             var databaseService = new DatabaseService();
 
-            databaseService.TestDatabaseConnection();
+            var chapters = databaseService.GetChapters(Discipline.Handgun, Language.English);
+
+            var sections = databaseService.GetSections(24);
+
+            var rules = databaseService.GetRules(2);
+
+            var glossaries = databaseService.GetGlossaries(Discipline.Handgun, Language.English);
+
+            var appendices = databaseService.GetAppendices(Discipline.Handgun, Language.English);
 
             MainPage = new AppShell();
         }
