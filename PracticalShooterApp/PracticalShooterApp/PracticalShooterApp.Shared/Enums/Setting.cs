@@ -14,6 +14,8 @@ namespace PracticalShooterApp.Shared.Enums
         [Setting(defaultValue: false)]
         ShowAllRulebooks,
         [Setting(defaultValue: Discipline.Handgun)]
-        DefaultDiscipline
+        DefaultDiscipline,
+        [Setting(defaultValue: true)]
+        ShowOnboarding
     }
 }

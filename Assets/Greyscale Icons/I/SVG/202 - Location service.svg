@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2048px" height="2048px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2048 2048"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+    .fil1 {fill:#757575}
+    .fil2 {fill:#BEBEBE}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_415198664">
+   <rect id="_415206440" class="fil0" width="2048" height="2048"/>
+   <rect id="_415204496" class="fil0" x="255.999" y="255.999" width="1536" height="1536"/>
+  </g>
+  <path class="fil1" d="M1410.57 415.746c-107.333,-106.081 -236.404,-159.747 -387.229,-159.747 -150.786,0 -279.806,53.6788 -385.887,159.747 -107.385,106.068 -160.997,235.101 -159.748,387.188 0,100.924 24.2799,191.686 71.5902,273.449 2.55236,3.82914 6.35552,8.96103 10.2118,15.3567l453.62 700.261 481.796 -709.236c49.8107,-83.0375 75.3934,-176.302 75.3934,-279.831 0,-152.087 -53.7189,-281.106 -159.748,-387.188l0 0z"/>
+  <path class="fil2" d="M1023.37 557.571c-72.841,-1.31693 -134.218,24.2929 -185.33,76.7079 -51.1134,51.0863 -76.643,112.437 -76.643,185.277 0,72.8127 25.5295,134.165 76.643,186.58 51.1252,51.0993 112.489,76.6418 185.33,76.6418 72.7997,-0.0129921 134.164,-25.5284 186.541,-76.6418 51.1122,-52.415 76.6949,-113.74 76.6949,-186.58 0,-72.8398 -25.5827,-134.164 -76.6949,-185.277 -52.363,-52.4292 -113.741,-77.9977 -186.541,-76.6949l0 -0.0129921z"/>
+ </g>
+</svg>

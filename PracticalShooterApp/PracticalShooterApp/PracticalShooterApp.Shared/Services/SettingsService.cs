@@ -97,5 +97,21 @@ namespace PracticalShooterApp.Shared.Services
             }
             set => _settingsRepository.SetSetting($"{Setting.DefaultDiscipline}", JsonConvert.SerializeObject(value));
         }
+
+        [Setting("Always Show Onboarding")]
+        public bool ShowOnboarding
+        {
+            get
+            {
+                var serialisedValue = _settingsRepository.GetSetting($"{Setting.ShowOnboarding}");
+
+                var value = string.IsNullOrWhiteSpace(serialisedValue)
+                    ? Setting.ShowOnboarding.GetDefaultValue<bool>()
+                    : JsonConvert.DeserializeObject<bool>(serialisedValue);
+
+                return value;
+            }
+            set => _settingsRepository.SetSetting($"{Setting.ShowOnboarding}", JsonConvert.SerializeObject(value));
+        }
     }
 }

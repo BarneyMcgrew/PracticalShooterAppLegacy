@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace PracticalShooterApp.ViewModels
 {
-    public class ItemsViewModel : BaseViewModel
+    public class ItemsViewModel : OldBaseViewModel
     {
         private Item _selectedItem;
 

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticalShooterApp.Views.LoadingPage"
+             xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <Grid>
+            <controls:BackgroundView/>
+            <controls:WebImageView
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                UrlLink="{Binding UrlLink}"
+                UrlSource="{Binding UrlSource}"
+                Margin="0, 0, 0, 50"/>
+            <StackLayout Padding="15"
+                         Margin="10"
+                         VerticalOptions="End"
+                         Orientation="Vertical"
+                         BackgroundColor="{StaticResource SubBackground}">
+                <Label 
+                    Text="{Binding LoadingText}"
+                    TextColor="{StaticResource TextColour}"/>
+                <ProgressBar 
+                    ScaleY="3"
+                    ProgressColor="{StaticResource MainColour}" 
+                    Progress="{Binding LoadingValue}"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

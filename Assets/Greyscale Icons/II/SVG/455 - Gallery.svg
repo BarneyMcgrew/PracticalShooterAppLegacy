@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2048px" height="2048px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2048 2048"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil6 {fill:none}
+    .fil3 {fill:#2F2F2F}
+    .fil4 {fill:#444444}
+    .fil0 {fill:#6A6A6A}
+    .fil2 {fill:#9D9D9D}
+    .fil5 {fill:#A4A4A5}
+    .fil1 {fill:#DADADA}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="287.994,255.991 1760,255.991 1792,255.991 1792,287.992 1792,1759.99 1792,1791.99 1760,1791.99 287.994,1791.99 255.994,1791.99 255.994,1759.99 255.994,287.992 255.994,255.991 "/>
+  <polygon class="fil1" points="319.994,319.992 319.994,1727.99 1728,1727.99 1728,319.992 "/>
+  <path class="fil2" d="M747.329 514.917c48.665,0 92.7284,19.7291 124.625,51.6248 31.8957,31.8957 51.6248,75.9603 51.6248,124.626 0,48.6662 -19.728,92.7284 -51.6248,124.626 -31.8969,31.8957 -75.9603,51.6248 -124.625,51.6248 -48.6674,0 -92.732,-19.7303 -124.626,-51.6248 -31.8969,-31.8981 -51.6248,-75.9603 -51.6248,-124.626 0,-48.6662 19.7291,-92.7308 51.6248,-124.626 31.8945,-31.8945 75.9591,-51.6248 124.626,-51.6248z"/>
+  <polygon class="fil3" points="1042.9,981.404 1260.77,1586.26 1271.23,1615.32 1236.14,1615.32 977.76,1615.32 680.248,1615.32 639.592,1615.32 639.449,1615.32 1023.59,927.797 1023.93,928.749 "/>
+  <polygon class="fil4" points="1401.37,708.527 1713.03,1573.76 1728,1615.32 1677.8,1615.32 1308.19,1615.32 882.614,1615.32 824.457,1615.32 824.253,1615.32 1373.75,631.844 1374.24,633.206 "/>
+  <path class="fil5" d="M319.994 1649.93l0 78.0615 1408 0 0 -113.953c-142.88,-65.8914 -390.441,-109.468 -671.952,-109.468 -329.958,0 -613.283,59.8595 -736.049,145.36z"/>
+  <rect class="fil6" width="2048" height="2048"/>
+ </g>
+</svg>

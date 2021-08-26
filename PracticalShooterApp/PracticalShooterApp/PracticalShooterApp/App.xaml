@@ -8,6 +8,21 @@
     <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="Primary">#2196F3</Color>
+            
+            <Color x:Key="MainBackground">#252525</Color>
+            <Color x:Key="SubBackground">#414141</Color>
+            <Color x:Key="MainColour">#FF0000</Color>
+            <Color x:Key="SubColour">#AF0404</Color>
+            <Color x:Key="TextColour">#f2f2f2</Color>
+            
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource TextColour}"/>
+            </Style>
+            
+            <Style TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="{StaticResource SubBackground}"/>
+            </Style>    
+            
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
