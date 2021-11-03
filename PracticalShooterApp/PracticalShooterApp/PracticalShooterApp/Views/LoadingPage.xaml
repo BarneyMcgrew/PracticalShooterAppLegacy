@@ -8,24 +8,32 @@
     <ContentPage.Content>
         <Grid>
             <controls:BackgroundView/>
+            <Image Source="onboardingBackground.gif"
+                   Opacity="0.15"
+                   Aspect="AspectFill"/>
             <controls:WebImageView
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 UrlLink="{Binding UrlLink}"
                 UrlSource="{Binding UrlSource}"
+                BackgroundColor="{StaticResource MainBackground}"
                 Margin="0, 0, 0, 50"/>
-            <StackLayout Padding="15"
+            <StackLayout Padding="5"
                          Margin="10"
                          VerticalOptions="End"
-                         Orientation="Vertical"
-                         BackgroundColor="{StaticResource SubBackground}">
+                         Orientation="Vertical">
                 <Label 
                     Text="{Binding LoadingText}"
                     TextColor="{StaticResource TextColour}"/>
-                <ProgressBar 
-                    ScaleY="3"
-                    ProgressColor="{StaticResource MainColour}" 
-                    Progress="{Binding LoadingValue}"/>
+                <Frame CornerRadius="5" 
+                       Padding="0"
+                       HasShadow="False"
+                       IsClippedToBounds="True">
+                    <ProgressBar 
+                        ScaleY="3"
+                        ProgressColor="{StaticResource MainColour}" 
+                        Progress="{Binding LoadingValue}"/>
+                </Frame>
             </StackLayout>
         </Grid>
     </ContentPage.Content>

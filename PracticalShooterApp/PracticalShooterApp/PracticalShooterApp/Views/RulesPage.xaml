@@ -2,12 +2,38 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PracticalShooterApp.Views.RulesPage">
+             xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+             x:Class="PracticalShooterApp.Views.RulesPage"
+             Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Hello, world!"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <controls:BackgroundView/>
+            <ListView
+                x:Name="listViewer"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand" 
+                HasUnevenRows="True"
+                SeparatorColor="{StaticResource MainColour}"
+                SelectionMode="Single"
+                IsGroupingEnabled="True"
+                ItemSelected="SectionSelected">
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label TextColor="{StaticResource MainColour}" VerticalTextAlignment="Center" FontSize="Large" Text="{Binding Name}" Padding="10,10,10,10" FontAttributes="Bold"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" Padding="20,10,10,10">
+                                <Label VerticalTextAlignment="Center" FontSize="Medium" Text="{Binding Name}" VerticalOptions="FillAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace PracticalShooterApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MorePage : ContentPage
+    public partial class ResultsPage : ContentPage
     {
-        public MorePage()
+        public ResultsPage()
         {
             InitializeComponent();
         }

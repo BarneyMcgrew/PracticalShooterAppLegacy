@@ -15,6 +15,8 @@ namespace PracticalShooterApp.Shared.Enums
         ShowAllRulebooks,
         [Setting(defaultValue: Discipline.Handgun)]
         DefaultDiscipline,
+        [Setting(defaultValue: Language.English)]
+        DefaultLanguage,
         [Setting(defaultValue: true)]
         ShowOnboarding
     }

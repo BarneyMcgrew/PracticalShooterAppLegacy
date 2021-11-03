@@ -19,10 +19,10 @@
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource MainBackground}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource TextColour}"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource TextColour}"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource MainColour}"/>
             </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
@@ -38,9 +38,9 @@
     </TabBar>
 
     <TabBar>
-        <ShellContent Title="Search" Icon="icons8_home.png" Route="SearchPage" ContentTemplate="{DataTemplate local:SearchPage}"/>
-        <ShellContent Title="Rules" Icon="icons8_rules.png" Route="RulesPage" ContentTemplate="{DataTemplate local:RulesPage}"/>
-        <ShellContent Title="Setting" Icon="icons8_automation.png" Route="SettingsPage" ContentTemplate="{DataTemplate local:MorePage}"/>
+        <ShellContent Title="Search" Icon="search.png" Route="SearchPage" ContentTemplate="{DataTemplate local:SearchPage}"/>
+        <ShellContent Title="Rules" Icon="books.png" Route="RulesPage" ContentTemplate="{DataTemplate local:RulesPage}"/>
+        <ShellContent Title="Setting" Icon="settings.png" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}"/>
     </TabBar>
 
     <TabBar>        

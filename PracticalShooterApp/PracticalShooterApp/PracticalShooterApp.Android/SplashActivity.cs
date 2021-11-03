@@ -7,7 +7,7 @@ namespace PracticalShooterApp.Droid
 {
     public class SplashActivity
     {
-        [Activity(Label = "P Shooter", Icon = "@mipmap/ic_launcher", MainLauncher = true, NoHistory = true, Theme = "@style/MyTheme.Splash")]
+        [Activity(Label = "PRACTICAL", Icon = "@mipmap/ic_launcher", MainLauncher = true, NoHistory = true, Theme = "@style/MyTheme.Splash")]
         public class SplashScreen : Activity, Android.Animation.Animator.IAnimatorListener
         {
             public void OnAnimationCancel(Lottie.Forms.Resource.Animator animation)

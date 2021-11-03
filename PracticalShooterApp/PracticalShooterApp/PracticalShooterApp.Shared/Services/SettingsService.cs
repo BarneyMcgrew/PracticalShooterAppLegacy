@@ -4,6 +4,7 @@ using PracticalShooterApp.Shared.Enums;
 using PracticalShooterApp.Shared.Enums.Attributes;
 using PracticalShooterApp.Shared.Extensions;
 using PracticalShooterApp.Shared.Interfaces.Repositories;
+using PracticalShooterApp.Shared.Interfaces.Services;
 using Xamarin.Forms;
 
 namespace PracticalShooterApp.Shared.Services
@@ -11,7 +12,7 @@ namespace PracticalShooterApp.Shared.Services
     public class SettingsService
     {
         private ISettingsRepository _settingsRepository;
-        
+     
         public SettingsService()
         {
             _settingsRepository = DependencyService.Get<ISettingsRepository>();
@@ -96,6 +97,21 @@ namespace PracticalShooterApp.Shared.Services
                 return value;
             }
             set => _settingsRepository.SetSetting($"{Setting.DefaultDiscipline}", JsonConvert.SerializeObject(value));
+        }
+
+        [Setting("Default Language")]
+        public Language DefaultLanguage
+        {
+            get
+            {
+                var serialisedValue = _settingsRepository.GetSetting($"{Setting.DefaultLanguage}");
+
+                var value = string.IsNullOrWhiteSpace(serialisedValue)
+                    ? Setting.DefaultLanguage.GetDefaultValue<Language>()
+                    : JsonConvert.DeserializeObject<Language>(serialisedValue);
+
+                return value;
+            }
         }
 
         [Setting("Always Show Onboarding")]

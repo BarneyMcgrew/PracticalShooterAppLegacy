@@ -2,12 +2,57 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PracticalShooterApp.Views.SearchPage">
+             xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+             x:Class="PracticalShooterApp.Views.SearchPage"
+             Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Hello, world!"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <controls:BackgroundView/>
+            <Image Source="onboardingBackground.gif"
+                   Opacity="0.15"
+                   Aspect="AspectFill"/>
+            <Frame
+                BackgroundColor="{StaticResource TextColour}"
+                CornerRadius="15"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Picker
+                        x:Name="rulebookPicker"
+                        Title="Select a Rulebook"
+                        IsVisible="False">
+                        <Picker.Items>
+                            <x:String>Handgun</x:String>
+                            <x:String>Action Air</x:String>
+                            <x:String>Rifle</x:String>
+                            <x:String>Mini Rifle</x:String>
+                            <x:String>Shotgun</x:String>
+                            <x:String>PCC</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <StackLayout Orientation="Horizontal">
+                        <Label 
+                            TextColor="{StaticResource DarkBackgorund}"
+                            Text="Search rules from"/>
+                        <Label 
+                            x:Name="rulebookSelector"
+                            TextColor="{StaticResource MainColour}"
+                            FontAttributes="Bold"
+                            Text="Handgun Rulebook"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <SearchBar
+                            Margin="-20,0,0,0"
+                            FontSize="Small"
+                            IsSpellCheckEnabled="True"
+                            Keyboard="Text"
+                            BackgroundColor="{StaticResource TextColour}"
+                            CancelButtonColor="{StaticResource NegativeColour}"
+                            TextColor="{StaticResource MainColour}"
+                            SearchButtonPressed="SearchBar_OnSearchButtonPressed"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

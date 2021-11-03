@@ -3,14 +3,57 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="False"
              x:Class="PracticalShooterApp.Views.OnboardingPage"
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
         <Grid>
             <controls:BackgroundView/>
-            <CarouselView>
-                
-            </CarouselView>
+            <Image Source="onboardingBackground.gif"
+                   Opacity="0.15"
+                   Aspect="AspectFill"/>
+            <Grid
+                RowDefinitions="*, 50, 10"
+            >
+                <CarouselView x:Name="OnboardingCarousel"
+                              Margin="-1"
+                              Grid.RowSpan="2"
+                              HorizontalScrollBarVisibility="Never"
+                              IndicatorView="Indicators"
+                              Loop="False">
+                    <CarouselView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>onboardingWelcome.gif</x:String>
+                            <x:String>onboardingFeatures.gif</x:String>
+                            <x:String>onboardingDevelopment.gif</x:String>
+                        </x:Array>
+                    </CarouselView.ItemsSource>
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <ContentView>
+                                <Image Source="{Binding .}"
+                                       Aspect="AspectFill"
+                                       Margin="-1"/>
+                            </ContentView>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView x:Name="Indicators"
+                               Grid.Row="1"
+                               SelectedIndicatorColor="{StaticResource MainColour}"
+                               IndicatorColor="{StaticResource TextColour}"
+                               IndicatorSize="15"
+                />
+                <Button x:Name="ContinueButton"
+                        Margin="25, 0"
+                        IsVisible="False"
+                        Grid.Row="1"
+                        Text="Continue"
+                        TextColor="{StaticResource TextColour}"
+                        BackgroundColor="{StaticResource MainColour}"/>
+            </Grid>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

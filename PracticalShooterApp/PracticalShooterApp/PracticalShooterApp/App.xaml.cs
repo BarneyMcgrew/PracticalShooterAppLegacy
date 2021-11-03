@@ -20,6 +20,8 @@ namespace PracticalShooterApp
             Akavache.Registrations.Start("ThePracticalShooterApp");
 
             //DependencyService.Register<MockDataStore>();
+            DependencyService.Register<SettingsService>();
+            DependencyService.Register<RulebooksService>();
 
             MainPage = new AppShell();
             

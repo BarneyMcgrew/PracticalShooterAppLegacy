@@ -90,8 +90,25 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\app.png" />
+    <AndroidResource Include="Resources\drawable\betaTesting.png" />
+    <AndroidResource Include="Resources\drawable\bmg.png" />
+    <AndroidResource Include="Resources\drawable\books.png" />
+    <AndroidResource Include="Resources\drawable\bugsFixed.png" />
+    <AndroidResource Include="Resources\drawable\build.png" />
+    <AndroidResource Include="Resources\drawable\coding.png" />
     <AndroidResource Include="Resources\drawable\icon_about.png" />
     <AndroidResource Include="Resources\drawable\icon_feed.png" />
+    <AndroidResource Include="Resources\drawable\mk.png" />
+    <AndroidResource Include="Resources\drawable\onboardingBackground.jpg" />
+    <AndroidResource Include="Resources\drawable\onboardingDevelopment.gif" />
+    <AndroidResource Include="Resources\drawable\onboardingFeatures.gif" />
+    <AndroidResource Include="Resources\drawable\onboardingWelcome.gif" />
+    <AndroidResource Include="Resources\drawable\opencell.png" />
+    <AndroidResource Include="Resources\drawable\phoneInstall.png" />
+    <AndroidResource Include="Resources\drawable\reviews.png" />
+    <AndroidResource Include="Resources\drawable\search.png" />
+    <AndroidResource Include="Resources\drawable\settings.png" />
     <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
     <AndroidResource Include="Resources\layout\SplashLayout.xml" />
     <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />

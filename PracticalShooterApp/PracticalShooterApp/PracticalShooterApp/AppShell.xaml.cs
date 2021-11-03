@@ -18,7 +18,7 @@ namespace PracticalShooterApp
             Routing.RegisterRoute(nameof(LoadingPage), typeof(LoadingPage));
             Routing.RegisterRoute(nameof(SearchPage), typeof(SearchPage));
             Routing.RegisterRoute(nameof(RulesPage), typeof(RulesPage));
-            Routing.RegisterRoute(nameof(MorePage), typeof(MorePage));
+            Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
