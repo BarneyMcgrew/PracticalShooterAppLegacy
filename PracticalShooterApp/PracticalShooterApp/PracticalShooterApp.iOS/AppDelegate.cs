@@ -1,9 +1,12 @@
-﻿using System;
+using Syncfusion.SfCarousel.XForms.iOS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
 using UIKit;
+using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace PracticalShooterApp.iOS
 {
@@ -22,7 +25,9 @@ namespace PracticalShooterApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
+global::Xamarin.Forms.Forms.Init();
+SfCarouselRenderer.Init();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

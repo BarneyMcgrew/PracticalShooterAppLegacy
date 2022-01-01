@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xForms="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+             xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:themes="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             Title="Match Calendar"
+             Shell.NavBarIsVisible="False"
+             x:Name="Calendar"
+             x:Class="PracticalShooterApp.Views.CalendarPage">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, *">
+            <controls:TitleView Title="Events Calendar" Grid.Row="0">
+                <controls:TitleView.LeadingView>
+                    <buttons:SfButton
+                        x:Name="backButton"
+                        Command="{Binding BindingContext.BackButtonCommand, Source={x:Reference calendar}}"
+                        CommandParameter="{x:Reference backButton}"                        
+                        Style="{StaticResource IconButtonStyle}"
+                        Text="{StaticResource Back}" />
+                </controls:TitleView.LeadingView>
+            </controls:TitleView>
+            
+            <xForms:SfCalendar Grid.Row="1" 
+                               x:Name="calendar"
+                               YearViewMode="Date"
+                               ShowInlineEvents="True"
+                               InlineViewMode="Inline"
+                               MonthChanged="calendar_MonthChanged"
+                               DataSource="{Binding InlineCalendarEntries}"
+                               InlineItemTapped="calendar_InlineItemTapped"
+                               ViewMode="MonthView"/>
+
+            <busyindicator:SfBusyIndicator x:Name="busyindicator" 
+                                       Grid.Row="1"
+                                       IsBusy="{Binding IsBusy}"
+                                       Title="Loading..."
+                                       AnimationType="Box"
+                                       Duration="0.5"
+                                       BackgroundColor="{StaticResource Primary}"
+                                       TextColor="{StaticResource Tertiary}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

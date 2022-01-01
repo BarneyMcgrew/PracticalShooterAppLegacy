@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PracticalShooterApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,22 +13,17 @@ namespace PracticalShooterApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class OnboardingPage : ContentPage
     {
+        private OnboardingPageViewModel _viewModel = new OnboardingPageViewModel();
         public OnboardingPage()
         {
             InitializeComponent();
 
-            OnboardingCarousel.CurrentItemChanged += OnCurrentItemChanged;
-            ContinueButton.Clicked += ContinueButtonOnClicked;
+            this.BindingContext = _viewModel;
         }
 
-        private async void ContinueButtonOnClicked(object sender, EventArgs e)
+        protected override void OnAppearing()
         {
-            await Shell.Current.GoToAsync("//SearchPage");
-        }
-
-        private void OnCurrentItemChanged(object sender, CurrentItemChangedEventArgs e)
-        {
-            ContinueButton.IsVisible = OnboardingCarousel.Position == 2;
+            base.OnAppearing();
         }
     }
 }

@@ -6,21 +6,78 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="akavache" Version="7.3.1" />
-    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.0.10" />
-    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <None Remove="Resources\Montserrat-Bold.ttf" />
+    <None Remove="Resources\Montserrat-Medium.ttf" />
+    <None Remove="Resources\Montserrat-Regular.ttf" />
+    <None Remove="Resources\Montserrat-SemiBold.ttf" />
+    <None Remove="Resources\UIFontIcons.ttf" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
-    <Folder Include="DeleteMe\" />
+    <EmbeddedResource Include="Resources\Montserrat-Bold.ttf" />
+    <EmbeddedResource Include="Resources\Montserrat-Medium.ttf" />
+    <EmbeddedResource Include="Resources\Montserrat-Regular.ttf" />
+    <EmbeddedResource Include="Resources\Montserrat-SemiBold.ttf" />
+    <EmbeddedResource Include="Resources\UIFontIcons.ttf" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PracticalShooterApp.Shared\PracticalShooterApp.Shared.csproj" />
+    <PackageReference Include="akavache" Version="8.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.4.0.38" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.4.0.40" />
+    <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator" Version="19.4.0.38" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="19.4.0.40" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCarousel" Version="19.4.0.38" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="19.4.0.38" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="19.4.0.38" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DependencyInterfaces" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Styles\ButtonStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\FontIcons.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\GradientViewStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\LabelStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Templates\EventTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Templates\NavigationCalendarTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Templates\NavigationListTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Templates\NavigationTileTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\CalendarEntryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LearnPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MorePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Templates\WalkthroughItemPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

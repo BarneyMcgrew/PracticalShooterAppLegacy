@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{601C066B-7A18-4364-893A-C25EEE8E19CA}</ProjectGuid>
+    <ProjectGuid>{A2959779-E8D6-448F-8328-9F23A480D29E}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{89a4fe7c-635d-49c9-8d8c-5cd363c0d68d}</TemplateGuid>
     <OutputType>Exe</OutputType>
@@ -65,12 +65,9 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Repositories\DatabaseRepository.cs" />
-    <Compile Include="Repositories\SettingsRepository.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <BundleResource Include="Resources\rulesData.db" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -135,22 +132,33 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.0.10" />
-    <PackageReference Include="sqlite-net-pcl">
-      <Version>1.7.335</Version>
+    <PackageReference Include="akavache">
+      <Version>8.1.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.4.0.38" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.4.0.40" />
+    <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator">
+      <Version>19.4.0.38</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="19.4.0.40" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCarousel">
+      <Version>19.4.0.38</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfListView">
+      <Version>19.4.0.38</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="19.4.0.38" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\PracticalShooterApp.Shared\PracticalShooterApp.Shared.csproj">
-      <Project>{A84B185C-6BCF-45C8-B851-E1399B572C8E}</Project>
-      <Name>PracticalShooterApp.Shared</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PracticalShooterApp\PracticalShooterApp.csproj">
-      <Project>{C2499BB1-7BCC-4187-BF14-93267FFDADCB}</Project>
+      <Project>{0509793A-DB34-427B-9DA4-3E2F231E4CC3}</Project>
       <Name>PracticalShooterApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DependencyServices\" />
   </ItemGroup>
 </Project>

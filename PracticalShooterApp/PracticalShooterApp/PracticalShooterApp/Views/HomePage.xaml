@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Title}"
+             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:controls="clr-namespace:PracticalShooterApp.Controls"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
+             xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:syncEffectsView="clr-namespace:Syncfusion.XForms.EffectsView;assembly=Syncfusion.Core.XForms"
+             xmlns:template="clr-namespace:PracticalShooterApp.Templates"
+             xmlns:vm="clr-namespace:PracticalShooterApp.ViewModels"
+             Shell.NavBarIsVisible="False"
+             x:Name="Home"
+             x:Class="PracticalShooterApp.Views.HomePage">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, *">
+
+            <!--  Title View  -->
+            <controls:TitleView Title="Home" Grid.Row="0">
+                <!--<controls:TitleView.LeadingView>
+                    <buttons:SfButton
+                        x:Name="backButton"
+                        Command="{Binding BindingContext.BackButtonCommand, Source={x:Reference navigationList}}"
+                        CommandParameter="{x:Reference backButton}"
+                        Style="{StaticResource IconButtonStyle}"
+                        Text="{StaticResource Back}" />
+                </controls:TitleView.LeadingView>-->
+            </controls:TitleView>
+
+            <Grid 
+                Grid.Row="1" 
+                Padding="{core:OnPlatformOrientationThickness Default='11,0', TabletPortrait='20,16,20,0', TabletLandscape='20,16,20,0', Desktop='20,24,20,0'}">
+
+                <listView:SfListView
+                    x:Name="navigationList"
+                    AutoFitMode="Height"
+                    IsScrollBarVisible="false"
+                    ItemSpacing="{core:OnPlatformOrientationThickness PhonePortrait='0,11,0,0',
+                                                                      PhoneLandscape='0,11,0,0',
+                                                                      Default='0,0,27,27'}"
+                    ItemsSource="{Binding NavigationList}"
+                    SelectionBackgroundColor="Transparent">
+                    <listView:SfListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <!--  View of each tile item  -->
+                                    <controls:CustomShadowFrame
+                                    IsVisible="{Binding UseTileCard}"
+                                    Margin="5,2,5,5"
+                                    Padding="0"
+                                    BackgroundColor="{DynamicResource GrayShadowColor}"
+                                    BorderColor="{DynamicResource GrayShadowColor}"
+                                    BorderWidth="1"
+                                    CornerRadius="4"
+                                    HasShadow="True"
+                                    HorizontalOptions="FillAndExpand"
+                                    Radius="4"
+                                    VerticalOptions="FillAndExpand">
+
+                                        <syncEffectsView:SfEffectsView
+                                            RippleColor="{DynamicResource Gray-300}"
+                                            TouchDownEffects="Ripple"
+                                            TouchUpCommand="{Binding Path=BindingContext.ItemTappedCommand, Source={x:Reference Home}}"
+                                            TouchUpCommandParameter="{Binding}">
+
+                                            <border:SfBorder
+                                            BorderColor="Transparent"
+                                            BorderWidth="0"
+                                            CornerRadius="4">
+                                                <template:NavigationTileTemplate />
+                                            </border:SfBorder>
+                                        </syncEffectsView:SfEffectsView>
+
+                                    </controls:CustomShadowFrame>
+
+                                    <!--  View of each card item  -->
+                                    <controls:CustomShadowFrame
+                                    IsVisible="{Binding UseListCard}"
+                                    Margin="5,2,5,5"
+                                    Padding="0"
+                                    BackgroundColor="{DynamicResource GrayShadowColor}"
+                                    BorderColor="{DynamicResource GrayShadowColor}"
+                                    BorderWidth="1"
+                                    CornerRadius="4"
+                                    HasShadow="True"
+                                    HorizontalOptions="FillAndExpand"
+                                    Radius="4"
+                                    VerticalOptions="FillAndExpand">
+
+                                        <syncEffectsView:SfEffectsView
+                                        RippleColor="{DynamicResource Gray-300}"
+                                        TouchDownEffects="Ripple"
+                                        TouchUpCommand="{Binding Path=BindingContext.ItemTappedCommand, Source={x:Reference Home}}"
+                                        TouchUpCommandParameter="{Binding}">
+
+                                            <border:SfBorder
+                                            BorderColor="Transparent"
+                                            BorderWidth="0"
+                                            CornerRadius="4">
+                                                <template:NavigationListTemplate />
+                                            </border:SfBorder>
+
+                                        </syncEffectsView:SfEffectsView>
+                                    </controls:CustomShadowFrame>
+                                </Grid>                                                             
+                            </ViewCell>
+                        </DataTemplate>
+                    </listView:SfListView.ItemTemplate>
+
+                    <!--  Span count to specify in the different layouts  -->
+                    <listView:SfListView.LayoutManager>
+                        <listView:GridLayout SpanCount="{OnIdiom Phone=1, Tablet=2, Desktop=3}" />
+                    </listView:SfListView.LayoutManager>
+                </listView:SfListView>
+                <busyindicator:SfBusyIndicator x:Name="busyindicator" 
+                                       IsBusy="{Binding IsBusy}"
+                                       Title="Loading..."
+                                       AnimationType="Box"
+                                       Duration="0.5"
+                                       BackgroundColor="{StaticResource Primary}"
+                                       TextColor="{StaticResource Tertiary}"/>
+            </Grid>            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,59 +1,91 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
-             xmlns:system="clr-namespace:System;assembly=netstandard"
+             xmlns:behaviour="clr-namespace:PracticalShooterApp.Behaviours;assembly=PracticalShooterApp"
+             xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
+             xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+             xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:viewModel="clr-namespace:PracticalShooterApp.ViewModels;assembly=PracticalShooterApp"
              ios:Page.UseSafeArea="False"
+             Shell.NavBarIsVisible="False"
              x:Class="PracticalShooterApp.Views.OnboardingPage"
-             Shell.NavBarIsVisible="False">
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="ItemTemplate">
+                <ContentPresenter Content="{Binding RotatorView}" />
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <Grid>
-            <controls:BackgroundView/>
-            <Image Source="onboardingBackground.gif"
-                   Opacity="0.15"
-                   Aspect="AspectFill"/>
-            <Grid
-                RowDefinitions="*, 50, 10"
-            >
-                <CarouselView x:Name="OnboardingCarousel"
-                              Margin="-1"
-                              Grid.RowSpan="2"
-                              HorizontalScrollBarVisibility="Never"
-                              IndicatorView="Indicators"
-                              Loop="False">
-                    <CarouselView.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>onboardingWelcome.gif</x:String>
-                            <x:String>onboardingFeatures.gif</x:String>
-                            <x:String>onboardingDevelopment.gif</x:String>
-                        </x:Array>
-                    </CarouselView.ItemsSource>
-                    <CarouselView.ItemTemplate>
-                        <DataTemplate>
-                            <ContentView>
-                                <Image Source="{Binding .}"
-                                       Aspect="AspectFill"
-                                       Margin="-1"/>
-                            </ContentView>
-                        </DataTemplate>
-                    </CarouselView.ItemTemplate>
-                </CarouselView>
-                <IndicatorView x:Name="Indicators"
-                               Grid.Row="1"
-                               SelectedIndicatorColor="{StaticResource MainColour}"
-                               IndicatorColor="{StaticResource TextColour}"
-                               IndicatorSize="15"
-                />
-                <Button x:Name="ContinueButton"
-                        Margin="25, 0"
-                        IsVisible="False"
-                        Grid.Row="1"
-                        Text="Continue"
-                        TextColor="{StaticResource TextColour}"
-                        BackgroundColor="{StaticResource MainColour}"/>
-            </Grid>
+        <Grid RowDefinitions="50, *, Auto">
+
+            <!--  Gradient view  -->
+            <gradient:SfGradientView Grid.RowSpan="3" Style="{StaticResource OrangeGradientStyle}" />
+
+            <!--  Skip button  -->
+            <button:SfButton
+                x:Name="SkipButton"
+                Grid.Row="0"
+                Margin="{core:OnPlatformOrientationThickness AndroidPhonePortrait='0,10,10,0',
+                                                             AndroidPhoneLandscape='0,10,10,0',
+                                                             iOSPhonePortrait='0,20,10,0',
+                                                             iOSPhoneLandscape='0,10,10,0'}"
+                Command="{Binding SkipCommand}"
+                CornerRadius="20"
+                HeightRequest="40"
+                HorizontalOptions="End"
+                IsVisible="{Binding IsSkipButtonVisible}"
+                Style="{StaticResource TransparentButtonStyle}"
+                Text="Skip"
+                TextColor="{x:StaticResource Gray-White}"
+                WidthRequest="80" />
+
+            <!--  Rotator used to navigate the view  -->
+            <rotator:SfRotator
+                x:Name="Rotator"
+                Grid.Row="1"
+                Margin="{x:OnIdiom Phone='15,0,15,0',
+                                   Desktop='0',
+                                   Tablet='0'}"
+                BackgroundColor="Transparent"
+                DotPlacement="None"
+                EnableLooping="False"
+                EnableSwiping="False"
+                HorizontalOptions="FillAndExpand"
+                ItemTemplate="{StaticResource ItemTemplate}"
+                ItemsSource="{Binding Boardings}"
+                NavigationDirection="Horizontal"
+                SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}"
+                VerticalOptions="CenterAndExpand"
+                WidthRequest="{core:OnPlatformOrientationDoubleValue Default=400,
+                                                                     AndroidPhonePortrait=400,
+                                                                     AndroidPhoneLandscape=200,
+                                                                     iOSPhonePortrait=400,
+                                                                     iOSPhoneLandscape=200}">
+                <rotator:SfRotator.Behaviors>
+                    <behaviour:SfRotatorBehaviour />
+                </rotator:SfRotator.Behaviors>
+            </rotator:SfRotator>
+
+            <!--  Next button  -->
+            <button:SfButton
+                x:Name="NextButtonText"
+                Grid.Row="2"
+                Margin="0,10,0,24"
+                Command="{Binding NextCommand}"
+                CommandParameter="{x:Reference Rotator}"
+                CornerRadius="20"
+                HeightRequest="40"
+                HorizontalOptions="Center"
+                Style="{StaticResource SimpleButtonStyle}"
+                Text="{Binding NextButtonText}"
+                VerticalOptions="End"
+                WidthRequest="245" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

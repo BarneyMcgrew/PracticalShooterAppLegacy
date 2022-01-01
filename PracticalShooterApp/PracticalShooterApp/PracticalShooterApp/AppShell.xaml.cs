@@ -13,17 +13,19 @@ namespace PracticalShooterApp
             InitializeComponent();
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
-            
+
             Routing.RegisterRoute(nameof(OnboardingPage), typeof(OnboardingPage));
-            Routing.RegisterRoute(nameof(LoadingPage), typeof(LoadingPage));
-            Routing.RegisterRoute(nameof(SearchPage), typeof(SearchPage));
-            Routing.RegisterRoute(nameof(RulesPage), typeof(RulesPage));
-            Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
+
+            Routing.RegisterRoute(nameof(CalendarEntryPage), typeof(CalendarEntryPage));            
+            Routing.RegisterRoute(nameof(CalendarPage), typeof(CalendarPage));
+
+            Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
+            Routing.RegisterRoute(nameof(LearnPage), typeof(LearnPage));
+            Routing.RegisterRoute(nameof(MorePage), typeof(MorePage));
+
+            Routing.RegisterRoute(nameof(ItemsPage), typeof(ItemsPage));
+            Routing.RegisterRoute(nameof(AboutPage), typeof(AboutPage));
         }
 
-        private async void OnMenuItemClicked(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync("//LoginPage");
-        }
     }
 }

@@ -1,12 +1,18 @@
 ﻿using PracticalShooterApp.Services;
-using PracticalShooterApp.Shared.Services;
 using PracticalShooterApp.Views;
 using System;
-using PracticalShooterApp.Shared.Enums;
+using System.Globalization;
+using PracticalShooterApp.Clients;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Akavache;
 
+[assembly: ExportFont("Montserrat-Bold.ttf", Alias = "Montserrat-Bold")]
+[assembly: ExportFont("Montserrat-Medium.ttf", Alias = "Montserrat-Medium")]
+[assembly: ExportFont("Montserrat-Regular.ttf", Alias = "Montserrat-Regular")]
+[assembly: ExportFont("Montserrat-SemiBold.ttf", Alias = "Montserrat-SemiBold")]
+[assembly: ExportFont("UIFontIcons.ttf", Alias = "FontIcons")]
 namespace PracticalShooterApp
 {
     public partial class App : Application
@@ -17,14 +23,20 @@ namespace PracticalShooterApp
             InitializeComponent();
             
             VersionTracking.Track();
-            Akavache.Registrations.Start("ThePracticalShooterApp");
 
-            //DependencyService.Register<MockDataStore>();
-            DependencyService.Register<SettingsService>();
-            DependencyService.Register<RulebooksService>();
+            var licenseKey = "NTUyMTc3QDMxMzkyZTM0MmUzMEhnOVk3Z3E1NHNwUitsaHVTbmpvWXdvdUxUeEhDLzBHdVBGRTFpNkRWelU9";
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(licenseKey);
 
-            MainPage = new AppShell();
+            BlobCache.ApplicationName = "PracticalShooterApp";
+
+            DependencyService.Register<AzureApiClient>();
+            DependencyService.Register<HomeTilesService>();
+            DependencyService.Register<CalendarEntriesService>();
+            DependencyService.Register<BrowserService>();
             
+            DependencyService.Register<MockDataStore>();
+            
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()

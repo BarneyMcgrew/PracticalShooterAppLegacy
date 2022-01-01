@@ -3,6 +3,7 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:PracticalShooterApp.Views"
        Title="PracticalShooterApp"
+       BackgroundColor="{StaticResource PrimaryDark}"
        x:Class="PracticalShooterApp.AppShell">
 
     <!--
@@ -14,38 +15,36 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource MainBackground}" />
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource MainBackground}" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource TextColour}"/>
-                <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource TextColour}"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource MainColour}"/>
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
             </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
-            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />            
         </ResourceDictionary>
     </Shell.Resources>
+
+    <TabBar>
+        <ShellContent Route="OnboardingPage" ContentTemplate="{DataTemplate local:OnboardingPage}" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Route="CalendarEntryPage" ContentTemplate="{DataTemplate local:CalendarEntryPage}" />
+    </TabBar>
     
     <TabBar>
-        <ShellContent Route="LoadingPage" ContentTemplate="{DataTemplate local:LoadingPage}" />
-    </TabBar>
-    
-    <TabBar>
-        <ShellContent Route="OnboardingPage" ContentTemplate="{DataTemplate local:OnboardingPage}"/>
+        <ShellContent Route="CalendarPage" ContentTemplate="{DataTemplate local:CalendarPage}" />
     </TabBar>
 
-    <TabBar>
-        <ShellContent Title="Search" Icon="search.png" Route="SearchPage" ContentTemplate="{DataTemplate local:SearchPage}"/>
-        <ShellContent Title="Rules" Icon="books.png" Route="RulesPage" ContentTemplate="{DataTemplate local:RulesPage}"/>
-        <ShellContent Title="Setting" Icon="settings.png" Route="SettingsPage" ContentTemplate="{DataTemplate local:SettingsPage}"/>
+        <TabBar>
+        <ShellContent Route="HomePage" Title="Home" Icon="HomeIcon.png" ContentTemplate="{DataTemplate local:HomePage}"/>
+        <ShellContent Route="LearnPage" Title="Learn" Icon="LearnIcon.png" ContentTemplate="{DataTemplate local:LearnPage}"/>
+        <ShellContent Route="MorePage" Title="More" Icon="MoreIcon.png" ContentTemplate="{DataTemplate local:MorePage}"/>
     </TabBar>
-
-    <TabBar>        
-        <ShellContent Title="About" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
-    </TabBar>
-
 </Shell>
