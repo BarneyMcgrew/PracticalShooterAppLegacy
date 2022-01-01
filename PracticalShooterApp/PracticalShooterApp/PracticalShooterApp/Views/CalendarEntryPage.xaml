@@ -12,14 +12,6 @@
     x:Name="EventDetail"
     BackgroundColor="{StaticResource Gray-Bg}"
     NavigationPage.HasNavigationBar="False">
-
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <converter:BooleanToStringConverter x:Key="boolToStringConverter" />
-            <converter:BooleanToColorConverter x:Key="boolToColorConverter" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
     <ContentPage.Content>
         <ScrollView VerticalScrollBarVisibility="Never">
             <Grid RowDefinitions="Auto, *">
@@ -263,15 +255,17 @@
                                 Text="GET MORE INFO" />
 
                             <!--  more icon button  -->
-                            <!--<buttons:SfButton
-                                x:Name="menuIcon"
+                            <buttons:SfButton
+                                x:Name="shareIcon"
+                                IsVisible="{Binding ShowCalendarUrl}"
                                 Margin="16,0,0,0"
                                 BackgroundColor="{StaticResource PrimaryDark}"
-                                Command="{Binding Path=BindingContext.MenuCommand, Source={x:Reference menuIcon}}"
+                                Command="{Binding ShareEntryCommand}"
                                 CornerRadius="4"
                                 HorizontalOptions="End"
+                                TextColor="{StaticResource Tertiary}"
                                 Style="{StaticResource IconButtonStyle}"
-                                Text="{StaticResource Menu}" />-->
+                                Text="{StaticResource Share}" />
 
                         </StackLayout>
 

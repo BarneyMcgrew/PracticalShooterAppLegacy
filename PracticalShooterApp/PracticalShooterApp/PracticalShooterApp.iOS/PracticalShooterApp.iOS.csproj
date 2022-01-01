@@ -135,6 +135,7 @@
     <PackageReference Include="akavache">
       <Version>8.1.1</Version>
     </PackageReference>
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.4.0.38" />
     <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.4.0.40" />
     <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator">
@@ -159,6 +160,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DependencyServices" />
     <Folder Include="DependencyServices\" />
   </ItemGroup>
 </Project>

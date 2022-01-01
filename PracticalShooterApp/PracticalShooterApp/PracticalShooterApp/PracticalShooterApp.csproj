@@ -19,11 +19,13 @@
     <EmbeddedResource Include="Resources\Montserrat-Regular.ttf" />
     <EmbeddedResource Include="Resources\Montserrat-SemiBold.ttf" />
     <EmbeddedResource Include="Resources\UIFontIcons.ttf" />
+    <EmbeddedResource Include="Databases\rulesData.db" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="akavache" Version="8.1.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.4.0.38" />
     <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.4.0.40" />
     <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator" Version="19.4.0.38" />
@@ -31,12 +33,9 @@
     <PackageReference Include="Syncfusion.Xamarin.SfCarousel" Version="19.4.0.38" />
     <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="19.4.0.38" />
     <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="19.4.0.38" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DependencyInterfaces" />
   </ItemGroup>
 
   <ItemGroup>

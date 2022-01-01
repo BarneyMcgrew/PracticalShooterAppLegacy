@@ -1,7 +1,9 @@
 ﻿using PracticalShooterApp.Services.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
+using PracticalShooterApp.Helpers.Interfaces;
 using Xamarin.Forms;
 
 namespace PracticalShooterApp.ViewModels
@@ -19,13 +21,16 @@ namespace PracticalShooterApp.ViewModels
         private string _disciplineName;
         private string _eventAssociation;
         private string _eventDescription;
-        private string _calendarUrl;        
+        private string _calendarUrl;
+        private bool _showCalendarUrl;
 
         private Command<object> backButtonCommand;
         private Command goToLinkCommand;
+        private Command shareEntryCommad;
 
         private ICalendarEntriesService _calendarEntriesService => DependencyService.Get<ICalendarEntriesService>();
         private IBrowserService _browserService => DependencyService.Get<IBrowserService>();
+        private IShareHelper _shareHelper => DependencyService.Get<IShareHelper>();
 
         public CalendarEntryPageViewModel()
         {    
@@ -36,6 +41,9 @@ namespace PracticalShooterApp.ViewModels
 
         public Command GoToLinkCommand => this.goToLinkCommand ??
                                                   (this.goToLinkCommand = new Command(this.GoToLinkClicked));
+        
+        public Command ShareEntryCommand => this.shareEntryCommad ??
+                                          (this.shareEntryCommad = new Command(this.ShareEntryClicked));
 
         public string InlineIdentifier
         {
@@ -117,7 +125,8 @@ namespace PracticalShooterApp.ViewModels
 
         public bool ShowCalendarUrl
         {
-            get => !string.IsNullOrWhiteSpace(_calendarUrl);
+            get => _showCalendarUrl;
+            set => SetProperty(ref _showCalendarUrl, value);
         }
 
         private async void BackButtonClicked(object obj)
@@ -129,9 +138,14 @@ namespace PracticalShooterApp.ViewModels
         {
             var uri = new Uri(CalendarUrl);
             _browserService.GoToLink(uri);
-        }        
+        }
 
-        public async void LoadCalendarEntry(string inlineIdentifier)
+        private void ShareEntryClicked()
+        {
+            _shareHelper.ShareUri(EventName, CalendarUrl);
+        }
+
+        private async void LoadCalendarEntry(string inlineIdentifier)
         {
             try
             {
@@ -147,6 +161,7 @@ namespace PracticalShooterApp.ViewModels
                 EventAssociation = calendarEntry.AssociationName;
                 EventDescription = calendarEntry.EventDescription;
                 CalendarUrl = calendarEntry.CalendarUrl;
+                ShowCalendarUrl = !string.IsNullOrWhiteSpace(_calendarUrl);
             }
             catch (Exception)
             {

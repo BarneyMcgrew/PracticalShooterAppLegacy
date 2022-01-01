@@ -2,11 +2,13 @@
 using PracticalShooterApp.Views;
 using System;
 using System.Globalization;
+using System.Threading.Tasks;
 using PracticalShooterApp.Clients;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Akavache;
+using PracticalShooterApp.Helpers;
 
 [assembly: ExportFont("Montserrat-Bold.ttf", Alias = "Montserrat-Bold")]
 [assembly: ExportFont("Montserrat-Medium.ttf", Alias = "Montserrat-Medium")]
@@ -33,8 +35,11 @@ namespace PracticalShooterApp
             DependencyService.Register<HomeTilesService>();
             DependencyService.Register<CalendarEntriesService>();
             DependencyService.Register<BrowserService>();
+            DependencyService.Register<ShareHelper>();
+            DependencyService.Register<SqlRulesClient>();
+            DependencyService.Register<RulebookService>();
             
-            DependencyService.Register<MockDataStore>();
+            DependencyService.Register<MockDataStore>();            
             
             MainPage = new AppShell();
         }
