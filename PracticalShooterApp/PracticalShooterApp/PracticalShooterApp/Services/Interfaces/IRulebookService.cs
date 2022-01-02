@@ -7,6 +7,7 @@ namespace PracticalShooterApp.Services.Interfaces
 {
     public interface IRulebookService
     {
-        Task<List<Rulebook>> GetAllRulebooksByLanguage(Language language);
+        Task<Rulebook> GetCurrentRulebook();
+        Task<List<Rulebook>> GetAllRulebooksByCurrentLanguage();
     }
 }

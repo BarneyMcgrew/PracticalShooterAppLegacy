@@ -35,9 +35,14 @@ namespace PracticalShooterApp
             DependencyService.Register<HomeTilesService>();
             DependencyService.Register<CalendarEntriesService>();
             DependencyService.Register<BrowserService>();
-            DependencyService.Register<ShareHelper>();
-            DependencyService.Register<SqlRulesClient>();
             DependencyService.Register<RulebookService>();
+            DependencyService.Register<ChapterService>();
+            
+            DependencyService.Register<ShareHelper>();
+            
+            DependencyService.Register<SqlRulesClient>();
+            DependencyService.Register<SettingsClient>();
+            
             
             DependencyService.Register<MockDataStore>();            
             
