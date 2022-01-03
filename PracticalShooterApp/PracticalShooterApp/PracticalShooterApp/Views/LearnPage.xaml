@@ -16,7 +16,7 @@
                 <controls:TitleView.TrailingView>
                     <buttons:SfButton
                         x:Name="settingsButton"
-                        Command="{Binding SettingsButtonCommand}"
+                        Command="{Binding SettingsTappedCommand}"
                         CommandParameter="{x:Reference settingsButton}"
                         Style="{StaticResource IconButtonStyle}"
                         Text="{StaticResource Menu}" />
@@ -29,6 +29,7 @@
                 BackgroundColor="{StaticResource PrimaryLight}"
                 ItemsSource="{Binding SectionsList}"                
                 AutoFitMode="DynamicHeight"
+                TapCommand="{Binding ItemTappedCommand}"
                 IsScrollBarVisible="False"
                 IsStickyGroupHeader="True"
                 ItemSpacing="{core:OnPlatformOrientationThickness PhonePortrait='0,0,0,0',

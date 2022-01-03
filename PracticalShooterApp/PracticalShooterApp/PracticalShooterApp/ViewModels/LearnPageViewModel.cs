@@ -9,6 +9,7 @@ namespace PracticalShooterApp.ViewModels
     public class LearnPageViewModel : BaseViewModel
     {
         private Command<object> itemTappedCommand;
+        private Command settingsTappedCommand;
         private IChapterService _chapterService => DependencyService.Get<IChapterService>();
         private ISectionService _sectionService => DependencyService.Get<ISectionService>();
         
@@ -59,7 +60,21 @@ namespace PracticalShooterApp.ViewModels
         
         private async void NavigateToNextPage(object selectedItem)
         {
-            var learnSectionsModel = (LearnSectionsModel)selectedItem;
+            var eventArgs = (Syncfusion.ListView.XForms.ItemTappedEventArgs)selectedItem;
+            var model = (LearnSectionsModel)eventArgs.ItemData;
+        }
+
+        public Command SettingsTappedCommand
+        {
+            get
+            {
+                return this.settingsTappedCommand ?? (this.settingsTappedCommand = new Command(this.OpenSettingsPage));
+            }
+        }
+
+        private async void OpenSettingsPage(object selectedItem)
+        {
+
         }
     }
 }
