@@ -1,14 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+             xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
+             xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms" 
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
              Shell.NavBarIsVisible="False"
              x:Class="PracticalShooterApp.Views.LearnPage">
     <ContentPage.Content>
-        <StackLayout
-            BackgroundColor="{StaticResource Primary}">
-            <Label Text="Welcome to Learn Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid RowDefinitions="Auto, *">
+            <!-- Title View -->
+            <controls:TitleView Title="Learn" Grid.Row="0">
+                <controls:TitleView.TrailingView>
+                    <buttons:SfButton
+                        x:Name="settingsButton"
+                        Command="{Binding SettingsButtonCommand}"
+                        CommandParameter="{x:Reference settingsButton}"
+                        Style="{StaticResource IconButtonStyle}"
+                        Text="{StaticResource Menu}" />
+                </controls:TitleView.TrailingView>
+            </controls:TitleView>
+            <!-- Chapter List View -->
+            <listView:SfListView
+                x:Name="sectionList"
+                Grid.Row="1"
+                BackgroundColor="{StaticResource PrimaryLight}"
+                ItemsSource="{Binding SectionsList}"                
+                AutoFitMode="DynamicHeight"
+                IsScrollBarVisible="False"
+                IsStickyGroupHeader="True"
+                ItemSpacing="{core:OnPlatformOrientationThickness PhonePortrait='0,0,0,0',
+                                                                  PhoneLandscape='0,0,0,0',
+                                                                  Default='0,0,0,0'}"
+                SelectionBackgroundColor="Transparent">                
+                <listView:SfListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <StackLayout 
+                            Orientation="Horizontal" 
+                            Padding="0, 10, 0, 10" 
+                            BackgroundColor="{StaticResource PrimaryDark}">
+                            <Label 
+                                Text="{Binding Key}"
+                                TextColor="{StaticResource Tertiary}"
+                                Margin="10, 0, 0, 0"/>
+                        </StackLayout>
+                    </DataTemplate>                    
+                </listView:SfListView.GroupHeaderTemplate>
+                <listView:SfListView.ItemTemplate>
+                    <DataTemplate>                        
+                        <StackLayout 
+                            Orientation="Horizontal" 
+                            Margin="0, 1, 0, 0" 
+                            Padding="0, 10, 0, 10" 
+                            BackgroundColor="{StaticResource Primary}">
+                            <Label 
+                                Text="{Binding SectionName}" 
+                                Margin="20, 0, 0, 0"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </listView:SfListView.ItemTemplate>
+            </listView:SfListView>
+            <busyindicator:SfBusyIndicator x:Name="busyindicator" 
+                                       Grid.Row="1"
+                                       IsBusy="{Binding IsBusy}"
+                                       Title="Loading..."
+                                       AnimationType="Box"
+                                       Duration="0.5"
+                                       BackgroundColor="{StaticResource Primary}"
+                                       TextColor="{StaticResource Tertiary}"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

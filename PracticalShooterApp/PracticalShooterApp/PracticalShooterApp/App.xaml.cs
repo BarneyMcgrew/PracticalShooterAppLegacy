@@ -31,15 +31,17 @@ namespace PracticalShooterApp
 
             BlobCache.ApplicationName = "PracticalShooterApp";
 
-            DependencyService.Register<AzureApiClient>();
+            
             DependencyService.Register<HomeTilesService>();
             DependencyService.Register<CalendarEntriesService>();
             DependencyService.Register<BrowserService>();
             DependencyService.Register<RulebookService>();
             DependencyService.Register<ChapterService>();
+            DependencyService.Register<SectionService>();
             
             DependencyService.Register<ShareHelper>();
             
+            DependencyService.Register<AzureApiClient>();
             DependencyService.Register<SqlRulesClient>();
             DependencyService.Register<SettingsClient>();
             
