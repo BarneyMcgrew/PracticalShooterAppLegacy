@@ -61,6 +61,9 @@ namespace PracticalShooterApp.ViewModels
         private async void NavigateToNextPage(object selectedItem)
         {
             var eventArgs = (Syncfusion.ListView.XForms.ItemTappedEventArgs)selectedItem;
+            if (eventArgs.ItemType == Syncfusion.ListView.XForms.ItemType.GroupHeader)
+                return;
+
             var model = (LearnSectionsModel)eventArgs.ItemData;
         }
 
