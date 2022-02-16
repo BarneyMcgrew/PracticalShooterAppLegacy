@@ -6,7 +6,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using PracticalShooterApp.Models;
-using PracticalShooterApp.Services.Interfaces;
+using PracticalShooterApp.Services;
 using PracticalShooterApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;

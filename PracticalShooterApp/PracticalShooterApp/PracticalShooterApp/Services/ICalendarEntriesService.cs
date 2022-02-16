@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using PracticalShooterApp.Models;
 
-namespace PracticalShooterApp.Services.Interfaces
+namespace PracticalShooterApp.Services
 {
     public interface ICalendarEntriesService
     {

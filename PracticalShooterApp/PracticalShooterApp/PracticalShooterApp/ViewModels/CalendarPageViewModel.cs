@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Windows.Input;
 using PracticalShooterApp.Models;
-using PracticalShooterApp.Services.Interfaces;
+using PracticalShooterApp.Services;
 using PracticalShooterApp.Views;
 using Syncfusion.SfCalendar.XForms;
 using Xamarin.Forms;

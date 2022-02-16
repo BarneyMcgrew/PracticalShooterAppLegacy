@@ -5,7 +5,6 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using PracticalShooterApp.Clients.Interfaces;
 using PracticalShooterApp.Models;
 
 namespace PracticalShooterApp.Clients

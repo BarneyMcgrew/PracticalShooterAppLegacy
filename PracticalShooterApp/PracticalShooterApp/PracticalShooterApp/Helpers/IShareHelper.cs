@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace PracticalShooterApp.Helpers.Interfaces
+namespace PracticalShooterApp.Helpers
 {
     public interface IShareHelper
     {

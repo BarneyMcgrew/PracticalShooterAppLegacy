@@ -1,10 +1,9 @@
-﻿using PracticalShooterApp.Clients.Interfaces;
-using PracticalShooterApp.Models;
-using PracticalShooterApp.Services.Interfaces;
+﻿using PracticalShooterApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using PracticalShooterApp.Clients;
 using Xamarin.Forms;
 
 namespace PracticalShooterApp.Services

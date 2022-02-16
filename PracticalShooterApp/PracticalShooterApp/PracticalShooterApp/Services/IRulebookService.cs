@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using PracticalShooterApp.DataModels;
-using PracticalShooterApp.Enums;
 
-namespace PracticalShooterApp.Services.Interfaces
+namespace PracticalShooterApp.Services
 {
     public interface IRulebookService
     {

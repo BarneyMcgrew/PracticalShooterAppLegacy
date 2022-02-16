@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 using PracticalShooterApp.Models;
-using PracticalShooterApp.Services.Interfaces;
+using PracticalShooterApp.Services;
 using Xamarin.Forms;
 
 namespace PracticalShooterApp.ViewModels

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PracticalShooterApp.Services.Interfaces
+namespace PracticalShooterApp.Services
 {
     public interface IBrowserService
     {

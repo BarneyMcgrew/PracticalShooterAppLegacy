@@ -2,11 +2,11 @@
 using System.Threading.Tasks;
 using PracticalShooterApp.Models;
 
-namespace PracticalShooterApp.Services.Interfaces
+namespace PracticalShooterApp.Clients
 {
-    public interface IHomeTilesService
+    public interface IAzureApiClient
     {
         Task<List<HomeTilesModel>> GetHomeTiles();
-        Task<List<HomeTilesModel>> UpdateHomeTiles();
+        Task<List<CalendarEntriesModel>> GetCalendarEntries();
     }
 }

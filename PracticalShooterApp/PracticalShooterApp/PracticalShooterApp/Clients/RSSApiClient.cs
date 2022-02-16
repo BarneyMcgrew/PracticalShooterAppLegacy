@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using PracticalShooterApp.Clients.Interfaces;
 using PracticalShooterApp.Models;
 using System;
 using System.Collections.Generic;

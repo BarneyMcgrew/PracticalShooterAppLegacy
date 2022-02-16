@@ -7,7 +7,6 @@ using PracticalShooterApp.Clients;
 using PracticalShooterApp.DataModels;
 using PracticalShooterApp.Enums;
 using PracticalShooterApp.Models;
-using PracticalShooterApp.Services.Interfaces;
 using PracticalShooterApp.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

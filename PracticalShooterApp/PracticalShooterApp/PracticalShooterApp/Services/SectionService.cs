@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using PracticalShooterApp.Clients.Interfaces;
+using PracticalShooterApp.Clients;
 using PracticalShooterApp.DataModels;
-using PracticalShooterApp.Services.Interfaces;
 using SQLite;
 using Xamarin.Forms;
 

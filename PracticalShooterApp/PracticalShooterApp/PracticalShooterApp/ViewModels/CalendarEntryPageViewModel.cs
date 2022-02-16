@@ -1,9 +1,9 @@
-﻿using PracticalShooterApp.Services.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
-using PracticalShooterApp.Helpers.Interfaces;
+using PracticalShooterApp.Helpers;
+using PracticalShooterApp.Services;
 using Xamarin.Forms;
 
 namespace PracticalShooterApp.ViewModels

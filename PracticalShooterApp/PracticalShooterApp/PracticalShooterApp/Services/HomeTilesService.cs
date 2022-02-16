@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
 using Akavache;
-using PracticalShooterApp.Clients.Interfaces;
+using PracticalShooterApp.Clients;
 using PracticalShooterApp.Models;
-using PracticalShooterApp.Services.Interfaces;
 using Xamarin.Forms;
 
 namespace PracticalShooterApp.Services

@@ -4,7 +4,6 @@ using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Akavache;
-using PracticalShooterApp.Clients.Interfaces;
 using PracticalShooterApp.Enums;
 
 namespace PracticalShooterApp.Clients

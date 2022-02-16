@@ -1,5 +1,4 @@
 ﻿using System;
-using PracticalShooterApp.Services.Interfaces;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 

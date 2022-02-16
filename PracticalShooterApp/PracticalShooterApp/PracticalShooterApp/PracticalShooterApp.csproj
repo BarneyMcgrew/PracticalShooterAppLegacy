@@ -82,4 +82,34 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Helpers\ShareHelper.cs">
+      <DependentUpon>IShareHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\BrowserService.cs">
+      <DependentUpon>IBrowserService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\CalendarEntriesService.cs">
+      <DependentUpon>ICalendarEntriesService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\ChapterService.cs">
+      <DependentUpon>IChapterService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\HomeTilesService.cs">
+      <DependentUpon>IHomeTilesService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\RulebookService.cs">
+      <DependentUpon>IRulebookService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\MockDataStore.cs">
+      <DependentUpon>IDataStore.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\SectionService.cs">
+      <DependentUpon>ISectionService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\WebService.cs">
+      <DependentUpon>IWebService.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

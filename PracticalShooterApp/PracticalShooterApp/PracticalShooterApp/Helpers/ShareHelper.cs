@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-using PracticalShooterApp.Helpers.Interfaces;
 using Xamarin.Essentials;
 
 namespace PracticalShooterApp.Helpers

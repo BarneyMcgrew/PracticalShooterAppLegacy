@@ -1,6 +1,6 @@
 ﻿using SQLite;
 
-namespace PracticalShooterApp.Clients.Interfaces
+namespace PracticalShooterApp.Clients
 {
     public interface ISqlRulesClient
     {

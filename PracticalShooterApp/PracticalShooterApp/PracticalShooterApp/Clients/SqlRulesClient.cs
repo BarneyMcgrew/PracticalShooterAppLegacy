@@ -5,7 +5,6 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using PracticalShooterApp.Clients.Interfaces;
 using PracticalShooterApp.DataModels;
 using PracticalShooterApp.DependencyInterfaces;
 using PracticalShooterApp.Enums;

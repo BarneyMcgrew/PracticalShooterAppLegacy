@@ -2,10 +2,8 @@
 using System.Threading.Tasks;
 using Akavache;
 using PracticalShooterApp.Clients;
-using PracticalShooterApp.Clients.Interfaces;
 using PracticalShooterApp.DataModels;
 using PracticalShooterApp.Enums;
-using PracticalShooterApp.Services.Interfaces;
 using SQLite;
 using Xamarin.Forms;
 
