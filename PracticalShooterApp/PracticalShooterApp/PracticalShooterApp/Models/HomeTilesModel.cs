@@ -27,6 +27,10 @@ namespace PracticalShooterApp.Models
         [JsonProperty(PropertyName = "itemName")]
         public String ItemName { get; set; }
         
+        [DataMember(Name = "region")]
+        [JsonProperty(PropertyName = "region")]
+        public String Region { get; set; }
+
         [DataMember(Name = "itemOrder")]
         [JsonProperty(PropertyName = "itemOrder")]
         public Int32 ItemOrder { get; set; }

@@ -7,6 +7,7 @@ using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using PracticalShooterApp.Models;
 using PracticalShooterApp.Services.Interfaces;
+using PracticalShooterApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using NavigationModel = PracticalShooterApp.Models.NavigationModel;
@@ -62,15 +63,25 @@ namespace PracticalShooterApp.ViewModels
         private async void NavigateToNextPage(object selectedItem)
         {
             var homeTile = (HomeTilesModel)selectedItem;
-            
-            if (homeTile.NavigationContext.Contains("http"))
+
+            var contextSplit = homeTile.NavigationContext.Split(new String[] { "::" }, StringSplitOptions.RemoveEmptyEntries);
+
+            var contextType = contextSplit[0];
+
+            var contextString = contextSplit[1];
+
+            switch (contextType)
             {
-                var uri = new Uri(homeTile.NavigationContext);
-                _browserService.GoToLink(uri);
-            }
-            else if (homeTile.NavigationContext.Contains("//"))
-            {
-                await Shell.Current.GoToAsync(homeTile.NavigationContext);
+                case "PAGE":
+                    await Shell.Current.GoToAsync(contextString);
+                    break;
+                case "RSS":
+                    await Shell.Current.GoToAsync($"{nameof(RSSPage)}?{nameof(RSSPageViewModel.ContextFeed)}={contextString}");
+                    break;
+                default: // WEB
+                    var uri = new Uri(contextString);
+                    _browserService.GoToLink(uri);
+                    break;
             }
         }
 

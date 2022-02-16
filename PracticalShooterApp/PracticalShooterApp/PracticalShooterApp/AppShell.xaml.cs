@@ -18,6 +18,8 @@ namespace PracticalShooterApp
 
             Routing.RegisterRoute(nameof(CalendarEntryPage), typeof(CalendarEntryPage));            
             Routing.RegisterRoute(nameof(CalendarPage), typeof(CalendarPage));
+
+            Routing.RegisterRoute(nameof(RSSPage), typeof(RSSPage));
             
             Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
             Routing.RegisterRoute(nameof(LearnPage), typeof(LearnPage));
