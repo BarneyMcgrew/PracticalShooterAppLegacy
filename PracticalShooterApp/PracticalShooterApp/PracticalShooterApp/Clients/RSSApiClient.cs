@@ -37,9 +37,12 @@ namespace PracticalShooterApp.Clients
                 HttpResponseMessage response = await _httpClient.GetAsync(url);
 
                 XmlSerializer serializer = new XmlSerializer(typeof(RSSRawFeed));
-                using (StringReader reader = new StringReader(response.Content.ReadAsStringAsync().Result))
+                using (StringReader reader = new StringReader(response.Content.ReadAsStringAsync().Result.Trim()))
                 {
                     var deserializedResponse = (RSSRawFeed)serializer.Deserialize(reader);
+
+                    if (deserializedResponse == null)
+                        throw new Exception("Unable to deserialise RSS Feed");
 
                     return deserializedResponse;
                 }

@@ -7,6 +7,7 @@ using Foundation;
 using UIKit;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Syncfusion.XForms.iOS.Buttons;
 
 namespace PracticalShooterApp.iOS
 {
@@ -25,8 +26,11 @@ namespace PracticalShooterApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-global::Xamarin.Forms.Forms.Init();
-SfCarouselRenderer.Init();
+            global::Xamarin.Forms.Forms.Init();
+            SfCarouselRenderer.Init();
+            SfChipRenderer.Init();
+            SfChipGroupRenderer.Init();         
+            Syncfusion.XForms.iOS.PopupLayout.SfPopupLayoutRenderer.Init();
 
             LoadApplication(new App());
 

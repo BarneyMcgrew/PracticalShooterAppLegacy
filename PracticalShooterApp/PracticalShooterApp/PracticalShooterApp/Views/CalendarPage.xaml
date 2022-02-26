@@ -36,7 +36,7 @@
             <busyindicator:SfBusyIndicator x:Name="busyindicator" 
                                        Grid.Row="1"
                                        IsBusy="{Binding IsBusy}"
-                                       Title="Loading..."
+                                       Title="Loading Calendar..."
                                        AnimationType="Box"
                                        Duration="0.5"
                                        BackgroundColor="{StaticResource Primary}"

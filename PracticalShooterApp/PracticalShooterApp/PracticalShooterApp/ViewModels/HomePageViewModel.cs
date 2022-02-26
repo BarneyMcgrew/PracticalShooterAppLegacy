@@ -20,6 +20,11 @@ namespace PracticalShooterApp.ViewModels
 
         private Command<object> itemTappedCommand;
 
+        private List<HomeTilesModel> _navigationList =
+            new List<HomeTilesModel>();
+
+        private string _selectedRegion;
+
         private IHomeTilesService _homeTilesService => DependencyService.Get<IHomeTilesService>();
         private IBrowserService _browserService => DependencyService.Get<IBrowserService>();
         
@@ -51,6 +56,20 @@ namespace PracticalShooterApp.ViewModels
         [DataMember(Name = "navigationList")]
         public ObservableCollection<HomeTilesModel> NavigationList { get; set; } =
             new ObservableCollection<HomeTilesModel>();
+
+        [DataMember(Name = "regionFilter")]
+        public ObservableCollection<string> RegionFilter { get; set; } =
+            new ObservableCollection<string>();
+
+        public string SelectedRegion
+        {
+            get => _selectedRegion;
+            set
+            {
+                _selectedRegion = value;
+                SetProperty(ref _selectedRegion, value);
+            }
+        }
 
         #endregion
 
@@ -116,6 +135,11 @@ namespace PracticalShooterApp.ViewModels
             {
                 NavigationList.Add(homeTile);
             }
+        }
+
+        private void RefreshUIFeed()
+        {
+
         }
 
         #endregion

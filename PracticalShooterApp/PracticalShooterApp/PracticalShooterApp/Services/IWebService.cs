@@ -6,5 +6,6 @@ namespace PracticalShooterApp.Services
     public interface IWebService
     {
         Task<RSSFeedModel> GetRSSFeed(string url);
+        Task<RSSFeedModel> UpdateRSSFeed(string url);
     }
 }

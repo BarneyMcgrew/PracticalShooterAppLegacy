@@ -23,6 +23,8 @@ namespace PracticalShooterApp.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
+            Syncfusion.XForms.Android.PopupLayout.SfPopupLayoutRenderer.Init();
+
             if (Xamarin.Essentials.Platform.CurrentActivity.Window != null)
                 Xamarin.Essentials.Platform.CurrentActivity.Window.SetStatusBarColor(Color.ParseColor("#353535"));
 

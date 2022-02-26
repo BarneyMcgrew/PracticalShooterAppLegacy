@@ -9,7 +9,6 @@ namespace PracticalShooterApp.ViewModels
     public class LearnPageViewModel : BaseViewModel
     {
         private Command<object> itemTappedCommand;
-        private Command settingsTappedCommand;
         private IChapterService _chapterService => DependencyService.Get<IChapterService>();
         private ISectionService _sectionService => DependencyService.Get<ISectionService>();
         
@@ -65,19 +64,6 @@ namespace PracticalShooterApp.ViewModels
                 return;
 
             var model = (LearnSectionsModel)eventArgs.ItemData;
-        }
-
-        public Command SettingsTappedCommand
-        {
-            get
-            {
-                return this.settingsTappedCommand ?? (this.settingsTappedCommand = new Command(this.OpenSettingsPage));
-            }
-        }
-
-        private async void OpenSettingsPage(object selectedItem)
-        {
-
         }
     }
 }

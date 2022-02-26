@@ -1,7 +1,9 @@
-﻿using System;
+﻿using PracticalShooterApp.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Xml;
 using System.Xml.Serialization;
+using Xamarin.Forms;
 using static PracticalShooterApp.Models.RSSFeedModel;
 
 namespace PracticalShooterApp.Models
@@ -146,28 +148,21 @@ namespace PracticalShooterApp.Models
 
 		public RSSFeedModel ConvertToModel()
         {
+			if (this == null)
+				return null;
+
+			var rssItemHelper = DependencyService.Get<IRSSItemHelper>();
+
 			var model = new RSSFeedModel()
             {
 				Title = this.Channel.Title,
 				Description = this.Channel.Description,
-				ImageUrl = this.Channel.Image.Url,
 				Items = new List<RSSFeedModel.RSSFeedItem>()
             };
 
             foreach (var item in this.Channel.Item)
-            {
-
-				var pubDate = (System.Xml.XmlNode[])item.PubDate;
-
-				var itemModel = new RSSFeedItem()
-				{
-					Title = item.Title,
-					Description = item.Description,
-					Categories = item.Category,
-					PostLink = item.Guid.Text,
-					PublishDate = DateTime.Parse(pubDate[0].Value),
-					LinkReference = item.Link
-				};
+            {			
+				var itemModel = rssItemHelper.ConvertRawToModel(item);
 
 				model.Items.Add(itemModel);
             }	

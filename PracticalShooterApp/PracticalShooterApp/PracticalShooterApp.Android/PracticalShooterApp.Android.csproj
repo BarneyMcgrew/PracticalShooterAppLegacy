@@ -63,21 +63,24 @@
     </PackageReference>
     <PackageReference Include="Plugin.CurrentActivity" Version="2.1.0.4" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
-    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.4.0.38" />
-    <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.4.0.40" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.4.0.52" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.4.0.52" />
     <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator">
-      <Version>19.4.0.38</Version>
+      <Version>19.4.0.52</Version>
     </PackageReference>
-    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="19.4.0.40" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="19.4.0.52" />
     <PackageReference Include="Syncfusion.Xamarin.SfCarousel">
-      <Version>19.4.0.38</Version>
+      <Version>19.4.0.52</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfListView">
-      <Version>19.4.0.38</Version>
+      <Version>19.4.0.52</Version>
     </PackageReference>
-    <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="19.4.0.38" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout">
+      <Version>19.4.0.52</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="19.4.0.52" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -150,7 +153,6 @@
     <AndroidResource Include="Resources\drawable\icon_small.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DependencyServices" />
     <Folder Include="DependencyServices\" />
   </ItemGroup>
   <ItemGroup>

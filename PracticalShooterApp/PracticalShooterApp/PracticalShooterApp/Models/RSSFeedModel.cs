@@ -10,6 +10,8 @@ namespace PracticalShooterApp.Models
         {
             public String Title { get; set; }
             public String Description { get; set; }
+            public String ImageUrl { get; set; }
+            public bool HasImage { get; set; }
             public String PostLink { get; set; }
             public String LinkReference { get; set; }
             public List<String> Categories { get; set; }
@@ -18,7 +20,6 @@ namespace PracticalShooterApp.Models
 
         public String Title { get; set; }
         public String Description { get; set; }
-        public String ImageUrl { get; set; }
         public List<RSSFeedItem> Items { get; set; }
     }
 }

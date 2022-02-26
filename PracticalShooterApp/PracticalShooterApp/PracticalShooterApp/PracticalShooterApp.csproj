@@ -26,16 +26,17 @@
     <PackageReference Include="akavache" Version="8.1.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
-    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.4.0.38" />
-    <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.4.0.40" />
-    <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator" Version="19.4.0.38" />
-    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="19.4.0.40" />
-    <PackageReference Include="Syncfusion.Xamarin.SfCarousel" Version="19.4.0.38" />
-    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="19.4.0.38" />
-    <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="19.4.0.38" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.4.0.52" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.4.0.52" />
+    <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator" Version="19.4.0.52" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="19.4.0.52" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCarousel" Version="19.4.0.52" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="19.4.0.52" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout" Version="19.4.0.52" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="19.4.0.52" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />  
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -110,6 +111,12 @@
     </Compile>
     <Compile Update="Services\WebService.cs">
       <DependentUpon>IWebService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\RSSNavigationListTemplate.xaml.cs">
+      <DependentUpon>RSSNavigationListTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Helpers\RSSItemHelper.cs">
+      <DependentUpon>IRSSItemHelper.cs</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

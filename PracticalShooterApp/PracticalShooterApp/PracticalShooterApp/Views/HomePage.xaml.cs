@@ -27,5 +27,10 @@ namespace PracticalShooterApp.Views
 
             _viewModel.PopulateHomeTiles();
         }
+
+        private void settingsButton_Clicked(object sender, EventArgs e)
+        {
+            popupSettings.Show();            
+        }
     }
 }

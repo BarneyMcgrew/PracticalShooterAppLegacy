@@ -41,6 +41,7 @@ namespace PracticalShooterApp
             DependencyService.Register<WebService>();
             
             DependencyService.Register<ShareHelper>();
+            DependencyService.Register<RSSItemHelper>();
             
             DependencyService.Register<AzureApiClient>();
             DependencyService.Register<RSSApiClient>();
