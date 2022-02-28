@@ -20,28 +20,77 @@
         <sfPopup:SfPopupLayout x:Name="popupSettings">
             <sfPopup:SfPopupLayout.PopupView>
                 <sfPopup:PopupView
-                    AnimationMode="SlideOnTop"
+                    AnimationMode="Fade"
                     BackgroundColor="{StaticResource Primary}"
                     ShowCloseButton="False"
                     ShowFooter="False"
                     ShowHeader="False">
                     <sfPopup:PopupView.PopupStyle>
                         <sfPopup:PopupStyle
-                            BlurIntensity="ExtraDark"
-                            BorderColor="{StaticResource Tertiary}"
+                            BorderColor="{StaticResource PrimaryLight}"
                             BorderThickness="5"
-                            CornerRadius="20"
-                            HeaderBackgroundColor="DimGray" />
+                            CornerRadius="20"/>
                     </sfPopup:PopupView.PopupStyle>
                     <sfPopup:PopupView.ContentTemplate>
                         <DataTemplate>
-                            <Label
-                                BackgroundColor="{StaticResource Primary}"
-                                HorizontalOptions="Center"
-                                HorizontalTextAlignment="Center"
-                                Text="Meow"
-                                VerticalOptions="Center"
-                                WidthRequest="50" />
+                            <Grid RowDefinitions="Auto, Auto, *">
+                                <Grid Grid.Row="0" 
+                                      RowDefinitions="Auto, 1">
+                                    <Label Grid.Row="0" 
+                                           Margin="0,8"
+                                           FontFamily="Montserrat-Medium"
+                                           FontSize="16"
+                                           HorizontalOptions="Center"
+                                           HorizontalTextAlignment="Center"
+                                           Text="Select Region"
+                                           TextColor="{StaticResource Gray-900}"
+                                           VerticalOptions="Center"
+                                           VerticalTextAlignment="Center"/>
+                                    <BoxView
+                                        Grid.Row="1"
+                                        Color="{StaticResource Tertiary}"/>
+                                    <ScrollView
+                                        Grid.Row="2">
+                                        <StackLayout Padding="20, 0" HorizontalOptions="Center" VerticalOptions="Center">
+                                            <buttons:SfCheckBox 
+                                                UncheckedColor="{StaticResource Secondary}"
+                                                CheckedColor="{StaticResource Tertiary}"
+                                                TextColor="{StaticResource Secondary}"
+                                                Text="United Kingdom"/>
+                                            <buttons:SfCheckBox 
+                                                UncheckedColor="{StaticResource Secondary}"
+                                                CheckedColor="{StaticResource Tertiary}"
+                                                TextColor="{StaticResource Secondary}"
+                                                Text="France"/>
+                                            <buttons:SfCheckBox 
+                                                UncheckedColor="{StaticResource Secondary}"
+                                                CheckedColor="{StaticResource Tertiary}"
+                                                TextColor="{StaticResource Secondary}"
+                                                Text="Italy"/>
+                                            <buttons:SfCheckBox 
+                                                UncheckedColor="{StaticResource Secondary}"
+                                                CheckedColor="{StaticResource Tertiary}"
+                                                TextColor="{StaticResource Secondary}"
+                                                Text="Northern Ireland"/>
+                                            <buttons:SfCheckBox 
+                                                UncheckedColor="{StaticResource Secondary}"
+                                                CheckedColor="{StaticResource Tertiary}"
+                                                TextColor="{StaticResource Secondary}"
+                                                Text="Greece"/>
+                                            <buttons:SfCheckBox 
+                                                UncheckedColor="{StaticResource Secondary}"
+                                                CheckedColor="{StaticResource Tertiary}"
+                                                TextColor="{StaticResource Secondary}"
+                                                Text="Czech Republic"/>
+                                            <buttons:SfCheckBox 
+                                                UncheckedColor="{StaticResource Secondary}"
+                                                CheckedColor="{StaticResource Tertiary}"
+                                                TextColor="{StaticResource Secondary}"
+                                                Text="Canada"/>
+                                        </StackLayout>
+                                    </ScrollView>
+                                </Grid>
+                            </Grid>
                         </DataTemplate>
                     </sfPopup:PopupView.ContentTemplate>
                 </sfPopup:PopupView>

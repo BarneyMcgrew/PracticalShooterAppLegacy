@@ -8,6 +8,7 @@ using UIKit;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Syncfusion.XForms.iOS.Buttons;
+using Syncfusion.XForms.iOS.PopupLayout;
 
 namespace PracticalShooterApp.iOS
 {
@@ -30,7 +31,8 @@ namespace PracticalShooterApp.iOS
             SfCarouselRenderer.Init();
             SfChipRenderer.Init();
             SfChipGroupRenderer.Init();         
-            Syncfusion.XForms.iOS.PopupLayout.SfPopupLayoutRenderer.Init();
+            SfCheckBoxRenderer.Init();
+            SfPopupLayoutRenderer.Init();
 
             LoadApplication(new App());
 
