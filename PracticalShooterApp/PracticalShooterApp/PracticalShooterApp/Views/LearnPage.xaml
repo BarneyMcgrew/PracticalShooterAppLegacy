@@ -20,7 +20,7 @@
                         Command="{Binding SettingsTappedCommand}"
                         CommandParameter="{x:Reference settingsButton}"
                         Style="{StaticResource IconButtonStyle}"
-                        Text="{StaticResource BurgerMenu}" />
+                        Text="{StaticResource Category}" />
                 </controls:TitleView.TrailingView>
             </controls:TitleView>
             <!--  Chapter List View  -->

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reactive;
 using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Akavache;
 using PracticalShooterApp.Enums;
+using PracticalShooterApp.Models;
 
 namespace PracticalShooterApp.Clients
 {
@@ -60,7 +62,27 @@ namespace PracticalShooterApp.Clients
                         null));
             }
         }
-        
-        
+
+        public List<String> SelectedRegions
+        {
+            get
+            {
+                var task = Task.Run(async () =>
+                    await _settingsCache.GetOrCreateObject(
+                        nameof(SelectedRegions),
+                        () => new List<String>(),
+                        null));
+
+                return task.Result;
+            }
+            set
+            {
+                Task.Run(async () =>
+                    await _settingsCache.InsertObject(
+                        nameof(SelectedRegions),
+                        value,
+                        null));
+            }
+        }
     }
 }

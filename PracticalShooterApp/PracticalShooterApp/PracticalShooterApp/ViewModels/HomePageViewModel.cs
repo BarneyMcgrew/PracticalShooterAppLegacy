@@ -5,9 +5,11 @@ using System.Globalization;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
+using PracticalShooterApp.Clients;
 using PracticalShooterApp.Models;
 using PracticalShooterApp.Services;
 using PracticalShooterApp.Views;
+using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using NavigationModel = PracticalShooterApp.Models.NavigationModel;
@@ -19,14 +21,14 @@ namespace PracticalShooterApp.ViewModels
         #region Fields
 
         private Command<object> itemTappedCommand;
+        private Command<object> filterCheckedCommand;
 
         private List<HomeTilesModel> _navigationList =
             new List<HomeTilesModel>();
 
-        private string _selectedRegion;
-
         private IHomeTilesService _homeTilesService => DependencyService.Get<IHomeTilesService>();
         private IBrowserService _browserService => DependencyService.Get<IBrowserService>();
+        private SettingsClient _settingsClient => DependencyService.Get<SettingsClient>();
         
         #endregion
 
@@ -39,6 +41,15 @@ namespace PracticalShooterApp.ViewModels
 
         #region Properties
 
+        public Command<object> FilterCheckedCommand
+        {
+            get
+            {
+                return this.filterCheckedCommand ??
+                       (this.filterCheckedCommand = new Command<object>(this.FilterChecked));
+            }
+        }
+        
         /// <summary>
         /// Gets the command that will be executed when an item is selected.
         /// </summary>
@@ -46,7 +57,8 @@ namespace PracticalShooterApp.ViewModels
         {
             get
             {
-                return this.itemTappedCommand ?? (this.itemTappedCommand = new Command<object>(this.NavigateToNextPage));
+                return this.itemTappedCommand ?? 
+                       (this.itemTappedCommand = new Command<object>(this.NavigateToNextPage));
             }
         }
 
@@ -58,22 +70,29 @@ namespace PracticalShooterApp.ViewModels
             new ObservableCollection<HomeTilesModel>();
 
         [DataMember(Name = "regionFilter")]
-        public ObservableCollection<string> RegionFilter { get; set; } =
-            new ObservableCollection<string>();
-
-        public string SelectedRegion
-        {
-            get => _selectedRegion;
-            set
-            {
-                _selectedRegion = value;
-                SetProperty(ref _selectedRegion, value);
-            }
-        }
+        public ObservableCollection<RegionFilter> RegionFilter { get; set; } =
+            new ObservableCollection<RegionFilter>();
 
         #endregion
 
         #region Methods
+
+        private async void FilterChecked(object sender)
+        {
+            var selectedRegions = new List<string>();
+            
+            foreach (var filter in RegionFilter)
+            {
+                if (filter.RegionSelected)
+                {
+                    selectedRegions.Add(filter.RegionName);
+                }
+            }
+
+            _settingsClient.SelectedRegions = selectedRegions;
+            
+            RefreshUIFeed();
+        }
 
         /// <summary>
         /// Invoked when an item is selected from the navigation list.
@@ -129,17 +148,73 @@ namespace PracticalShooterApp.ViewModels
 
         private void UpdateTileList(List<HomeTilesModel> tileList)
         {
-            NavigationList.Clear();
-
+            _navigationList.Clear();
+            
             foreach (var homeTile in tileList.OrderBy(o => o.ItemOrder))
             {
-                NavigationList.Add(homeTile);
+                _navigationList.Add(homeTile);
+            }
+            
+            RefreshRegionUIFilters();
+            RefreshUIFeed();
+        }
+        
+        private void RefreshRegionUIFilters()
+        {
+            RegionFilter.Clear();
+            
+            var regionTextList = new List<string>();
+
+            foreach (var region in _navigationList
+                .Where(u => !string.IsNullOrWhiteSpace(u.Region))
+                .SelectMany(o => o.Region.Split(',')))
+            {
+                if (!regionTextList.Contains(region))
+                {
+                    var selected = _settingsClient.SelectedRegions.Contains(region);
+                    
+                    regionTextList.Add(region);
+                    RegionFilter.Add(new RegionFilter
+                    {
+                        RegionName = region,
+                        RegionSelected = selected
+                    });
+                }
             }
         }
 
         private void RefreshUIFeed()
         {
+            NavigationList.Clear();
 
+            if (!_settingsClient.SelectedRegions.Any())
+            {
+                _navigationList.ForEach(o => NavigationList.Add(o));
+            }
+            else
+            {
+                foreach (var homeTilesModel in _navigationList)
+                {
+                    var selected = false;
+                
+                    if (string.IsNullOrWhiteSpace(homeTilesModel.Region))
+                    {
+                        selected = true;
+                    }
+                    else
+                    {
+                        foreach (var region in homeTilesModel.Region.Split(','))
+                        {
+                            selected = _settingsClient.SelectedRegions.Contains(region);
+                        }
+                    }
+
+                    if (selected)
+                    {
+                        NavigationList.Add(homeTilesModel);
+                    }
+                }
+            }
         }
 
         #endregion
