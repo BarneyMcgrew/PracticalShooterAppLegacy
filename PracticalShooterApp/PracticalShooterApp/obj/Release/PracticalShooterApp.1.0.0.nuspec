@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>PracticalShooterApp</id>
+    <version>1.0.0</version>
+    <authors>PracticalShooterApp</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-android31.0">
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.200-preview.13.2865" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.200-preview.13.2865" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-ios15.2">
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.200-preview.13.2865" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.200-preview.13.2865" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-maccatalyst15.2">
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.200-preview.13.2865" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.200-preview.13.2865" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-windows10.0.19041">
+        <dependency id="Microsoft.Graphics.Win2D" version="1.0.0.30" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.200-preview.13.2865" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.200-preview.13.2865" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.WindowsAppSDK" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="F:\Github\PracticalShooterApp\PracticalShooterApp\PracticalShooterApp\bin\Release\net6.0-windows10.0.19041\win10-x64\PracticalShooterApp.runtimeconfig.json" target="lib\net6.0-windows10.0.19041\PracticalShooterApp.runtimeconfig.json" />
+    <file src="F:\Github\PracticalShooterApp\PracticalShooterApp\PracticalShooterApp\bin\Release\net6.0-windows10.0.19041\win10-x64\PracticalShooterApp.dll" target="lib\net6.0-windows10.0.19041\PracticalShooterApp.dll" />
+    <file src="F:\Github\PracticalShooterApp\PracticalShooterApp\PracticalShooterApp\bin\Release\net6.0-windows10.0.19041\win10-x64\resources.pri" target="lib\net6.0-windows10.0.19041\resources.pri" />
+  </files>
+</package>
