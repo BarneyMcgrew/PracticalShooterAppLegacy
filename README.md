@@ -15,6 +15,6 @@ This app incorporates the essentials a competitor would need including the rules
 ## Phase One Features
 - Rulebook Bookmark Feature
 - Add Tools Tab
--- Hit Factor Calculator
--- Training Par Timer
--- Briefing Creator
+  - Hit Factor Calculator
+  - Training Par Timer
+  - Briefing Creator
