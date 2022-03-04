@@ -10,6 +10,11 @@ This app incorporates the essentials a competitor would need including the rules
 - Home screen with customisable links to external sources (including RSS feeds) with region filter.
 - Events calendar with filtering of based on region and event types.
 - Rulebook with all disciplines and search functionality (should include hot links and tooltips).
+- Generic More Settings and other details (feedback and bug reporting).
 
 ## Phase One Features
-- 
+- Rulebook Bookmark Feature
+- Add Tools Tab
+-- Hit Factor Calculator
+-- Training Par Timer
+-- Briefing Creator
