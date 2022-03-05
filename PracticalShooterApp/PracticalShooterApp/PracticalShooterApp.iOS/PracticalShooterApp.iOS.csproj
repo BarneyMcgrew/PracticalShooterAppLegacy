@@ -112,7 +112,7 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <BundleResource Include="Resources\betaTesting.png" />
+    <BundleResource Include="Resources\BetaTesting.png" />
     <BundleResource Include="Resources\BugReport.png" />
     <BundleResource Include="Resources\Feedback.png" />
     <BundleResource Include="Resources\HomeIcon.png" />

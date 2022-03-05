@@ -10,6 +10,7 @@ using Xamarin.Forms;
 using Syncfusion.XForms.iOS.Buttons;
 using Syncfusion.XForms.iOS.PopupLayout;
 using Syncfusion.ListView.XForms.iOS;
+using Syncfusion.SfRotator.XForms.iOS;
 using Syncfusion.XForms.iOS.Border;
 using Syncfusion.XForms.iOS.EffectsView;
 
@@ -32,15 +33,16 @@ namespace PracticalShooterApp.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             SfListViewRenderer.Init();
+            SfEffectsViewRenderer.Init();
             SfCarouselRenderer.Init();
+            SfRotatorRenderer.Init();
             SfChipRenderer.Init();
             SfChipGroupRenderer.Init();         
             SfCheckBoxRenderer.Init();
             SfPopupLayoutRenderer.Init();
             SfButtonRenderer.Init();
             SfBorderRenderer.Init();
-            SfEffectsViewRenderer.Init();
-            
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

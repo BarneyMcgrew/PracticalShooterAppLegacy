@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -130,7 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PracticalShooterApp\PracticalShooterApp.csproj">
-      <Project>{0509793A-DB34-427B-9DA4-3E2F231E4CC3}</Project>
+      <Project>{355F1E5E-7767-4644-9668-7F078F05D0FF}</Project>
       <Name>PracticalShooterApp</Name>
     </ProjectReference>
   </ItemGroup>

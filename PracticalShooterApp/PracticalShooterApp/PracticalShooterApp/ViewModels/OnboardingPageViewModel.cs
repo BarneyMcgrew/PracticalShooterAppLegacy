@@ -88,7 +88,7 @@ namespace PracticalShooterApp.ViewModels
 
         private void ValidateUserOnboarding()
         {
-            var alreadyOnboarded = !VersionTracking.IsFirstLaunchForCurrentBuild;
+            var alreadyOnboarded = false; //!VersionTracking.IsFirstLaunchForCurrentBuild;
             
             if (alreadyOnboarded)
                 this.Skip(null);

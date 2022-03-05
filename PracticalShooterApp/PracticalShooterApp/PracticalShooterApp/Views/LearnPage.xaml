@@ -15,7 +15,7 @@
         <Grid RowDefinitions="Auto, *">
             <Grid.Margin>
                 <OnPlatform x:TypeArguments="Thickness">
-                    <On Platform="iOS" Value="0,30,0,0" />
+                    <On Platform="iOS" Value="0,40,0,0" />
                     <On Platform="Android, WinPhone, Windows" Value="0,0,0,0" />
                 </OnPlatform>
             </Grid.Margin>

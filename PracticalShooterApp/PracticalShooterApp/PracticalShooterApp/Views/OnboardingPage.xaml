@@ -12,6 +12,7 @@
              xmlns:viewModel="clr-namespace:PracticalShooterApp.ViewModels;assembly=PracticalShooterApp"
              ios:Page.UseSafeArea="False"
              Shell.NavBarIsVisible="False"
+             BackgroundColor="{StaticResource Primary}"
              x:Class="PracticalShooterApp.Views.OnboardingPage"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Resources>
@@ -23,6 +24,12 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <Grid RowDefinitions="50, *, Auto">
+            <Grid.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0,40,0,0" />
+                    <On Platform="Android, WinPhone, Windows" Value="0,0,0,0" />
+                </OnPlatform>
+            </Grid.Margin>
 
             <!--  Gradient view  -->
             <gradient:SfGradientView Grid.RowSpan="3" Style="{StaticResource OrangeGradientStyle}" />

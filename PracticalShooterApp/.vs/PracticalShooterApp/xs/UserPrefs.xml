@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{E0F7FDB0-D11C-4C4A-AF95-0E3658D7DC69}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PracticalShooterApp/PracticalShooterApp.Android/MainActivity.cs">
+    <Files>
+      <File FileName="PracticalShooterApp/PracticalShooterApp.Android/MainActivity.cs" Line="24" Column="72" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PracticalShooterApp" expanded="True">
+            <Node name="PracticalShooterApp" expanded="True" />
+            <Node name="PracticalShooterApp.Android" expanded="True">
+              <Node name="MainActivity.cs" selected="True" />
+            </Node>
+            <Node name="PracticalShooterApp.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.PracticalShooterApp.Android PreferredExecutionTarget="Android.Pixel_3_API_28" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
