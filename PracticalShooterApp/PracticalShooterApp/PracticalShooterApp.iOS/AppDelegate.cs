@@ -10,9 +10,25 @@ using Xamarin.Forms;
 using Syncfusion.XForms.iOS.Buttons;
 using Syncfusion.XForms.iOS.PopupLayout;
 using Syncfusion.ListView.XForms.iOS;
+using Syncfusion.SfCalendar.XForms.iOS;
+using Syncfusion.SfChart.XForms.iOS.Renderers;
+using Syncfusion.SfDataGrid.XForms.iOS;
+using Syncfusion.SfGauge.XForms.iOS;
+using Syncfusion.SfMaps.XForms.iOS;
+using Syncfusion.SfNumericUpDown.XForms.iOS;
+using Syncfusion.SfPullToRefresh.XForms.iOS;
+using Syncfusion.SfRating.XForms.iOS;
 using Syncfusion.SfRotator.XForms.iOS;
+using Syncfusion.XForms.iOS.BadgeView;
 using Syncfusion.XForms.iOS.Border;
+using Syncfusion.XForms.iOS.Cards;
+using Syncfusion.XForms.iOS.ComboBox;
+using Syncfusion.XForms.iOS.Core;
 using Syncfusion.XForms.iOS.EffectsView;
+using Syncfusion.XForms.iOS.Expander;
+using Syncfusion.XForms.iOS.Graphics;
+using Syncfusion.XForms.iOS.ProgressBar;
+using Syncfusion.XForms.iOS.TabView;
 
 namespace PracticalShooterApp.iOS
 {
@@ -32,16 +48,30 @@ namespace PracticalShooterApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            SfListViewRenderer.Init();
             SfEffectsViewRenderer.Init();
-            SfCarouselRenderer.Init();
-            SfRotatorRenderer.Init();
-            SfChipRenderer.Init();
-            SfChipGroupRenderer.Init();         
-            SfCheckBoxRenderer.Init();
-            SfPopupLayoutRenderer.Init();
+            this.LoadApplication(new App());
             SfButtonRenderer.Init();
+            SfCheckBoxRenderer.Init();
+            SfDataGridRenderer.Init();
             SfBorderRenderer.Init();
+            SfGradientViewRenderer.Init();
+            SfListViewRenderer.Init();
+            SfRatingRenderer.Init();
+            SfRotatorRenderer.Init();
+            SfComboBoxRenderer.Init();
+            SfRadioButtonRenderer.Init();
+            SfPopupLayoutRenderer.Init();
+            SfExpanderRenderer.Init();
+            SfCardViewRenderer.Init();
+            SfBadgeViewRenderer.Init();
+            SfSegmentedControlRenderer.Init();
+            Core.Init();
+            SfMapsRenderer.Init();
+            SfTabViewRenderer.Init();
+            SfCalendarRenderer.Init();
+            SfLinearProgressBarRenderer.Init();
+            SfChartRenderer.Init();
+            SfGaugeRenderer.Init();
 
             LoadApplication(new App());
 
