@@ -112,12 +112,20 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <BundleResource Include="Resources\betaTesting.png" />
+    <BundleResource Include="Resources\BugReport.png" />
+    <BundleResource Include="Resources\Feedback.png" />
+    <BundleResource Include="Resources\HomeIcon.png" />
     <BundleResource Include="Resources\icon_about.png" />
     <BundleResource Include="Resources\icon_about%402x.png" />
     <BundleResource Include="Resources\icon_about%403x.png" />
     <BundleResource Include="Resources\icon_feed.png" />
     <BundleResource Include="Resources\icon_feed%402x.png" />
     <BundleResource Include="Resources\icon_feed%403x.png" />
+    <BundleResource Include="Resources\LearnIcon.png" />
+    <BundleResource Include="Resources\MoreIcon.png" />
+    <BundleResource Include="Resources\Thanks.png" />
+    <BundleResource Include="Resources\WorkInProgress.png" />
     <BundleResource Include="Resources\xamarin_logo.png" />
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />

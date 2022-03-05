@@ -85,5 +85,10 @@ namespace PracticalShooterApp.Views
         {
             calendar.SelectedDate = DateTime.Now;
         }
+
+        private void filterButton_OnClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

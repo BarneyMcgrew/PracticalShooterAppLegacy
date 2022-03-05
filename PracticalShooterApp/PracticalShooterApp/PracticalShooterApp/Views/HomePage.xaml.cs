@@ -28,9 +28,9 @@ namespace PracticalShooterApp.Views
             _viewModel.PopulateHomeTiles();
         }
 
-        private void settingsButton_Clicked(object sender, EventArgs e)
+        private void filterButton_Clicked(object sender, EventArgs e)
         {
-            popupSettings.Show();            
+            popupHome.Show();            
         }
 
         private void ToggleButton_OnStateChanged(object sender, StateChangedEventArgs e)

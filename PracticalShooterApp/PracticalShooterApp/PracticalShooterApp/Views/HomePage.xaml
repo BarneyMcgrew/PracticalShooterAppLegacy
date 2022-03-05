@@ -15,9 +15,16 @@
     xmlns:vm="clr-namespace:PracticalShooterApp.ViewModels"
     x:Name="Home"
     Title="{Binding Title}"
+    BackgroundColor="{StaticResource Primary}"
     Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <sfPopup:SfPopupLayout x:Name="popupSettings">
+        <sfPopup:SfPopupLayout x:Name="popupHome">
+            <sfPopup:SfPopupLayout.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0,30,0,0" />
+                    <On Platform="Android, WinPhone, Windows" Value="0,0,0,0" />
+                </OnPlatform>
+            </sfPopup:SfPopupLayout.Margin>
             <sfPopup:SfPopupLayout.PopupView>
                 <sfPopup:PopupView
                     AnimationMode="Fade"
@@ -28,8 +35,8 @@
                     ShowHeader="False">
                     <sfPopup:PopupView.PopupStyle>
                         <sfPopup:PopupStyle
-                            BorderColor="{StaticResource PrimaryLight}"
-                            BorderThickness="5"
+                            BorderColor="{StaticResource Tertiary}"
+                            BorderThickness="1"
                             CornerRadius="20"/>
                     </sfPopup:PopupView.PopupStyle>
                     <sfPopup:PopupView.ContentTemplate>
@@ -53,6 +60,8 @@
                                     
                                     <listView:SfListView
                                         Grid.Row="2"
+                                        Margin="15,0"
+                                        SelectionMode="None"
                                         ItemsSource="{Binding RegionFilter}">
                                         <listView:SfListView.ItemTemplate>
                                             <DataTemplate>
@@ -84,8 +93,8 @@
                     <controls:TitleView Title="Home" Grid.Row="0">
                         <controls:TitleView.TrailingView>
                             <buttons:SfButton
-                                x:Name="settingsButton"
-                                Clicked="settingsButton_Clicked"
+                                x:Name="filterButton"
+                                Clicked="filterButton_Clicked"
                                 Style="{StaticResource IconButtonStyle}"
                                 Text="{StaticResource Filter}" />
                         </controls:TitleView.TrailingView>
@@ -96,6 +105,7 @@
                         <listView:SfListView
                             x:Name="navigationList"
                             AutoFitMode="Height"
+                            BackgroundColor="Red"
                             IsScrollBarVisible="false"
                             ItemSpacing="{core:OnPlatformOrientationThickness PhonePortrait='0,11,0,0',
                                                                               PhoneLandscape='0,11,0,0',
@@ -165,6 +175,7 @@
 
                                                 </syncEffectsView:SfEffectsView>
                                             </controls:CustomShadowFrame>
+                                            <Label Text="This is a row"></Label>
                                         </Grid>
                                     </ViewCell>
                                 </DataTemplate>

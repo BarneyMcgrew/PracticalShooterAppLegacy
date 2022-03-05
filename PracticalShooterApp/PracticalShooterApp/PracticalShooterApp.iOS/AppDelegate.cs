@@ -9,6 +9,9 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Syncfusion.XForms.iOS.Buttons;
 using Syncfusion.XForms.iOS.PopupLayout;
+using Syncfusion.ListView.XForms.iOS;
+using Syncfusion.XForms.iOS.Border;
+using Syncfusion.XForms.iOS.EffectsView;
 
 namespace PracticalShooterApp.iOS
 {
@@ -28,12 +31,16 @@ namespace PracticalShooterApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            SfListViewRenderer.Init();
             SfCarouselRenderer.Init();
             SfChipRenderer.Init();
             SfChipGroupRenderer.Init();         
             SfCheckBoxRenderer.Init();
             SfPopupLayoutRenderer.Init();
-
+            SfButtonRenderer.Init();
+            SfBorderRenderer.Init();
+            SfEffectsViewRenderer.Init();
+            
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

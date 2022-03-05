@@ -9,18 +9,33 @@
     xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
     xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
     xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    BackgroundColor="{StaticResource Primary}"
     Shell.NavBarIsVisible="False">
     <ContentPage.Content>
         <Grid RowDefinitions="Auto, *">
+            <Grid.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0,30,0,0" />
+                    <On Platform="Android, WinPhone, Windows" Value="0,0,0,0" />
+                </OnPlatform>
+            </Grid.Margin>
             <!--  Title View  -->
             <controls:TitleView Title="Learn" Grid.Row="0">
-                <controls:TitleView.TrailingView>
+                <controls:TitleView.LeadingView>
                     <buttons:SfButton
                         x:Name="settingsButton"
                         Command="{Binding SettingsTappedCommand}"
                         CommandParameter="{x:Reference settingsButton}"
                         Style="{StaticResource IconButtonStyle}"
                         Text="{StaticResource Category}" />
+                </controls:TitleView.LeadingView>
+                <controls:TitleView.TrailingView>
+                    <buttons:SfButton
+                        x:Name="searchButton"
+                        Command="{Binding SettingsTappedCommand}"
+                        CommandParameter="{x:Reference settingsButton}"
+                        Style="{StaticResource IconButtonStyle}"
+                        Text="{StaticResource Search}" />
                 </controls:TitleView.TrailingView>
             </controls:TitleView>
             <!--  Chapter List View  -->

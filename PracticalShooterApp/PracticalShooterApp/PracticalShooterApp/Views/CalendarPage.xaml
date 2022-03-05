@@ -21,6 +21,13 @@
                         Style="{StaticResource IconButtonStyle}"
                         Text="{StaticResource Back}" />
                 </controls:TitleView.LeadingView>
+                <controls:TitleView.TrailingView>
+                    <buttons:SfButton
+                        x:Name="filterButton"
+                        Clicked="filterButton_OnClicked"
+                        Style="{StaticResource IconButtonStyle}"
+                        Text="{StaticResource Filter}" />
+                </controls:TitleView.TrailingView>
             </controls:TitleView>
             
             <xForms:SfCalendar Grid.Row="1" 
