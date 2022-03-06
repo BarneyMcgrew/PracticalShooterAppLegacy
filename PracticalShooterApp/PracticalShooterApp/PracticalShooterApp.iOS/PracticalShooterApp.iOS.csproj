@@ -130,6 +130,7 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -178,7 +179,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\PracticalShooterApp\PracticalShooterApp.csproj">
-      <Project>{0509793A-DB34-427B-9DA4-3E2F231E4CC3}</Project>
+      <Project>{355F1E5E-7767-4644-9668-7F078F05D0FF}</Project>
       <Name>PracticalShooterApp</Name>
     </ProjectReference>
   </ItemGroup>
