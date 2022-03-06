@@ -5,12 +5,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
     xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-    xmlns:converter="clr-namespace:PracticalShooterApp.Converters"
-    xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-    xmlns:local="clr-namespace:PracticalShooterApp.Templates"    
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="False"
     Shell.NavBarIsVisible="False"
     x:Name="EventDetail"
-    BackgroundColor="{StaticResource Gray-Bg}"
+    BackgroundColor="{StaticResource Primary}"
     NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <ScrollView VerticalScrollBarVisibility="Never">

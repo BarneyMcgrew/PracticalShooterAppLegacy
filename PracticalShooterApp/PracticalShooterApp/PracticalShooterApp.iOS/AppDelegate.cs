@@ -10,6 +10,7 @@ using Xamarin.Forms;
 using Syncfusion.XForms.iOS.Buttons;
 using Syncfusion.XForms.iOS.PopupLayout;
 using Syncfusion.ListView.XForms.iOS;
+using Syncfusion.SfBusyIndicator.XForms.iOS;
 using Syncfusion.SfCalendar.XForms.iOS;
 using Syncfusion.SfChart.XForms.iOS.Renderers;
 using Syncfusion.SfDataGrid.XForms.iOS;
@@ -72,8 +73,10 @@ namespace PracticalShooterApp.iOS
             SfLinearProgressBarRenderer.Init();
             SfChartRenderer.Init();
             SfGaugeRenderer.Init();
+            SfBusyIndicatorRenderer.Init();
 
             LoadApplication(new App());
+            app.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
 
             return base.FinishedLaunching(app, options);
         }

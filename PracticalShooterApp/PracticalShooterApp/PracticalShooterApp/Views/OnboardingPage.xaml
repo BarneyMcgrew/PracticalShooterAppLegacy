@@ -9,7 +9,6 @@
              xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
              xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-             xmlns:viewModel="clr-namespace:PracticalShooterApp.ViewModels;assembly=PracticalShooterApp"
              ios:Page.UseSafeArea="False"
              Shell.NavBarIsVisible="False"
              BackgroundColor="{StaticResource Primary}"
@@ -23,13 +22,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <Grid RowDefinitions="50, *, Auto">
-            <Grid.Margin>
-                <OnPlatform x:TypeArguments="Thickness">
-                    <On Platform="iOS" Value="0,40,0,0" />
-                    <On Platform="Android, WinPhone, Windows" Value="0,0,0,0" />
-                </OnPlatform>
-            </Grid.Margin>
+        <Grid RowDefinitions="100, *, Auto">
 
             <!--  Gradient view  -->
             <gradient:SfGradientView Grid.RowSpan="3" Style="{StaticResource OrangeGradientStyle}" />
@@ -40,7 +33,7 @@
                 Grid.Row="0"
                 Margin="{core:OnPlatformOrientationThickness AndroidPhonePortrait='0,10,10,0',
                                                              AndroidPhoneLandscape='0,10,10,0',
-                                                             iOSPhonePortrait='0,20,10,0',
+                                                             iOSPhonePortrait='0,40,10,0',
                                                              iOSPhoneLandscape='0,10,10,0'}"
                 Command="{Binding SkipCommand}"
                 CornerRadius="20"

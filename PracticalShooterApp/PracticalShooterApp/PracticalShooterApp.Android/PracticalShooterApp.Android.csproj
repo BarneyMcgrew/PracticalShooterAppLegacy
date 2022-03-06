@@ -22,6 +22,7 @@
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <AndroidSupportedAbis>armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,6 +56,7 @@
     <Reference Include="System.Numerics.Vectors" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="Mono.Android.Export" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="akavache">
@@ -62,22 +64,34 @@
     </PackageReference>
     <PackageReference Include="Plugin.CurrentActivity" Version="2.1.0.4" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
-    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.4.0.52" />
-    <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.4.0.52" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.4.0.54" />
+    <PackageReference Include="Syncfusion.Xamarin.Cards" Version="19.4.0.54" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.4.0.54" />
+    <PackageReference Include="Syncfusion.Xamarin.Expander" Version="19.4.0.54" />
+    <PackageReference Include="Syncfusion.Xamarin.SfBadgeView" Version="19.4.0.54" />
     <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator">
-      <Version>19.4.0.52</Version>
+      <Version>19.4.0.54</Version>
     </PackageReference>
-    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="19.4.0.52" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="19.4.0.54" />
     <PackageReference Include="Syncfusion.Xamarin.SfCarousel">
-      <Version>19.4.0.52</Version>
+      <Version>19.4.0.54</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="19.4.0.54" />
+    <PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="19.4.0.54" />
+    <PackageReference Include="Syncfusion.Xamarin.SfGauge" Version="19.4.0.54" />
     <PackageReference Include="Syncfusion.Xamarin.SfListView">
-      <Version>19.4.0.52</Version>
+      <Version>19.4.0.54</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfMaps" Version="19.4.0.54" />
+    <PackageReference Include="Syncfusion.Xamarin.SfNumericUpDown" Version="19.4.0.54" />
     <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout">
-      <Version>19.4.0.52</Version>
+      <Version>19.4.0.54</Version>
     </PackageReference>
-    <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="19.4.0.52" />
+    <PackageReference Include="Syncfusion.Xamarin.SfProgressBar" Version="19.4.0.54" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPullToRefresh" Version="19.4.0.54" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="19.4.0.54" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="19.4.0.54" />
+    <PackageReference Include="Syncfusion.Xamarin.SfTabView" Version="19.4.0.54" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
   </ItemGroup>

@@ -11,11 +11,18 @@
     xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:syncEffectsView="clr-namespace:Syncfusion.XForms.EffectsView;assembly=Syncfusion.Core.XForms"
     xmlns:template="clr-namespace:PracticalShooterApp.Templates"
+    BackgroundColor="{StaticResource Primary}"
     xmlns:viewmodels="clr-namespace:PracticalShooterApp.ViewModels"
     x:Name="RSS"
     Shell.NavBarIsVisible="False">
     <ContentPage.Content>
         <Grid RowDefinitions="Auto, Auto, *">
+            <Grid.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0,25,0,0" />
+                    <On Platform="Android, WinPhone, Windows" Value="0,0,0,0" />
+                </OnPlatform>
+            </Grid.Margin>
             <Grid
                 Grid.Row="0"
                 Padding="0,8,0,0"
@@ -99,8 +106,8 @@
                                 <controls:CustomShadowFrame
                                     Margin="5,2,5,5"
                                     Padding="0"
-                                    BackgroundColor="{DynamicResource GrayShadowColor}"
-                                    BorderColor="{DynamicResource GrayShadowColor}"
+                                    BackgroundColor="{DynamicResource PrimaryDark}"
+                                    BorderColor="{DynamicResource PrimaryDark}"
                                     BorderWidth="1"
                                     CornerRadius="4"
                                     HasShadow="True"

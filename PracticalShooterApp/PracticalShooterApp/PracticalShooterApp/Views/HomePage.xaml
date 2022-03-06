@@ -21,7 +21,7 @@
         <sfPopup:SfPopupLayout x:Name="popupHome">
             <sfPopup:SfPopupLayout.Margin>
                 <OnPlatform x:TypeArguments="Thickness">
-                    <On Platform="iOS" Value="0,40,0,0" />
+                    <On Platform="iOS" Value="0,25,0,0" />
                     <On Platform="Android, WinPhone, Windows" Value="0,0,0,0" />
                 </OnPlatform>
             </sfPopup:SfPopupLayout.Margin>
@@ -105,7 +105,6 @@
                         <listView:SfListView
                             x:Name="navigationList"
                             AutoFitMode="Height"
-                            BackgroundColor="Red"
                             IsScrollBarVisible="false"
                             ItemSpacing="{core:OnPlatformOrientationThickness PhonePortrait='0,11,0,0',
                                                                               PhoneLandscape='0,11,0,0',
@@ -120,11 +119,11 @@
                                             <controls:CustomShadowFrame
                                                 Margin="5,2,5,5"
                                                 Padding="0"
-                                                BackgroundColor="{DynamicResource GrayShadowColor}"
-                                                BorderColor="{DynamicResource GrayShadowColor}"
+                                                BackgroundColor="{DynamicResource PrimaryDark}"
+                                                BorderColor="{DynamicResource PrimaryDark}"
                                                 BorderWidth="1"
                                                 CornerRadius="4"
-                                                HasShadow="True"
+                                                HasShadow="False"
                                                 HorizontalOptions="FillAndExpand"
                                                 IsVisible="{Binding UseTileCard}"
                                                 Radius="4"
@@ -150,11 +149,11 @@
                                             <controls:CustomShadowFrame
                                                 Margin="5,2,5,5"
                                                 Padding="0"
-                                                BackgroundColor="{DynamicResource GrayShadowColor}"
-                                                BorderColor="{DynamicResource GrayShadowColor}"
+                                                BackgroundColor="{DynamicResource PrimaryDark}"
+                                                BorderColor="{DynamicResource PrimaryDark}"
                                                 BorderWidth="1"
                                                 CornerRadius="4"
-                                                HasShadow="True"
+                                                HasShadow="False"
                                                 HorizontalOptions="FillAndExpand"
                                                 IsVisible="{Binding UseListCard}"
                                                 Radius="4"
@@ -175,7 +174,6 @@
 
                                                 </syncEffectsView:SfEffectsView>
                                             </controls:CustomShadowFrame>
-                                            <Label Text="This is a row"></Label>
                                         </Grid>
                                     </ViewCell>
                                 </DataTemplate>
@@ -193,7 +191,7 @@
                             BackgroundColor="{StaticResource Primary}"
                             IsBusy="{Binding IsBusy}"
                             TextColor="{StaticResource Tertiary}"
-                            Duration="0.5" />
+                            Duration="0.5" /> 
                     </Grid>
                 </Grid>
             </sfPopup:SfPopupLayout.Content>

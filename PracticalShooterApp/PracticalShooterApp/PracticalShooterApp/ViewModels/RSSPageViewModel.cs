@@ -165,18 +165,15 @@ namespace PracticalShooterApp.ViewModels
             RefreshUIFeed();
         }
 
-        private async void NavigateToNextPage(object selectedItem)
+        private void NavigateToNextPage(object selectedItem)
         {
             var rssItem = (RSSFeedModel.RSSFeedItem)selectedItem;
 
             if (rssItem == null)
                 return;
-
-            await Task.Run(() =>
-            {
-                var uri = new Uri(rssItem.PostLink);
-                _browserService.GoToLink(uri);
-            });            
+            
+            var uri = new Uri(rssItem.PostLink);
+            _browserService.GoToLink(uri);      
         }
 
         public Command<object> BackButtonCommand => this.backButtonCommand ??

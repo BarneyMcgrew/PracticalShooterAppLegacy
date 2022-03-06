@@ -6,12 +6,19 @@
              xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
              xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
              xmlns:themes="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             BackgroundColor="{StaticResource Primary}"
              Title="Match Calendar"
              Shell.NavBarIsVisible="False"
              x:Name="Calendar"
              x:Class="PracticalShooterApp.Views.CalendarPage">
     <ContentPage.Content>
         <Grid RowDefinitions="Auto, *">
+            <Grid.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0,25,0,0" />
+                    <On Platform="Android, WinPhone, Windows" Value="0,0,0,0" />
+                </OnPlatform>
+            </Grid.Margin>
             <controls:TitleView Title="Events Calendar" Grid.Row="0">
                 <controls:TitleView.LeadingView>
                     <buttons:SfButton
