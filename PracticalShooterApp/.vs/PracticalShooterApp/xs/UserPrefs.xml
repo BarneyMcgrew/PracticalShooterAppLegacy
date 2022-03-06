@@ -18,13 +18,10 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.PracticalShooterApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C2234D06-CBF8-4380-9D3D-E46789F4CE64" />
+  <MonoDevelop.Ide.ItemProperties.PracticalShooterApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F4F53E31-52BB-43AC-9A21-F604A23696A1" />
   <MonoDevelop.Ide.ItemProperties.PracticalShooterApp.Android PreferredExecutionTarget="Android.Pixel_3_API_28" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
