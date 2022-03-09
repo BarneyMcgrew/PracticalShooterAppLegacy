@@ -133,5 +133,8 @@
     <Compile Update="Helpers\RSSItemHelper.cs">
       <DependentUpon>IRSSItemHelper.cs</DependentUpon>
     </Compile>
+    <Compile Update="Helpers\ActionBarHelper.cs">
+      <DependentUpon>IActionBarHelper.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

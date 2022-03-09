@@ -18,13 +18,7 @@
     BackgroundColor="{StaticResource Primary}"
     Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <sfPopup:SfPopupLayout x:Name="popupHome">
-            <sfPopup:SfPopupLayout.Margin>
-                <OnPlatform x:TypeArguments="Thickness">
-                    <On Platform="iOS" Value="0,25,0,0" />
-                    <On Platform="Android, WinPhone, Windows" Value="0,0,0,0" />
-                </OnPlatform>
-            </sfPopup:SfPopupLayout.Margin>
+        <sfPopup:SfPopupLayout x:Name="popUpHome">
             <sfPopup:SfPopupLayout.PopupView>
                 <sfPopup:PopupView
                     AnimationMode="Fade"
