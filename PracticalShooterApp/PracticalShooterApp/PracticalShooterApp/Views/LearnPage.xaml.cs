@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using PracticalShooterApp.Clients;
 using PracticalShooterApp.DataModels;
 using PracticalShooterApp.Enums;
+using PracticalShooterApp.Helpers;
 using PracticalShooterApp.Models;
 using PracticalShooterApp.ViewModels;
 using Xamarin.Forms;
@@ -16,6 +17,8 @@ namespace PracticalShooterApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LearnPage : ContentPage
     {
+        private IActionBarHelper _actionBarHelper => DependencyService.Get<IActionBarHelper>();
+
         private readonly LearnPageViewModel _viewModel = new LearnPageViewModel();
         
         public LearnPage()
@@ -38,6 +41,17 @@ namespace PracticalShooterApp.Views
                     return item.ChapterGrouping;
                 }
             });
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            SetHeaderSafeArea();
+        }
+
+        private void SetHeaderSafeArea()
+        {
+            mainGrid.Margin = new Thickness(0, _actionBarHelper.GetTopSafeArea(), 0,0);
         }
     }
 }

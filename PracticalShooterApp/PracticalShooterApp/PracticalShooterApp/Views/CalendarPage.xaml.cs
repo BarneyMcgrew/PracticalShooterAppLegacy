@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PracticalShooterApp.Helpers;
 using PracticalShooterApp.ViewModels;
 using Syncfusion.SfCalendar.XForms;
 using Xamarin.Forms;
@@ -13,6 +14,8 @@ namespace PracticalShooterApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CalendarPage : ContentPage
     {
+        private IActionBarHelper _actionBarHelper => DependencyService.Get<IActionBarHelper>();
+
         private readonly CalendarPageViewModel _viewModel = new CalendarPageViewModel();
     
         public CalendarPage()
@@ -62,6 +65,7 @@ namespace PracticalShooterApp.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            SetHeaderSafeArea();
 
             try
             {
@@ -89,6 +93,11 @@ namespace PracticalShooterApp.Views
         private void filterButton_OnClicked(object sender, EventArgs e)
         {
             throw new NotImplementedException();
+        }
+        
+        private void SetHeaderSafeArea()
+        {
+            mainGrid.Margin = new Thickness(0, _actionBarHelper.GetTopSafeArea(), 0,0);
         }
     }
 }
