@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Windows.Input;
+using PracticalShooterApp.Clients;
 using PracticalShooterApp.Models;
 using PracticalShooterApp.Services;
 using PracticalShooterApp.Views;
@@ -16,8 +17,13 @@ namespace PracticalShooterApp.ViewModels
     {
         private Command<object> backButtonCommand;
         private Command<object> itemTappedCommand;
+        private Command<object> filterCheckedCommand;
+
+        private List<CalendarEntriesModel> _calendarEntriesList = 
+            new List<CalendarEntriesModel>();
 
         private ICalendarEntriesService _calendarEntriesService => DependencyService.Get<ICalendarEntriesService>();
+        private SettingsClient _settingsClient => DependencyService.Get<SettingsClient>();
         
         public CalendarPageViewModel()
         {
@@ -26,15 +32,25 @@ namespace PracticalShooterApp.ViewModels
             PopulateCalendarEntries();
         }
         
+        public Command<object> FilterCheckedCommand
+        {
+            get
+            {
+                return this.filterCheckedCommand ??
+                       (this.filterCheckedCommand = new Command<object>(this.FilterChecked));
+            }
+        }
+        
         public Command<object> BackButtonCommand => this.backButtonCommand ?? 
                                                     (this.backButtonCommand = new Command<object>(this.BackButtonClicked));
 
         [DataMember(Name = "calendarEntries")]
         public CalendarEventCollection InlineCalendarEntries { get; set; } =
             new CalendarEventCollection();
-
-        public List<CalendarEntriesModel> CalendarEntries { get; set; } =
-            new List<CalendarEntriesModel>();
+        
+        [DataMember(Name = "regionFilter")]
+        public ObservableCollection<RegionFilter> RegionFilter { get; set; } =
+            new ObservableCollection<RegionFilter>();
         
         public Command<object> ItemTappedCommand
         {
@@ -64,7 +80,7 @@ namespace PracticalShooterApp.ViewModels
 
             var cachedCalendarEntries = await _calendarEntriesService.GetCalendarEntries();
 
-            UpdateCalendar(cachedCalendarEntries);
+            UpdateCalendarListings(cachedCalendarEntries);
 
             if (cachedCalendarEntries.Count > 0)
             {
@@ -75,21 +91,97 @@ namespace PracticalShooterApp.ViewModels
 
             if (updatedCalendarEntries.Count > 0)
             {
-                UpdateCalendar(updatedCalendarEntries);
+                UpdateCalendarListings(updatedCalendarEntries);
             }
 
             IsBusy = false;
         }
 
-        public void UpdateCalendar(List<CalendarEntriesModel> calendarEntriesList)
+        public void UpdateCalendarListings(List<CalendarEntriesModel> calendarEntriesList)
         {
-            InlineCalendarEntries.Clear();
-            CalendarEntries.Clear();
+            _calendarEntriesList.Clear();
 
             foreach (var calendarEntriesModel in calendarEntriesList)
             {
-                CalendarEntries.Add(calendarEntriesModel);
-                InlineCalendarEntries.Add(calendarEntriesModel.ToInlineEvent());
+                _calendarEntriesList.Add(calendarEntriesModel);
+            }
+            
+            RefreshRegionUIFilters();
+            RefreshUIFeed();
+        }
+
+        public async void FilterChecked(object sender)
+        {
+            var selectedCountries = new List<string>();
+            
+            foreach (var filter in RegionFilter)
+            {
+                if (filter.RegionSelected)
+                {
+                    selectedCountries.Add(filter.RegionName);
+                }
+            }
+
+            _settingsClient.SelectedCountries = selectedCountries;
+            
+            RefreshUIFeed();
+        }
+        
+        private void RefreshRegionUIFilters()
+        {
+            RegionFilter.Clear();
+            
+            var regionTextList = new List<string>();
+
+            foreach (var region in _calendarEntriesList
+                         .Where(u => !string.IsNullOrWhiteSpace(u.EventCountry))
+                         .SelectMany(o => o.EventCountry.Split(',')))
+            {
+                if (!regionTextList.Contains(region))
+                {
+                    var selected = _settingsClient.SelectedCountries.Contains(region);
+                    
+                    regionTextList.Add(region);
+                    RegionFilter.Add(new RegionFilter
+                    {
+                        RegionName = region,
+                        RegionSelected = selected
+                    });
+                }
+            }
+        }
+        
+        private void RefreshUIFeed()
+        {
+            InlineCalendarEntries.Clear();
+
+            if (!_settingsClient.SelectedCountries.Any())
+            {
+                _calendarEntriesList.ForEach(o => InlineCalendarEntries.Add(o.ToInlineEvent()));
+            }
+            else
+            {
+                foreach (var homeTilesModel in _calendarEntriesList)
+                {
+                    var selected = false;
+                
+                    if (string.IsNullOrWhiteSpace(homeTilesModel.EventCountry))
+                    {
+                        selected = true;
+                    }
+                    else
+                    {
+                        foreach (var region in homeTilesModel.EventCountry.Split(','))
+                        {
+                            selected = _settingsClient.SelectedCountries.Contains(region);
+                        }
+                    }
+
+                    if (selected)
+                    {
+                        InlineCalendarEntries.Add(homeTilesModel.ToInlineEvent());
+                    }
+                }
             }
         }
     }

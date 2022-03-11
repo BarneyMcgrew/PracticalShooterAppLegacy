@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using PracticalShooterApp.Helpers;
 using PracticalShooterApp.ViewModels;
 using Syncfusion.SfCalendar.XForms;
+using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -92,12 +93,17 @@ namespace PracticalShooterApp.Views
 
         private void filterButton_OnClicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            popupCalendar.Show();
         }
         
         private void SetHeaderSafeArea()
         {
-            mainGrid.Margin = new Thickness(0, _actionBarHelper.GetTopSafeArea(), 0,0);
+            popupCalendar.Margin = new Thickness(0, _actionBarHelper.GetTopSafeArea(), 0,0);
+        }
+        
+        private void ToggleButton_OnStateChanged(object sender, StateChangedEventArgs e)
+        {
+            _viewModel.FilterCheckedCommand.Execute(sender);
         }
     }
 }

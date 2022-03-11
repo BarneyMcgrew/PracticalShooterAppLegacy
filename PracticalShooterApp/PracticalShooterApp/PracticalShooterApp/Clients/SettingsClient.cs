@@ -84,5 +84,27 @@ namespace PracticalShooterApp.Clients
                         null));
             }
         }
+        
+        public List<String> SelectedCountries
+        {
+            get
+            {
+                var task = Task.Run(async () =>
+                    await _settingsCache.GetOrCreateObject(
+                        nameof(SelectedCountries),
+                        () => new List<String>(),
+                        null));
+
+                return task.Result;
+            }
+            set
+            {
+                Task.Run(async () =>
+                    await _settingsCache.InsertObject(
+                        nameof(SelectedCountries),
+                        value,
+                        null));
+            }
+        }
     }
 }
