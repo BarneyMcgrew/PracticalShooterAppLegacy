@@ -131,7 +131,8 @@ namespace PracticalShooterApp.ViewModels
 
         private async void BackButtonClicked(object obj)
         {
-            await Shell.Current.GoToAsync("//CalendarPage");
+            await Shell.Current.Navigation.PopModalAsync();
+            //await Shell.Current.GoToAsync("..");
         }
 
         private void GoToLinkClicked()

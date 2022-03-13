@@ -46,5 +46,10 @@ namespace PracticalShooterApp.Views
         {
             _viewModel.FilterCheckedCommand.Execute(sender);
         }
+
+        private void mailButton_Clicked(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+        }
     }
 }

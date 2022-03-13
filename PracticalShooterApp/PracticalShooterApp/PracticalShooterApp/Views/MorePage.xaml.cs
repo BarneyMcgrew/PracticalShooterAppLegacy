@@ -39,7 +39,7 @@ namespace PracticalShooterApp.Views
 
         private async void eventsCalendar_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("//CalendarPage");
+            await Shell.Current.GoToAsync($"{Shell.Current.CurrentState.Location}/{nameof(CalendarPage)}");
         }
 
         private void hitFactorCalculator_Clicked(object sender, EventArgs e)

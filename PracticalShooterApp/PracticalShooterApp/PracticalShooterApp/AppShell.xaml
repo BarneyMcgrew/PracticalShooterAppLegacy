@@ -42,7 +42,7 @@
         <ShellContent Route="CalendarPage" ContentTemplate="{DataTemplate local:CalendarPage}" />
     </TabBar>
 
-        <TabBar>
+    <TabBar>
         <ShellContent Route="HomePage" Title="Home" Icon="HomeIcon.png" ContentTemplate="{DataTemplate local:HomePage}"/>
         <ShellContent Route="LearnPage" Title="Learn" Icon="LearnIcon.png" ContentTemplate="{DataTemplate local:LearnPage}"/>
         <ShellContent Route="MorePage" Title="More" Icon="MoreIcon.png" ContentTemplate="{DataTemplate local:MorePage}"/>

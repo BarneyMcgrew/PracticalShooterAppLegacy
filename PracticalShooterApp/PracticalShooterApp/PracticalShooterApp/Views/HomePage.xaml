@@ -92,6 +92,15 @@
                                 Style="{StaticResource IconButtonStyle}"
                                 Text="{StaticResource Filter}" />
                         </controls:TitleView.TrailingView>
+                        <controls:TitleView.LeadingView>
+                            <buttons:SfButton
+                                x:Name="mailButton"
+                                Clicked="mailButton_Clicked"
+                                TextColor="{StaticResource PrimaryDark}"
+                                IsEnabled="False"
+                                Style="{StaticResource IconButtonStyle}"
+                                Text="{StaticResource Mail}" />
+                        </controls:TitleView.LeadingView>
                     </controls:TitleView>
 
                     <Grid Grid.Row="1" Padding="{core:OnPlatformOrientationThickness Default='11,0', TabletPortrait='20,16,20,0', TabletLandscape='20,16,20,0', Desktop='20,24,20,0'}">

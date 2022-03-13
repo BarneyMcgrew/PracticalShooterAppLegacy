@@ -26,6 +26,8 @@ namespace PracticalShooterApp.ViewModels
         public async void PopulateSectionsList()
         {
             IsBusy = true;
+            
+            SectionsList.Clear();
 
             var chapterList = await _chapterService.GetChaptersFromCurrentRulebook();
 

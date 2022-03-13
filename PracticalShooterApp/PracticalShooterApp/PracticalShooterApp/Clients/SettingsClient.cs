@@ -106,5 +106,27 @@ namespace PracticalShooterApp.Clients
                         null));
             }
         }
+
+        public String LastNavigatedPage
+        {
+            get
+            {
+                var task = Task.Run(async () =>
+                    await _settingsCache.GetOrCreateObject(
+                        nameof(LastNavigatedPage),
+                        () => String.Empty,
+                        null));
+
+                return task.Result;
+            }
+            set
+            {
+                Task.Run(async () =>
+                    await _settingsCache.InsertObject(
+                        nameof(LastNavigatedPage),
+                        value,
+                        null));
+            }
+        }
     }
 }

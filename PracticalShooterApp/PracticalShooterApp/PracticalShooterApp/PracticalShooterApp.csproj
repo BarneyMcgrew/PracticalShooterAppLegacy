@@ -136,5 +136,14 @@
     <Compile Update="Helpers\ActionBarHelper.cs">
       <DependentUpon>IActionBarHelper.cs</DependentUpon>
     </Compile>
+    <Compile Update="Clients\SettingsClient.cs">
+      <DependentUpon>ISettingsClient.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Clients\SqlRulesClient.cs">
+      <DependentUpon>ISqlRulesClient.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Clients\RSSApiClient.cs">
+      <DependentUpon>IRSSApiClient.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

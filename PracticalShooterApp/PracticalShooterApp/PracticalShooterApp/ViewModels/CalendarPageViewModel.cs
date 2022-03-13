@@ -66,12 +66,13 @@ namespace PracticalShooterApp.ViewModels
 
             var inlineIdentifier = $"{inlineEvent.Subject} | {inlineEvent.StartTime}";
 
-            await Shell.Current.GoToAsync($"{nameof(CalendarEntryPage)}?{nameof(CalendarEntriesModel.InlineIdentifier)}={inlineIdentifier}");
+            await Shell.Current.Navigation.PushModalAsync(new CalendarEntryPage(inlineIdentifier));
+            //await Shell.Current.GoToAsync($"{Shell.Current.CurrentState.Location}/{nameof(CalendarEntryPage)}?{nameof(CalendarEntriesModel.InlineIdentifier)}={inlineIdentifier}");
         }
         
         private async void BackButtonClicked(object obj)
         {
-            await Shell.Current.GoToAsync("//HomePage");
+            await Shell.Current.GoToAsync("..");
         }
 
         public async void PopulateCalendarEntries()
