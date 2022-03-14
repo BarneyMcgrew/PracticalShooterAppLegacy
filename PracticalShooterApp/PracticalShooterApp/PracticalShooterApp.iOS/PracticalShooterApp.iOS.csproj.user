@@ -2,9 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectView>ShowAllFiles</ProjectView>
-    <SelectedDevice>iPhone 11 iOS 15.2</SelectedDevice>
+    <SelectedDevice>Simulator</SelectedDevice>
     <SelectedPlatformGroup>Simulator</SelectedPlatformGroup>
-    <ActiveDebugProfile>iPhone 11 iOS 15.2</ActiveDebugProfile>
+    <ActiveDebugProfile>Simulator</ActiveDebugProfile>
     <DefaultDevice>iPhone 11 iOS 15.2</DefaultDevice>
   </PropertyGroup>
 </Project>

@@ -40,15 +40,8 @@
             <sfPopup:SfPopupLayout.Content>
                 <Grid RowDefinitions="Auto, *">
                     <!--  Title View  -->
-                    <controls:TitleView Title="Learn" Grid.Row="0">
+                    <controls:TitleView Title="{Binding RulebookName}" Grid.Row="0">
                         <controls:TitleView.LeadingView>
-                            <buttons:SfButton
-                                x:Name="disciplineButton"
-                                Clicked="DisciplineButton_OnClicked"
-                                Style="{StaticResource IconButtonStyle}"
-                                Text="{StaticResource Category}" />
-                        </controls:TitleView.LeadingView>
-                        <controls:TitleView.TrailingView>
                             <buttons:SfButton
                                 x:Name="searchButton"
                                 Clicked="SearchButton_OnClicked"
@@ -56,6 +49,13 @@
                                 IsEnabled="False"
                                 TextColor="{StaticResource PrimaryDark}"
                                 Text="{StaticResource Search}" />
+                        </controls:TitleView.LeadingView>
+                        <controls:TitleView.TrailingView>
+                            <buttons:SfButton
+                                x:Name="disciplineButton"
+                                Clicked="DisciplineButton_OnClicked"
+                                Style="{StaticResource IconButtonStyle}"
+                                Text="{StaticResource Category}" />
                         </controls:TitleView.TrailingView>
                     </controls:TitleView>
                     <!--  Chapter List View  -->

@@ -1,12 +1,112 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:converters="clr-namespace:PracticalShooterApp.Converters;assembly=PracticalShooterApp"
+             ios:Page.UseSafeArea="False"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="{StaticResource Primary}"
+             NavigationPage.HasNavigationBar="False"
+             x:Name="rules"
              x:Class="PracticalShooterApp.Views.RulesPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <sfPopup:SfPopupLayout x:Name="popupRules">
+            <sfPopup:SfPopupLayout.PopupView>
+                <sfPopup:PopupView
+                    AnimationMode="Fade"
+                    BackgroundColor="{StaticResource Primary}"
+                    WidthRequest="200"
+                    ShowCloseButton="False"
+                    ShowFooter="False"
+                    ShowHeader="False">
+                    <sfPopup:PopupView.PopupStyle>
+                        <sfPopup:PopupStyle
+                            BorderColor="{StaticResource Tertiary}"
+                            BorderThickness="1"
+                            CornerRadius="20"/>
+                    </sfPopup:PopupView.PopupStyle>
+                    <sfPopup:PopupView.ContentTemplate>
+                        <DataTemplate>
+                            <Grid RowDefinitions="Auto, Auto, *">
+            
+                            </Grid>
+                        </DataTemplate>
+                    </sfPopup:PopupView.ContentTemplate>
+                </sfPopup:PopupView>
+            </sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:SfPopupLayout.Content>
+                <Grid RowDefinitions="Auto, *">
+                    <controls:TitleView
+                        Title="{Binding SectionName}"
+                        Grid.Row="0">
+                        <controls:TitleView.LeadingView>
+                            <buttons:SfButton
+                                x:Name="backButton"
+                                Command="{Binding BindingContext.BackButtonCommand, Source={x:Reference rules}}"
+                                CommandParameter="{x:Reference backButton}"
+                                Style="{StaticResource IconButtonStyle}"
+                                Text="{StaticResource Back}" />
+                        </controls:TitleView.LeadingView>
+                        <controls:TitleView.TrailingView>
+                            <buttons:SfButton
+                                x:Name="disciplineButton"
+                                Clicked="DisciplineButton_OnClicked"
+                                Style="{StaticResource IconButtonStyle}"
+                                Text="{StaticResource Category}" />
+                        </controls:TitleView.TrailingView>
+                    </controls:TitleView>
+                    <Picker Grid.Row="1" x:Name="disciplinePicker" IsVisible="False" SelectedIndexChanged="DisciplinePicker_OnSelectedIndexChanged">
+                        <Picker.Items>
+                            <x:String>Handgun</x:String>
+                            <x:String>Action Air</x:String>
+                            <x:String>Shotgun</x:String>
+                            <x:String>Rifle</x:String>
+                            <x:String>Mini Rifle</x:String>
+                            <x:String>PCC</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <listView:SfListView x:Name="rulesList"
+                                         Grid.Row="1"
+                                         AutoFitMode="DynamicHeight"
+                                         BackgroundColor="{StaticResource Primary}"
+                                         IsScrollBarVisible="False"
+                                         SelectionBackgroundColor="Transparent"
+                                         ItemsSource="{Binding RulesList}">
+                        <listView:SfListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout 
+                                    Margin="10,1,10,0"
+                                    Padding="0,10,0,10"
+                                    BackgroundColor="{StaticResource Primary}"
+                                    Orientation="Vertical">
+                                    <BoxView 
+                                        IsVisible="{Binding IsNotSubRule}"
+                                        Margin="-10, 10, -10, 20"
+                                        BackgroundColor="{StaticResource PrimaryDark}"
+                                        HeightRequest="1"/>
+                                    <StackLayout Orientation="Horizontal" IsVisible="{Binding IsNotDescription}">
+                                        <buttons:SfButton 
+                                                    FontSize="12"
+                                                    Margin="-10,-10"
+                                                    Clicked="SfButton_OnClicked"
+                                                    BindingContext="{Binding .}"
+                                                    TextColor="{StaticResource Tertiary}"
+                                                    Style="{StaticResource IconButtonStyle}" 
+                                                    Text="{StaticResource Share}"/>
+                                        <Label Text="{Binding Numeric}" TextColor="{StaticResource Tertiary}"/>
+                                        <Label Text="{Binding Name}" />
+                                    </StackLayout>
+                                    <Label FontSize="12" Text="{Binding Description}"/>
+                                </StackLayout>
+                            </DataTemplate>
+                        </listView:SfListView.ItemTemplate>
+                    </listView:SfListView>
+                </Grid>
+            </sfPopup:SfPopupLayout.Content>
+        </sfPopup:SfPopupLayout>
     </ContentPage.Content>
 </ContentPage>

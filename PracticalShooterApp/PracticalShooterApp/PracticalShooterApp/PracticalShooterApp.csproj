@@ -145,5 +145,8 @@
     <Compile Update="Clients\RSSApiClient.cs">
       <DependentUpon>IRSSApiClient.cs</DependentUpon>
     </Compile>
+    <Compile Update="Services\RulesService.cs">
+      <DependentUpon>IRulesService.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

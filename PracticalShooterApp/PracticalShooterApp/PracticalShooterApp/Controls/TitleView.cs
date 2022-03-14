@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System.Linq;
+using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
 namespace PracticalShooterApp.Controls
@@ -66,9 +67,9 @@ namespace PracticalShooterApp.Controls
             this.ColumnDefinitions = new ColumnDefinitionCollection
             {
                 new ColumnDefinition { Width = 4 },
-                new ColumnDefinition(),
                 new ColumnDefinition { Width = GridLength.Auto },
-                new ColumnDefinition(),
+                new ColumnDefinition { Width = GridLength.Star },
+                new ColumnDefinition { Width = GridLength.Auto },
                 new ColumnDefinition { Width = 4 },
             };
 
@@ -236,7 +237,11 @@ namespace PracticalShooterApp.Controls
                     titleView.titleLabel.LineHeight = 1.5;
                 }
 
-                titleView.Children.Remove(titleView.Content);
+                var oldTitleView = titleView.Children.FirstOrDefault(o => o.GetType() == titleView.titleLabel.GetType());
+                
+                if (oldTitleView != null)
+                    titleView.Children.Remove(oldTitleView);
+                
                 titleView.Children.Add(titleView.titleLabel, 2, 0);
             }
         }

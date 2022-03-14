@@ -38,6 +38,7 @@ namespace PracticalShooterApp
             DependencyService.Register<RulebookService>();
             DependencyService.Register<ChapterService>();
             DependencyService.Register<SectionService>();
+            DependencyService.Register<RulesService>();
             DependencyService.Register<WebService>();
             
             DependencyService.Register<ShareHelper>();

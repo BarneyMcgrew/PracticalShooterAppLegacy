@@ -1,7 +1,11 @@
 ﻿using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
+using PracticalShooterApp.Clients;
+using PracticalShooterApp.Extensions;
 using PracticalShooterApp.Models;
 using PracticalShooterApp.Services;
+using PracticalShooterApp.Views;
 using Xamarin.Forms;
 
 namespace PracticalShooterApp.ViewModels
@@ -9,25 +13,35 @@ namespace PracticalShooterApp.ViewModels
     public class LearnPageViewModel : BaseViewModel
     {
         private Command<object> itemTappedCommand;
+
+        private string _rulebookName;
+        
         private IChapterService _chapterService => DependencyService.Get<IChapterService>();
         private ISectionService _sectionService => DependencyService.Get<ISectionService>();
+
+        private SettingsClient _settingsClient => DependencyService.Get<SettingsClient>();
         
         public LearnPageViewModel()
         {
-            Title = "Learn";
-
-            PopulateSectionsList();
         }
         
         [DataMember(Name = "sectionsList")]
         public ObservableCollection<LearnSectionsModel> SectionsList { get; set; } =
             new ObservableCollection<LearnSectionsModel>();
 
+        public string RulebookName
+        {
+            get => _rulebookName;
+            set => SetProperty(ref _rulebookName, value);
+        }
+
         public async void PopulateSectionsList()
         {
             IsBusy = true;
             
             SectionsList.Clear();
+
+            RulebookName = _settingsClient.CurrentDiscipline.GetAttribute<DisplayAttribute>().Name;
 
             var chapterList = await _chapterService.GetChaptersFromCurrentRulebook();
 
@@ -66,6 +80,8 @@ namespace PracticalShooterApp.ViewModels
                 return;
 
             var model = (LearnSectionsModel)eventArgs.ItemData;
+            
+            await Shell.Current.GoToAsync($"{Shell.Current.CurrentState.Location}/{nameof(RulesPage)}?{nameof(RulesPageViewModel.InlineIdentifier)}={model.SectionId}");
         }
     }
 }

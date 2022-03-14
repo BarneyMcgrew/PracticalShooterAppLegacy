@@ -28,14 +28,13 @@ namespace PracticalShooterApp.Views
         {
             InitializeComponent();
 
-            disciplinePicker.SelectedItem = _settingsClient.CurrentDiscipline.GetAttribute<DisplayAttribute>();
             
             this.BindingContext = _viewModel;
 
             SetupListViewGrouping();
         }
 
-        public void SetupListViewGrouping()
+        private void SetupListViewGrouping()
         {
             sectionList.DataSource.GroupDescriptors.Add(new Syncfusion.DataSource.GroupDescriptor()
             {
@@ -52,11 +51,18 @@ namespace PracticalShooterApp.Views
         {
             base.OnAppearing();
             SetHeaderSafeArea();
+            SetDisciplinePicker();
         }
 
         private void SetHeaderSafeArea()
         {
             popUpLearn.Margin = new Thickness(0, _actionBarHelper.GetTopSafeArea(), 0,0);
+        }
+
+        private void SetDisciplinePicker()
+        {
+            var currentDiscipline = _settingsClient.CurrentDiscipline;
+            disciplinePicker.SelectedItem = currentDiscipline.GetAttribute<DisplayAttribute>().Name;
         }
 
         private void SearchButton_OnClicked(object sender, EventArgs e)
@@ -71,9 +77,9 @@ namespace PracticalShooterApp.Views
 
         private void DisciplinePicker_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            var selectedDisciplineName = (String)disciplinePicker.SelectedItem;
+            var selectedDisciplineName = disciplinePicker.SelectedItem;
             var selectedDiscipline = Discipline.Handgun;
-            
+
             switch (selectedDisciplineName)
             {
                 case "Handgun":
@@ -97,7 +103,7 @@ namespace PracticalShooterApp.Views
             }
 
             _settingsClient.CurrentDiscipline = selectedDiscipline;
-            
+
             _viewModel.PopulateSectionsList();
         }
     }
