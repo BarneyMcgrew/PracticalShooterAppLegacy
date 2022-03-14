@@ -91,6 +91,8 @@
                                     <StackLayout Orientation="Horizontal" IsVisible="{Binding IsNotDescription}">
                                         <buttons:SfButton 
                                                     FontSize="12"
+                                                    HorizontalOptions="Center"
+                                                    VerticalOptions="Center"
                                                     Margin="-10,-10"
                                                     Clicked="SfButton_OnClicked"
                                                     BindingContext="{Binding .}"
