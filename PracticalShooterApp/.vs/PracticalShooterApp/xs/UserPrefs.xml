@@ -1,19 +1,14 @@
 ﻿<Properties StartupConfiguration="{A2959779-E8D6-448F-8328-9F23A480D29E}|Default">
   <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="PracticalShooterApp/PracticalShooterApp.iOS/Info.plist" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PracticalShooterApp" expanded="True">
-            <Node name="PracticalShooterApp" expanded="True" />
-            <Node name="PracticalShooterApp.Android" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="PracticalShooterApp.iOS" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="LaunchScreen.storyboard" selected="True" />
-              </Node>
+            <Node name="PracticalShooterApp.iOS" expanded="True" selected="True">
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -21,9 +16,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.PracticalShooterApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F4F53E31-52BB-43AC-9A21-F604A23696A1" />
+  <MonoDevelop.Ide.ItemProperties.PracticalShooterApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
   <MonoDevelop.Ide.ItemProperties.PracticalShooterApp.Android PreferredExecutionTarget="Android.Pixel_3_API_28" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
