@@ -1,27 +1,3 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using PracticalShooterApp.Clients;
-using PracticalShooterApp.DataModels;
-using SQLite;
-using Xamarin.Forms;
-
-namespace PracticalShooterApp.Services
-{
-    public class RulesService : IRulesService
-    {
-        private SQLiteAsyncConnection _sqlClient => DependencyService.Get<ISqlRulesClient>().GetConnection();
-        
-        public RulesService()
-        {}
-
-        public async Task<List<Rule>> GetRulesBySectionId(int sectionId)
-        {
-            return await _sqlClient.Table<Rule>().Where(o => o.SectionId == sectionId).ToListAsync();
-        }
-
-        public async Task<List<SubRule>> GetSubRulesByRuleId(int ruleId)
-        {
-            return await _sqlClient.Table<SubRule>().Where(o => o.RuleId == ruleId).ToListAsync();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e6c71189cca14b25e6ab81b42b770a4defaff5b78cc49a67a016e22f925c621a
+size 1315

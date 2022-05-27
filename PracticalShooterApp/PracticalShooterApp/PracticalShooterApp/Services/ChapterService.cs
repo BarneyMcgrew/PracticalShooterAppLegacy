@@ -1,25 +1,3 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using PracticalShooterApp.Clients;
-using PracticalShooterApp.DataModels;
-using SQLite;
-using Xamarin.Forms;
-
-namespace PracticalShooterApp.Services
-{
-    public class ChapterService : IChapterService
-    {
-        private SQLiteAsyncConnection _sqlClient => DependencyService.Get<ISqlRulesClient>().GetConnection();
-        private IRulebookService _rulebookService => DependencyService.Get<IRulebookService>();
-        
-        public ChapterService()
-        {}
-
-        public async Task<List<Chapter>> GetChaptersFromCurrentRulebook()
-        {
-            var rulebook = await _rulebookService.GetCurrentRulebook();
-
-            return await _sqlClient.Table<Chapter>().Where(o => o.RulebookId == rulebook.Id).ToListAsync();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:46bc5276898d010c6df96ff7c8306ad2f46dae193b6078698b366c01e6b63edd
+size 1033
