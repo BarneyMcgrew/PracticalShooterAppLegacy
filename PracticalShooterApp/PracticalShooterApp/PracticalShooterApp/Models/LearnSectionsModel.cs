@@ -1,22 +1,3 @@
-﻿using System;
-using System.Runtime.Serialization;
-using Newtonsoft.Json;
-
-namespace PracticalShooterApp.Models
-{
-    [DataContract]
-    public class LearnSectionsModel
-    {
-        [DataMember(Name = "sectionId")]
-        [JsonProperty(PropertyName = "sectionId")]
-        public int SectionId { get; set; }
-        
-        [DataMember(Name = "chapterGrouping")]
-        [JsonProperty(PropertyName = "chapterGrouping")]
-        public String ChapterGrouping { get; set; }
-        
-        [DataMember(Name = "sectionName")]
-        [JsonProperty(PropertyName = "sectionName")]
-        public String SectionName { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:11aa3143ebb494a4d0582d444cdcc7dab0336fb6a693f646236d8eeeb6ccea0d
+size 810

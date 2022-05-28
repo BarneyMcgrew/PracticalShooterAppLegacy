@@ -94,6 +94,8 @@ namespace RulebookConversionLibrary.Helpers
             var lastLineWasAppendix = false;
             var appendixStarted = false;
             var lastLineWasGlossary = false;
+            var lastLineWasRule = false;
+            var lastLineWasSubRule = false;
             var indexReached = false;
 
             foreach (var line in fileArray)
@@ -127,6 +129,8 @@ namespace RulebookConversionLibrary.Helpers
                     lastLineWasSection = false;
                     lastLineWasAppendix = false;
                     lastLineWasGlossary = false;
+                    lastLineWasRule = false;
+                    lastLineWasSubRule = false;
 
                     continue;
                 }
@@ -149,6 +153,8 @@ namespace RulebookConversionLibrary.Helpers
                     lastLineWasAppendix = true;
                     appendixStarted = true;
                     lastLineWasGlossary = false;
+                    lastLineWasRule = false;
+                    lastLineWasSubRule = false;
 
                     continue;
                 }
@@ -183,6 +189,8 @@ namespace RulebookConversionLibrary.Helpers
                     lastLineWasSection = false;
                     lastLineWasAppendix = false;
                     lastLineWasGlossary = true;
+                    lastLineWasRule = false;
+                    lastLineWasSubRule = false;
 
                     continue;
                 }
@@ -204,6 +212,8 @@ namespace RulebookConversionLibrary.Helpers
                     lastLineWasSection = true;
                     lastLineWasAppendix = false;
                     lastLineWasGlossary = false;
+                    lastLineWasRule = false;
+                    lastLineWasSubRule = false;
 
                     continue;
                 }
@@ -224,6 +234,8 @@ namespace RulebookConversionLibrary.Helpers
                     lastLineWasChapter = false;
                     lastLineWasSection = false;
                     lastLineWasAppendix = false;
+                    lastLineWasRule = true;
+                    lastLineWasSubRule = false;
 
                     continue;
                 }
@@ -244,6 +256,8 @@ namespace RulebookConversionLibrary.Helpers
                     lastLineWasChapter = false;
                     lastLineWasSection = false;
                     lastLineWasAppendix = false;
+                    lastLineWasRule = false;
+                    lastLineWasSubRule = true;
 
                     continue;
                 }
@@ -257,6 +271,8 @@ namespace RulebookConversionLibrary.Helpers
                     lastLineWasChapter = false;
                     lastLineWasSection = false;
                     lastLineWasAppendix = false;
+                    lastLineWasRule = false;
+                    lastLineWasSubRule = false;
                 }
 
                 // Check for Section Description
@@ -268,6 +284,8 @@ namespace RulebookConversionLibrary.Helpers
                     lastLineWasChapter = false;
                     lastLineWasSection = false;
                     lastLineWasAppendix = false;
+                    lastLineWasRule = false;
+                    lastLineWasSubRule = false;
                 }
 
                 // Check for Appendix Description and Metadescriptions
@@ -285,6 +303,8 @@ namespace RulebookConversionLibrary.Helpers
                     lastLineWasSection = false;
                     // lastLineWasAppendix is kept as there could be more...
                     lastLineWasGlossary = false;
+                    lastLineWasRule = false;
+                    lastLineWasSubRule = false;
                 }
                 
                 // Check for extra glossary descriptions
@@ -296,7 +316,35 @@ namespace RulebookConversionLibrary.Helpers
                     lastLineWasChapter = false;
                     lastLineWasSection = false;
                     lastLineWasAppendix = false;
-                    // lastLineWasGlossary is kept as there could me more...
+                    // lastLineWasGlossary is kept as there could be more...
+                    lastLineWasRule = false;
+                    lastLineWasSubRule = false;
+                }
+                
+                // Check for extra rule descriptions
+
+                if (lastLineWasRule)
+                {
+                    extractedRules.Last().Description += $" {Environment.NewLine}{Environment.NewLine}{line}";
+
+                    lastLineWasChapter = false;
+                    lastLineWasSection = false;
+                    lastLineWasAppendix = false;
+                    lastLineWasGlossary = false;
+                    // lastLineWasRule is kept as there could be more
+                    lastLineWasSubRule = false;
+                }
+
+                if (lastLineWasSubRule)
+                {
+                    extractedSubRules.Last().Description += $" {Environment.NewLine}{Environment.NewLine}{line}";
+                    
+                    lastLineWasChapter = false;
+                    lastLineWasSection = false;
+                    lastLineWasAppendix = false;
+                    lastLineWasGlossary = false;
+                    lastLineWasRule = false; 
+                    // lastLineWasSubRule is kept as there could be more
                 }
             }
 
