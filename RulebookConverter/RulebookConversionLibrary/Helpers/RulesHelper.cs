@@ -15,7 +15,7 @@ namespace RulebookConversionLibrary.Helpers
         private static Regex _ruleRegex = new Regex(@"^(?<numeric>\d+\.\d+\.\d+)\s((?<name>((\w+)\s)+)(-|–|�)\s)?(?<description>.+)", RegexOptions.Compiled);
         private static Regex _subRuleRegex = new Regex(@"^(?<numeric>\d+\.\d+\.\d+\.\d+)\s((?<name>((\w+)\s)+)(-|–|�)\s)?(?<description>.+)", RegexOptions.Compiled);
         private static Regex _numericRegex = new Regex(@"^(?<chapter>\d+)(\.(?<section>\d+)(\.(?<rule>\d+)(\.(?<subrule>\d+))?)?)?", RegexOptions.Compiled);
-        private static Regex _appendixRegex = new Regex(@"APPENDIX\s(?<name>\S\d?)\:(?<description>.+)?", RegexOptions.Compiled);
+        private static Regex _appendixRegex = new Regex(@"APPENDIX\s(?<name>\S+\d?)\:(?<description>.+)?", RegexOptions.Compiled);
         private static Regex _glossaryRegex = new Regex(@"(?<key>.+[^\.])\s?\.{5,}(?<value>(.+))", RegexOptions.Compiled);
         private static Regex _glossarySplitRegex = new Regex(@"(?<=[^\.]\.)(\s|\n{2})", RegexOptions.Compiled);
         
