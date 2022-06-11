@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PracticalShooterApp.Views.PDFPage"
+    xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+    xmlns:converters="clr-namespace:PracticalShooterApp.Converters;assembly=PracticalShooterApp"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+    xmlns:xForms="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
+    x:Name="pdf"
+    ios:Page.UseSafeArea="False"
+    BackgroundColor="{StaticResource Primary}"
+    NavigationPage.HasNavigationBar="False"
+    Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <sfPopup:SfPopupLayout x:Name="popupPDF">
+            <sfPopup:SfPopupLayout.PopupView>
+                <sfPopup:PopupView
+                    AnimationMode="Fade"
+                    BackgroundColor="{StaticResource Primary}"
+                    ShowCloseButton="False"
+                    ShowFooter="False"
+                    ShowHeader="False"
+                    WidthRequest="200">
+                    <sfPopup:PopupView.PopupStyle>
+                        <sfPopup:PopupStyle
+                            BorderColor="{StaticResource Tertiary}"
+                            BorderThickness="1"
+                            CornerRadius="20" />
+                    </sfPopup:PopupView.PopupStyle>
+                    <sfPopup:PopupView.ContentTemplate>
+                        <DataTemplate>
+                            <Grid RowDefinitions="Auto, Auto, *" />
+                        </DataTemplate>
+                    </sfPopup:PopupView.ContentTemplate>
+                </sfPopup:PopupView>
+            </sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:SfPopupLayout.Content>
+                <Grid RowDefinitions="Auto, *">
+                    <controls:TitleView Title="{Binding Title}" Grid.Row="0">
+                        <controls:TitleView.LeadingView>
+                            <buttons:SfButton
+                                x:Name="backButton"
+                                Command="{Binding BindingContext.BackButtonCommand, Source={x:Reference pdf}}"
+                                CommandParameter="{x:Reference backButton}"
+                                Style="{StaticResource IconButtonStyle}"
+                                Text="{StaticResource Back}" />
+                        </controls:TitleView.LeadingView>
+                        <controls:TitleView.TrailingView>
+                            <buttons:SfButton
+                                x:Name="disciplineButton"
+                                Style="{StaticResource IconButtonStyle}"
+                                TextColor="{StaticResource Primary}"
+                                Text="{StaticResource Category}" />
+                        </controls:TitleView.TrailingView>
+                    </controls:TitleView>
+                    <xForms:SfPdfViewer 
+                        Grid.Row="1" 
+                        x:Name="pdfViewerControl" 
+                        PageViewMode="Continuous"
+                        IsToolbarVisible="{Binding ShowControlsBoolean}"
+                        InputFileStream="{Binding PDFStream}"/>
+                    <Entry 
+                        Grid.Row="1"  
+                        IsVisible="False"
+                        x:Name="textSearchEntry" 
+                        Text="{Binding SearchCriteria}" />
+                    <Button 
+                        Grid.Row="1"
+                        IsVisible="False"
+                        x:Name="searchButton"
+                        Command="{Binding SearchTextCommand, Source={x:Reference Name=pdfViewerControl}}"
+                        CommandParameter="{Binding Source ={x:Reference textSearchEntry}, Path=Text}"/>
+                    <busyindicator:SfBusyIndicator
+                        x:Name="busyindicator"
+                        Title="Loading PDF..."
+                        Grid.Row="1"
+                        AnimationType="Box"
+                        BackgroundColor="{StaticResource Primary}"
+                        IsBusy="{Binding IsBusy}"
+                        TextColor="{StaticResource Tertiary}"
+                        Duration="0.5" />
+                </Grid>
+            </sfPopup:SfPopupLayout.Content>
+        </sfPopup:SfPopupLayout>
+    </ContentPage.Content>
+</ContentPage>

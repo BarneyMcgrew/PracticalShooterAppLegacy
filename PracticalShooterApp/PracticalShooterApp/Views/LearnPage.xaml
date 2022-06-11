@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PracticalShooterApp.Views.LearnPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+    xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
+    xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
+    xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+    BackgroundColor="{StaticResource Primary}"
+    Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <sfPopup:SfPopupLayout x:Name="popUpLearn">
+            <sfPopup:SfPopupLayout.PopupView>
+                <sfPopup:PopupView
+                    AnimationMode="Fade"
+                    BackgroundColor="{StaticResource Primary}"
+                    ShowCloseButton="False"
+                    ShowFooter="False"
+                    ShowHeader="False"
+                    WidthRequest="200">
+                    <sfPopup:PopupView.PopupStyle>
+                        <sfPopup:PopupStyle
+                            BorderColor="{StaticResource Tertiary}"
+                            BorderThickness="1"
+                            CornerRadius="20" />
+                    </sfPopup:PopupView.PopupStyle>
+                    <sfPopup:PopupView.ContentTemplate>
+                        <DataTemplate>
+                            <Grid RowDefinitions="Auto, Auto, *" />
+                        </DataTemplate>
+                    </sfPopup:PopupView.ContentTemplate>
+                </sfPopup:PopupView>
+            </sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:SfPopupLayout.Content>
+                <Grid RowDefinitions="Auto, *">
+                    <!--  Title View  -->
+                    <controls:TitleView Title="{Binding RulebookName}" Grid.Row="0">
+                        <controls:TitleView.LeadingView>
+                            <buttons:SfButton
+                                x:Name="searchButton"
+                                Clicked="SearchButton_OnClicked"
+                                Style="{StaticResource IconButtonStyle}"
+                                Text="{StaticResource Search}" />
+                        </controls:TitleView.LeadingView>
+                        <controls:TitleView.TrailingView>
+                            <buttons:SfButton
+                                x:Name="disciplineButton"
+                                Clicked="DisciplineButton_OnClicked"
+                                Style="{StaticResource IconButtonStyle}"
+                                Text="{StaticResource Category}" />
+                        </controls:TitleView.TrailingView>
+                    </controls:TitleView>
+                    <!--  Chapter List View  -->
+                    <Picker
+                        x:Name="disciplinePicker"
+                        Grid.Row="1"
+                        IsVisible="False"
+                        SelectedIndexChanged="DisciplinePicker_OnSelectedIndexChanged">
+                        <Picker.Items>
+                            <x:String>Handgun</x:String>
+                            <x:String>Action Air</x:String>
+                            <x:String>Shotgun</x:String>
+                            <x:String>Rifle</x:String>
+                            <x:String>Mini Rifle</x:String>
+                            <x:String>PCC</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <listView:SfListView
+                        x:Name="sectionList"
+                        Grid.Row="1"
+                        AutoFitMode="None"
+                        BackgroundColor="{StaticResource Primary}"
+                        IsScrollBarVisible="False"
+                        IsStickyGroupHeader="True"
+                        ItemSpacing="{core:OnPlatformOrientationThickness PhonePortrait='0,0,0,0',
+                                                                          PhoneLandscape='0,0,0,0',
+                                                                          Default='0,0,0,0'}"
+                        ItemsSource="{Binding SectionsList}"
+                        SelectionBackgroundColor="Transparent"
+                        TapCommand="{Binding ItemTappedCommand}">
+                        <listView:SfListView.GroupHeaderTemplate>
+                            <DataTemplate>
+                                <StackLayout
+                                    Padding="0,10,0,10"
+                                    BackgroundColor="{StaticResource PrimaryDark}"
+                                    Orientation="Horizontal">
+                                    <Label
+                                        Margin="10,0,0,0"
+                                        Text="{Binding Key}"
+                                        TextColor="{StaticResource Tertiary}" />
+                                </StackLayout>
+                            </DataTemplate>
+                        </listView:SfListView.GroupHeaderTemplate>
+                        <listView:SfListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout
+                                    Margin="0,1,0,0"
+                                    Padding="0,10,0,10"
+                                    BackgroundColor="{StaticResource Primary}"
+                                    Orientation="Horizontal">
+                                    <Label Margin="20,0,0,0" Text="{Binding SectionName}" />
+                                </StackLayout>
+                            </DataTemplate>
+                        </listView:SfListView.ItemTemplate>
+                    </listView:SfListView>
+                    <busyindicator:SfBusyIndicator
+                        x:Name="busyindicator"
+                        Title="Loading Rules..."
+                        Grid.Row="1"
+                        AnimationType="Box"
+                        BackgroundColor="{StaticResource Primary}"
+                        IsBusy="{Binding IsBusy}"
+                        TextColor="{StaticResource Tertiary}"
+                        Duration="0.5" />
+                </Grid>
+            </sfPopup:SfPopupLayout.Content>
+        </sfPopup:SfPopupLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+             Title="{Binding Title}"
+             BackgroundColor="{StaticResource Primary}"
+             Shell.NavBarIsVisible="False"
+             x:Class="PracticalShooterApp.Views.MorePage">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, *" x:Name="mainGrid">
+            <!-- Title View -->
+            <controls:TitleView Title="More" Grid.Row="0">
+                <!-- <controls:TitleView.TrailingView> -->
+                <!--     <buttons:SfButton -->
+                <!--         x:Name="settingsButton" -->
+                <!--         Clicked="settingsButton_Clicked" -->
+                <!--         TextColor="{StaticResource Gray-100}" -->
+                <!--         IsEnabled="False" -->
+                <!--         Style="{StaticResource IconButtonStyle}" -->
+                <!--         Text="{StaticResource Settings}" /> -->
+                <!-- </controls:TitleView.TrailingView> -->
+            </controls:TitleView>
+            <ScrollView Grid.Row="1">
+                <StackLayout>
+                    <StackLayout Orientation="Vertical" Padding="10, 20, 0, 0">
+                        <Label FontSize="12" Text="Tools and Utilities"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="fileExplorer_Clicked"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource FileExplorer}"/>
+                        <Label Margin="10, 0, 0, 0" VerticalOptions="Center" Text="File Explorer"/>
+                        <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="20" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Back}" Rotation="180"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="eventsCalendar_Clicked"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Calendar}"/>
+                        <Label Margin="10, 0, 0, 0" VerticalOptions="Center" Text="Events Calendar"/>
+                        <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="20" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Back}" Rotation="180"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="hitFactorCalculator_Clicked"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Gray-100}" FontFamily="FontIcons" Text="{StaticResource Viewed}"/>
+                        <Label Margin="10, 0, 0, 0" VerticalOptions="Center" Text="Hit Factor Calculator" TextColor="{StaticResource Gray-100}"/>
+                        <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="20"  TextColor="{StaticResource Gray-100}" FontFamily="FontIcons" Text="{StaticResource Back}" Rotation="180"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="trainingParTimer_Clicked"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Gray-100}" FontFamily="FontIcons" Text="{StaticResource Audio}"/>
+                        <Label Margin="10, 0, 0, 0" VerticalOptions="Center" TextColor="{StaticResource Gray-100}" Text="Training Par Timer"/>
+                        <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="20" TextColor="{StaticResource Gray-100}" FontFamily="FontIcons" Text="{StaticResource Back}" Rotation="180"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="stageBriefCreator_Clicked"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Gray-100}" FontFamily="FontIcons" Text="{StaticResource Attachment}"/>
+                        <Label Margin="10, 0, 0, 0" VerticalOptions="Center" TextColor="{StaticResource Gray-100}" Text="Stage Brief Creator"/>
+                        <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="20" TextColor="{StaticResource Gray-100}" FontFamily="FontIcons" Text="{StaticResource Back}" Rotation="180"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" Padding="10, 20, 0, 0">
+                        <Label FontSize="12" Text="About Practical Shooter App"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Arrived}"/>
+                        <StackLayout Margin="10,0,0,0">
+                            <Label VerticalOptions="Center" Text="App Version"/>
+                            <Label Margin="0, -5,0,0" VerticalOptions="Center" FontSize="Micro" Text="v1.20 (Build Beta)"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="devByBarneyMcGrew_Clicked"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Account}"/>
+                        <Label Margin="10, 0, 0, 0" VerticalOptions="Center" Text="Developed by Barney McGrew"/>
+                        <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="20" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Back}" Rotation="180"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="developmentBlog_Clicked"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Home}"/>
+                        <Label Margin="10, 0, 0, 0" VerticalOptions="Center" Text="Go to our Development Blog"/>
+                        <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="20" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Back}" Rotation="180"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="psaFacebook_Clicked"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource FaceBook}"/>
+                        <StackLayout Margin="10,0,0,0">
+                            <Label VerticalOptions="Center" Text="PSA Facebook Page"/>
+                            <Label Margin="0, -5,0,0" FontSize="Micro" VerticalOptions="Center" Text="Like our Practical Shooter App Facebook page"/>
+                        </StackLayout>   
+                        <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="20" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Back}" Rotation="180"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" Padding="10, 20, 0, 0">
+                        <Label FontSize="12" Text="Our Community and Stats"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Group}"/>
+                        <StackLayout Margin="10,0,0,0">
+                            <Label VerticalOptions="Center" Text="A Few"/>
+                            <Label Margin="0, -5,0,0" FontSize="Micro" VerticalOptions="Center" Text="competitors have downloaded the app"/>
+                        </StackLayout>                    
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="bmgFacebook_Clicked"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource FaceBook}"/>
+                        <StackLayout Margin="10,0,0,0">
+                            <Label VerticalOptions="Center" Text="BMG Facebook Page"/>
+                            <Label Margin="0, -5,0,0" FontSize="Micro" VerticalOptions="Center" Text="Like our Barney McGrew Facebook page"/>
+                        </StackLayout>   
+                        <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="20" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Back}" Rotation="180"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="joinMailingList_Clicked"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Gray-100}" FontFamily="FontIcons" Text="{StaticResource Mail}"/>
+                        <StackLayout Margin="10,0,0,0">
+                            <Label VerticalOptions="Center" Text="Our Mailing List" TextColor="{StaticResource Gray-100}"/>
+                            <Label Margin="0, -5,0,0" FontSize="Micro" VerticalOptions="Center" Text="Join our development mailing list" TextColor="{StaticResource Gray-100}"/>
+                        </StackLayout>   
+                        <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="20" TextColor="{StaticResource Gray-100}" FontFamily="FontIcons" Text="{StaticResource Back}" Rotation="180"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" Padding="10, 20, 0, 0">
+                        <Label FontSize="12" Text="Support Our Development"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="rateApp_Clicked"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Gray-100}" FontFamily="FontIcons" Text="{StaticResource Rating}"/>
+                        <Label Margin="10, 0, 0, 0" VerticalOptions="Center" Text="Rate Our App" TextColor="{StaticResource Gray-100}" />
+                        <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="20" TextColor="{StaticResource Gray-100}" FontFamily="FontIcons" Text="{StaticResource Back}" Rotation="180"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="10" 
+                                 Margin="0, 0, 0, -5"
+                                 BackgroundColor="{StaticResource PrimaryDark}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="reportABug_Clicked"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label VerticalOptions="Center" FontSize="30" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Messages}"/>
+                        <StackLayout Margin="10,0,0,0">
+                            <Label VerticalOptions="Center" Text="Send Feedback"/>
+                            <Label Margin="0, -5,0,0" FontSize="Micro" VerticalOptions="Center" Text="Report a bug or recommend a change"/>
+                        </StackLayout>   
+                        <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontSize="20" TextColor="{StaticResource Tertiary}" FontFamily="FontIcons" Text="{StaticResource Back}" Rotation="180"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" Padding="10, 20, 0, 0"/>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

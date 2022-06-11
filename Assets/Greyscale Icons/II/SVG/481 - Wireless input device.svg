@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2048px" height="2048px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2048 2048"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil4 {fill:none}
+    .fil2 {fill:#2E2E2E}
+    .fil0 {fill:#E1E1E2}
+    .fil3 {fill:#FBFBFC}
+    .fil1 {fill:#B8B8B8;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" x="255.999" y="255.99" width="1536" height="1183.39"/>
+  <path class="fil1" d="M1792 1279.83l0 252.901c0,75.6603 -30.9307,144.422 -80.7591,194.251 -49.8296,49.8296 -118.591,80.7603 -194.251,80.7603 -75.6603,0 -144.422,-30.9307 -194.251,-80.7603 -49.8284,-49.8296 -80.7591,-118.591 -80.7591,-194.251l0 -252.901 550.021 0z"/>
+  <path class="fil1" d="M1516.99 1087.62l91.1292 0c50.5996,0 96.5788,20.6788 129.891,53.9906 33.313,33.3118 53.9906,79.291 53.9906,129.891l0 10.526 -275.01 0 0 -194.407z"/>
+  <path class="fil1" d="M1425.86 1087.62l91.1292 0 0 194.407 -275.01 0 0 -10.526c0,-50.5996 20.6788,-96.5788 53.9906,-129.891 33.3118,-33.3118 79.291,-53.9906 129.891,-53.9906z"/>
+  <rect class="fil2" x="255.999" y="255.99" width="479.993" height="352.002"/>
+  <rect class="fil2" x="796.625" y="255.99" width="579.369" height="352.002"/>
+  <rect class="fil2" x="1440.78" y="255.99" width="351.223" height="352.002"/>
+  <rect class="fil2" x="255.999" y="1087.55" width="479.993" height="352.002"/>
+  <path class="fil2" d="M796.625 1087.55l500.976 0c-14.3043,8.80749 -27.6567,19.3276 -39.7571,31.428 -40.5449,40.5461 -63.3626,95.1379 -63.3626,152.518 0,133.545 0,-82.1127 0,168.056l-397.856 0 0 -352.002z"/>
+  <rect class="fil2" x="255.999" y="670.365" width="799.994" height="352.002"/>
+  <rect class="fil2" x="1116.62" y="670.365" width="675.376" height="352.002"/>
+  <rect class="fil3" x="1241.98" y="1300.08" width="550.021" height="18.9614"/>
+  <rect class="fil3" transform="matrix(2.64845E-014 -0.387928 1 1.02741E-014 1507.51 1300.99)" width="550.021" height="18.9614"/>
+  <rect class="fil3" x="1487.61" y="1127.74" width="58.7504" height="143.751" rx="29.3752" ry="29.3752"/>
+  <rect class="fil4" width="2048" height="2048"/>
+ </g>
+</svg>

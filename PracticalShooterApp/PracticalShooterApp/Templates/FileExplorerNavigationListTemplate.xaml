@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid
+    x:Class="PracticalShooterApp.Templates.FileExplorerNavigationListTemplate"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:viewModel="clr-namespace:PracticalShooterApp.ViewModels"
+    x:Name="FileExplorerNavigationListItem">
+
+    <Grid
+        Padding="0,10, 0, 0"
+        BackgroundColor="{StaticResource PrimaryDark}"
+        ColumnDefinitions="Auto, *"
+        ColumnSpacing="0"
+        RowSpacing="0">
+
+        <StackLayout
+            Grid.Column="1"
+            HorizontalOptions="FillAndExpand"
+            Spacing="0"
+            VerticalOptions="FillAndExpand">
+
+            <!--  Name of the item  -->
+            <Label
+                HorizontalOptions="Start"
+                HorizontalTextAlignment="Start"
+                Padding="10, 0, 10, 0"
+                Style="{StaticResource TitleLabelStyle}"
+                Text="{Binding FileName}" />      
+            <BoxView 
+                Margin="10, 10"
+                BackgroundColor="{StaticResource Tertiary}"
+                HeightRequest="1"/>
+
+            <!--  Description about the item  -->
+            <Label
+                Margin="0,4,0,8"
+                FontSize="12"
+                Padding="10, 0, 10, 10"
+                HorizontalOptions="Start"
+                HorizontalTextAlignment="Start"
+                LineBreakMode="TailTruncation"
+                MaxLines="7"
+                LineHeight="{OnPlatform Android=1.25,
+                                        Default=-1}"
+                Style="{StaticResource DescriptionLabelStyle}"
+                TextType="Html"
+                Text="{Binding Description}" />
+
+            <!--  Average rating from the overall rating  -->
+            <!-- <StackLayout -->
+            <!--     HorizontalOptions="FillAndExpand" -->
+            <!--     Orientation="Horizontal" -->
+            <!--     Spacing="0" -->
+            <!--     VerticalOptions="EndAndExpand"> -->
+            <!--     ~1~ <Label @1@ -->
+            <!--     ~1~     Margin="0,0,4,0" @1@ -->
+            <!--     ~1~     FontFamily="FontIcons" @1@ -->
+            <!--     ~1~     FontSize="16" @1@ -->
+            <!--     ~1~     Text="{StaticResource Rating}" @1@ -->
+            <!--     ~1~     TextColor="{DynamicResource PrimaryColor}" @1@ -->
+            <!--     ~1~     VerticalOptions="Center" @1@ -->
+            <!--     ~1~     WidthRequest="16" /> @1@ -->
+            <!--     ~1~ <Label @1@ -->
+            <!--     ~1~     FontFamily="Montserrat-Regular" @1@ -->
+            <!--     ~1~     FontSize="12" @1@ -->
+            <!--     ~1~     LineHeight="{OnPlatform Android=1.5, @1@ -->
+            <!--     ~1~                             Default=-1}" @1@ -->
+            <!--     ~1~     Text="{Binding ItemRating}" @1@ -->
+            <!--     ~1~     TextColor="{DynamicResource Gray-700}" @1@ -->
+            <!--     ~1~     VerticalOptions="Center" @1@ -->
+            <!--     ~1~     Margin="0,4,0,0"> @1@ -->
+            <!--     ~1~ </Label> @1@ -->
+            <!-- -->
+            <!--     ~1~  Navigation icon  @1@ -->
+            <!--     <button:SfButton -->
+            <!--         BackgroundColor="Transparent" -->
+            <!--         Command="{Binding ItemTappedCommand}" -->
+            <!--         CommandParameter="{Binding BindingContext, Source={x:Reference RSSNavigationListItem}}" -->
+            <!--         CornerRadius="4" -->
+            <!--         FontFamily="FontIcons" -->
+            <!--         FontSize="14" -->
+            <!--         HorizontalOptions="EndAndExpand" -->
+            <!--         Text="{StaticResource Next}" -->
+            <!--         TextColor="{StaticResource Tertiary}" -->
+            <!--         VerticalOptions="Center"> -->
+            <!--         <button:SfButton.BindingContext> -->
+            <!--             <viewModel:HomePageViewModel /> -->
+            <!--         </button:SfButton.BindingContext> -->
+            <!--     </button:SfButton> -->
+            <!-- -->
+            <!-- </StackLayout> -->
+        </StackLayout>
+    </Grid>
+</Grid>

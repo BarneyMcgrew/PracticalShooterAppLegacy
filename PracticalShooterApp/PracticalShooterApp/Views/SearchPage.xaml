@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PracticalShooterApp.Views.SearchPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+    xmlns:textInputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+    x:Name="search"
+    ios:Page.UseSafeArea="False"
+    BackgroundColor="{StaticResource Primary}"
+    NavigationPage.HasNavigationBar="False"
+    Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <sfPopup:SfPopupLayout x:Name="popupSearch">
+            <sfPopup:SfPopupLayout.PopupView>
+                <sfPopup:PopupView
+                    AnimationMode="Fade"
+                    BackgroundColor="{StaticResource Primary}"
+                    ShowCloseButton="False"
+                    ShowFooter="False"
+                    ShowHeader="False"
+                    WidthRequest="200">
+                    <sfPopup:PopupView.PopupStyle>
+                        <sfPopup:PopupStyle
+                            BorderColor="{StaticResource Tertiary}"
+                            BorderThickness="1"
+                            CornerRadius="20" />
+                    </sfPopup:PopupView.PopupStyle>
+                    <sfPopup:PopupView.ContentTemplate>
+                        <DataTemplate>
+                            <Grid RowDefinitions="Auto, *, 200" />
+                        </DataTemplate>
+                    </sfPopup:PopupView.ContentTemplate>
+                </sfPopup:PopupView>
+            </sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:SfPopupLayout.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition>
+                            <RowDefinition.Height>
+                                <OnPlatform x:TypeArguments="GridLength">
+                                    <On Platform="Android">Auto</On>
+                                    <On Platform="iOS">150</On>
+                                </OnPlatform>
+                            </RowDefinition.Height>
+                        </RowDefinition>
+                    </Grid.RowDefinitions>    
+                    <controls:TitleView Title="{Binding RulebookName}" Grid.Row="0">
+                        <controls:TitleView.LeadingView>
+                            <buttons:SfButton
+                                x:Name="backButton"
+                                Command="{Binding BindingContext.BackButtonCommand, Source={x:Reference search}}"
+                                CommandParameter="{x:Reference backButton}"
+                                Style="{StaticResource IconButtonStyle}"
+                                Text="{StaticResource Back}" />
+                        </controls:TitleView.LeadingView>
+                        <controls:TitleView.TrailingView>
+                            <buttons:SfButton
+                                x:Name="disciplineButton"
+                                Clicked="DisciplineButton_OnClicked"
+                                Style="{StaticResource IconButtonStyle}"
+                                Text="{StaticResource Category}" />
+                        </controls:TitleView.TrailingView>
+                    </controls:TitleView>
+                    <textInputLayout:SfTextInputLayout
+                        x:Name="searchInputHeader"
+                        Grid.Row="0"
+                        Margin="70,0,70,0"
+                        Padding="0,0,0,0"
+                        BackgroundColor="Transparent"
+                        ContainerType="Outlined"
+                        FocusedColor="{StaticResource Secondary}"
+                        Hint="Search Rules"
+                        InputViewPadding="10"
+                        IsHintAlwaysFloated="False"
+                        IsVisible="False"
+                        ReserveSpaceForAssistiveLabels="False"
+                        UnfocusedColor="{StaticResource Secondary}">
+                        <Entry FontSize="13" />
+                    </textInputLayout:SfTextInputLayout>
+                    <Picker
+                        x:Name="disciplinePicker"
+                        Grid.Row="1"
+                        IsVisible="False"
+                        SelectedIndexChanged="DisciplinePicker_OnSelectedIndexChanged">
+                        <Picker.Items>
+                            <x:String>Handgun</x:String>
+                            <x:String>Action Air</x:String>
+                            <x:String>Shotgun</x:String>
+                            <x:String>Rifle</x:String>
+                            <x:String>Mini Rifle</x:String>
+                            <x:String>PCC</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <listView:SfListView
+                        x:Name="searchList"
+                        Grid.Row="1"
+                        AutoFitMode="DynamicHeight"
+                        BackgroundColor="{StaticResource Primary}"
+                        IsScrollBarVisible="True"
+                        ItemsSource="{Binding SearchList}"
+                        SelectionBackgroundColor="Transparent"
+                        TapCommand="{Binding ItemTappedCommand}">
+                        <listView:SfListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout
+                                    Margin="10,1,10,0"
+                                    Padding="0,10,0,0"
+                                    BackgroundColor="{StaticResource Primary}"
+                                    Orientation="Vertical">
+                                    <BoxView
+                                        Margin="-10,10,-10,20"
+                                        BackgroundColor="{StaticResource PrimaryDark}"
+                                        HeightRequest="1"
+                                        IsVisible="{Binding IsNotSubRule}" />
+                                    <StackLayout IsVisible="{Binding IsNotDescription}" Orientation="Horizontal">
+                                        <buttons:SfButton
+                                            Margin="-10,-10"
+                                            BindingContext="{Binding .}"
+                                            Clicked="SfButton_OnClicked"
+                                            FontSize="12"
+                                            HorizontalOptions="Center"
+                                            Style="{StaticResource IconButtonStyle}"
+                                            Text="{StaticResource Share}"
+                                            TextColor="{StaticResource Tertiary}"
+                                            VerticalOptions="Center" />
+                                        <Label Text="{Binding Numeric}" />
+                                        <Label Text="{Binding Name}" />
+                                    </StackLayout>
+                                    <Label FontSize="12" Text="{Binding Description}" />
+                                    <StackLayout Margin="0,10,0,0" Orientation="Horizontal" HorizontalOptions="End">
+                                        <Label FontSize="10" TextColor="{StaticResource Tertiary}" Text="{Binding SectionName}"/>
+                                        <Label FontSize="10" Text="|"/>
+                                        <Label FontSize="10" TextColor="{StaticResource Tertiary}" Text="{Binding RulebookName}"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </DataTemplate>
+                        </listView:SfListView.ItemTemplate>
+                    </listView:SfListView>
+                    <busyindicator:SfBusyIndicator
+                        x:Name="busyindicator"
+                        Title="Searching Rules..."
+                        Grid.Row="1"
+                        AnimationType="Box"
+                        BackgroundColor="{StaticResource Primary}"
+                        IsBusy="{Binding IsBusy}"
+                        TextColor="{StaticResource Tertiary}"
+                        Duration="0.5" />
+                    <textInputLayout:SfTextInputLayout
+                        x:Name="searchInputFooter"
+                        Grid.Row="2"
+                        MinimumHeightRequest="50"
+                        Padding="7,17,7,17"
+                        BackgroundColor="{StaticResource PrimaryDark}"
+                        ContainerType="Filled"
+                        FocusedColor="{StaticResource Secondary}"
+                        Hint="Search Rules"
+                        InputViewPadding="10"
+                        IsHintAlwaysFloated="False"
+                        IsVisible="True"
+                        ReserveSpaceForAssistiveLabels="False"
+                        VerticalOptions="Start"
+                        UnfocusedColor="{StaticResource Secondary}">
+                        <Entry Text="{Binding SearchParameters}" 
+                               Keyboard="Text"
+                               Unfocused="VisualElement_OnUnfocused"/>
+                    </textInputLayout:SfTextInputLayout>
+                </Grid>
+            </sfPopup:SfPopupLayout.Content>
+        </sfPopup:SfPopupLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31320.298
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "RulebookConverter\ConsoleUI.csproj", "{50A00409-602C-458D-B6B8-A602BBCC0B27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RulebookConversionLibrary", "RulebookConversionLibrary\RulebookConversionLibrary.csproj", "{520A1570-199B-40F8-A749-E1C8C06FA857}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{7EF57BB9-8C57-40A4-A083-C3A2AA7B69B7}"
+ProjectSection(SolutionItems) = preProject
+	Documentation\DbDesign.drawio = Documentation\DbDesign.drawio
+	Documentation\DbArchitecture.drawio = Documentation\DbArchitecture.drawio
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50A00409-602C-458D-B6B8-A602BBCC0B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A00409-602C-458D-B6B8-A602BBCC0B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A00409-602C-458D-B6B8-A602BBCC0B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A00409-602C-458D-B6B8-A602BBCC0B27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520A1570-199B-40F8-A749-E1C8C06FA857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520A1570-199B-40F8-A749-E1C8C06FA857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520A1570-199B-40F8-A749-E1C8C06FA857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520A1570-199B-40F8-A749-E1C8C06FA857}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDC75D8F-5F44-46BB-8134-CE9D3DC91CDD}
+	EndGlobalSection
+EndGlobal

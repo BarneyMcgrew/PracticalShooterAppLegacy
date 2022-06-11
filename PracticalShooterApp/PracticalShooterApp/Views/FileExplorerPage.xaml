@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="PracticalShooterApp.Views.FileExplorerPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+    xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+    xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
+    xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    xmlns:syncEffectsView="clr-namespace:Syncfusion.XForms.EffectsView;assembly=Syncfusion.Core.XForms"
+    xmlns:template="clr-namespace:PracticalShooterApp.Templates"
+    BackgroundColor="{StaticResource Primary}"
+    xmlns:viewmodels="clr-namespace:PracticalShooterApp.ViewModels"
+    x:Name="FileExplorer"
+    Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, Auto, *">
+            <Grid.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0,25,0,0" />
+                    <On Platform="Android, WinPhone, Windows" Value="0,0,0,0" />
+                </OnPlatform>
+            </Grid.Margin>
+            <Grid
+                Grid.Row="0"
+                Padding="0,8,0,0"
+                BackgroundColor="{StaticResource Primary}"
+                ColumnSpacing="2"
+                RowSpacing="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="300" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="4" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="1" />
+                </Grid.RowDefinitions>
+                <buttons:SfButton
+                    x:Name="backButton"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Command="{Binding BindingContext.BackButtonCommand, Source={x:Reference FileExplorer}}"
+                    CommandParameter="{x:Reference backButton}"
+                    HorizontalOptions="Start"
+                    Style="{StaticResource IconButtonStyle}"
+                    Text="{StaticResource Back}" />
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Margin="0,8"
+                    FontFamily="Montserrat-Medium"
+                    FontSize="16"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    Text="File Explorer"
+                    TextColor="{StaticResource Gray-900}"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center" />
+                <BoxView
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="5"
+                    Color="{StaticResource Tertiary}" />
+            </Grid>
+            <listView:SfListView
+                x:Name="navigationList"
+                Grid.Row="2"
+                AutoFitMode="Height"
+                IsScrollBarVisible="false"
+                ItemSpacing="{core:OnPlatformOrientationThickness PhonePortrait='0,11,0,0',
+                                                                  PhoneLandscape='0,11,0,0',
+                                                                  Default='0,0,27,27'}"
+                ItemsSource="{Binding NavigationList}"
+                SelectionBackgroundColor="Transparent">
+                <listView:SfListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <!--  View of each card item  -->
+                                <controls:CustomShadowFrame
+                                    Margin="5,2,5,5"
+                                    Padding="0"
+                                    BackgroundColor="{DynamicResource PrimaryDark}"
+                                    BorderColor="{DynamicResource PrimaryDark}"
+                                    BorderWidth="1"
+                                    CornerRadius="4"
+                                    HasShadow="True"
+                                    HorizontalOptions="FillAndExpand"
+                                    Radius="4"
+                                    VerticalOptions="FillAndExpand">
+
+                                    <syncEffectsView:SfEffectsView
+                                        RippleColor="{DynamicResource Gray-300}"
+                                        TouchDownEffects="Ripple"
+                                        TouchUpCommand="{Binding Path=BindingContext.ItemTappedCommand, Source={x:Reference FileExplorer}}"
+                                        TouchUpCommandParameter="{Binding}">
+
+                                        <border:SfBorder
+                                            BorderColor="Transparent"
+                                            BorderWidth="0"
+                                            CornerRadius="4">
+                                            <template:FileExplorerNavigationListTemplate />
+                                        </border:SfBorder>
+
+                                    </syncEffectsView:SfEffectsView>
+                                </controls:CustomShadowFrame>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </listView:SfListView.ItemTemplate>
+
+                <!--  Span count to specify in the different layouts  -->
+                <listView:SfListView.LayoutManager>
+                    <listView:GridLayout SpanCount="{OnIdiom Phone=1, Tablet=2, Desktop=3}" />
+                </listView:SfListView.LayoutManager>
+            </listView:SfListView>
+
+            <busyindicator:SfBusyIndicator
+                x:Name="busyindicator"
+                Title="Loading File Explorer..."
+                Grid.Row="1"
+                Grid.RowSpan="2"
+                AnimationType="Box"
+                BackgroundColor="{StaticResource Primary}"
+                IsBusy="{Binding IsBusy}"
+                TextColor="{StaticResource Tertiary}"
+                Duration="0.5" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,648 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Montserrat-Bold.ttf" />
+    <EmbeddedResource Include="Resources\Montserrat-Medium.ttf" />
+    <EmbeddedResource Include="Resources\Montserrat-Regular.ttf" />
+    <EmbeddedResource Include="Resources\Montserrat-SemiBold.ttf" />
+    <EmbeddedResource Include="Resources\UIFontIcons.ttf" />
+    <EmbeddedResource Include="Databases\rulesData.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 1.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 1.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 10.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 10.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 100.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 100.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 101.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 101.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 102.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 102.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 103.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 103.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 104.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 104.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 105.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 105.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 106.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 106.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 11.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 11.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 12.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 12.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 13.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 13.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 14.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 14.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 15.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 15.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 16.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 16.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 17.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 17.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 18.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 18.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 19.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 19.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 2.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 2.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 20.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 20.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 21.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 21.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 22.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 22.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 23.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 23.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 24.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 24.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 25.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 25.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 26.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 26.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 27.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 27.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 28.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 28.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 29.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 29.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 3.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 3.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 30.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 30.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 31.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 31.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 32.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 32.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 33.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 33.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 34.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 34.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 35.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 35.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 36.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 36.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 37.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 37.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 38.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 38.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 39.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 39.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 4.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 4.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 40.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 40.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 41.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 41.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 42.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 42.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 43.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 43.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 44.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 44.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 45.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 45.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 46.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 46.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 47.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 47.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 48.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 48.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 49.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 49.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 5.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 5.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 50.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 50.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 51.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 51.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 52.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 52.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 53.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 53.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 54.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 54.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 55.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 55.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 56.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 56.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 57.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 57.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 58.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 58.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 59.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 59.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 6.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 6.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 60.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 60.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 61.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 61.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 62.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 62.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 63.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 63.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 64.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 64.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 65.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 65.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 66.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 66.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 67.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 67.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 68.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 68.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 69.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 69.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 7.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 7.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 70.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 70.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 71.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 71.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 72.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 72.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 73.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 73.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 74.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 74.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 75.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 75.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 76.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 76.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 77.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 77.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 78.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 78.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 79.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 79.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 8.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 8.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 80.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 80.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 81.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 81.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 82.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 82.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 83.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 83.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 84.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 84.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 85.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 85.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 86.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 86.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 87.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 87.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 88.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 88.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 89.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 89.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 9.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 9.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 90.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 90.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 91.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 91.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 92.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 92.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 93.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 93.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 94.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 94.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 95.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 95.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 96.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 96.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 97.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 97.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 98.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 98.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PDFs\Appendix 99.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 99.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\TargetArrayHandbook.pdf" />
+    <EmbeddedResource Include="FileExplorer\TargetArrayHandbook.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\10ReshootReasons.pdf" />
+    <EmbeddedResource Include="FileExplorer\10ReshootReasons.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\ChiefRangeOfficerGuide.pdf" />
+    <EmbeddedResource Include="FileExplorer\ChiefRangeOfficerGuide.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\English-IPSCRulesActionAir.pdf" />
+    <EmbeddedResource Include="FileExplorer\English-IPSCRulesActionAir.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\English-IPSCRulesHandgun.pdf" />
+    <EmbeddedResource Include="FileExplorer\English-IPSCRulesHandgun.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\English-IPSCRulesMiniRifle.pdf" />
+    <EmbeddedResource Include="FileExplorer\English-IPSCRulesMiniRifle.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\English-IPSCRulesPCC.pdf" />
+    <EmbeddedResource Include="FileExplorer\English-IPSCRulesPCC.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\English-IPSCRulesRifle.pdf" />
+    <EmbeddedResource Include="FileExplorer\English-IPSCRulesRifle.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\English-IPSCRulesShotgun.pdf" />
+    <EmbeddedResource Include="FileExplorer\English-IPSCRulesShotgun.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\English-UKPSARulesLongBarrelPistol.pdf" />
+    <EmbeddedResource Include="FileExplorer\English-UKPSARulesLongBarrelPistol.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\HandgunEquipmentCheckManual.pdf" />
+    <EmbeddedResource Include="FileExplorer\HandgunEquipmentCheckManual.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\IPSCRulesFAQ.pdf" />
+    <EmbeddedResource Include="FileExplorer\IPSCRulesFAQ.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\MatchDirectorChecklist.pdf" />
+    <EmbeddedResource Include="FileExplorer\MatchDirectorChecklist.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\MatchDirectorHandbook.pdf" />
+    <EmbeddedResource Include="FileExplorer\MatchDirectorHandbook.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\RangeMasterGuide.pdf" />
+    <EmbeddedResource Include="FileExplorer\RangeMasterGuide.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\RangeOfficerManual.pdf" />
+    <EmbeddedResource Include="FileExplorer\RangeOfficerManual.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\ROAideMemoire.pdf" />
+    <EmbeddedResource Include="FileExplorer\ROAideMemoire.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="FileExplorer\USPSAIPSCRules.pdf" />
+    <EmbeddedResource Include="FileExplorer\USPSAIPSCRules.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Remove="PracticalShooterApp.ipa" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="akavache" Version="8.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="20.1.0.57" />
+    <PackageReference Include="Syncfusion.Xamarin.Cards" Version="20.1.0.57" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="20.1.0.59" />
+    <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator" Version="20.1.0.57" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="20.1.0.57" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="20.1.0.57" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPdfViewer" Version="20.1.0.57" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout" Version="20.1.0.57" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPullToRefresh" Version="20.1.0.57" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="20.1.0.59" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Styles\ButtonStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\FontIcons.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\GradientViewStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\LabelStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Templates\EventTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Templates\NavigationCalendarTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Templates\NavigationListTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Templates\NavigationTileTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\CalendarEntryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LearnPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MorePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Templates\WalkthroughItemPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RSSPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RulesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SearchPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Helpers\ShareHelper.cs">
+      <DependentUpon>IShareHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\BrowserService.cs">
+      <DependentUpon>IBrowserService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\CalendarEntriesService.cs">
+      <DependentUpon>ICalendarEntriesService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\ChapterService.cs">
+      <DependentUpon>IChapterService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\HomeTilesService.cs">
+      <DependentUpon>IHomeTilesService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\RulebookService.cs">
+      <DependentUpon>IRulebookService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\MockDataStore.cs">
+      <DependentUpon>IDataStore.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\SectionService.cs">
+      <DependentUpon>ISectionService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\WebService.cs">
+      <DependentUpon>IWebService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\RSSNavigationListTemplate.xaml.cs">
+      <DependentUpon>RSSNavigationListTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Helpers\RSSItemHelper.cs">
+      <DependentUpon>IRSSItemHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Helpers\ActionBarHelper.cs">
+      <DependentUpon>IActionBarHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Clients\SettingsClient.cs">
+      <DependentUpon>ISettingsClient.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Clients\SqlRulesClient.cs">
+      <DependentUpon>ISqlRulesClient.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Clients\RSSApiClient.cs">
+      <DependentUpon>IRSSApiClient.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\RulesService.cs">
+      <DependentUpon>IRulesService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\SearchService.cs">
+      <DependentUpon>ISearchService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\AppendixService.cs">
+      <DependentUpon>IAppendixService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Services\GlossaryService.cs">
+      <DependentUpon>IGlossaryService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\FileExplorerNavigationListTemplate.xaml.cs">
+      <DependentUpon>FileExplorerNavigationListTemplate.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
