@@ -1,20 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace PracticalShooterApp.Templates
-{
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NavigationTileTemplate : Grid
-    {
-        public NavigationTileTemplate()
-        {
-            InitializeComponent();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d3f0c421ba39b67b0ddf1cc0d749cc82879b88a6b64bdd93a8a3ada0974cf44
+size 427

@@ -1,20 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace PracticalShooterApp.Styles
-{
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LabelStyles
-    {
-        public LabelStyles()
-        {
-            InitializeComponent();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f57b4c99fbe742ecadcdd6c85306a19f8c8e1e02c8cfa85c805c0cb597fb0187
+size 395

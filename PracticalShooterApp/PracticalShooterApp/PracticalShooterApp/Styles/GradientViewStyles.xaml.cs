@@ -1,20 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace PracticalShooterApp.Styles
-{
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GradientViewStyles
-    {
-        public GradientViewStyles()
-        {
-            InitializeComponent();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a6282b431fcb6071d12c4696baa3f9427c2084daf580453b770b56eeef336b2
+size 409

@@ -1,32 +1,3 @@
-﻿using PracticalShooterApp.Models;
-using PracticalShooterApp.ViewModels;
-using PracticalShooterApp.Views;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace PracticalShooterApp.Views
-{
-    public partial class ItemsPage : ContentPage
-    {
-        ItemsViewModel _viewModel;
-
-        public ItemsPage()
-        {
-            InitializeComponent();
-
-            BindingContext = _viewModel = new ItemsViewModel();
-        }
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            _viewModel.OnAppearing();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8270b2c73138ea555602b7ea2060e8c8510ccd4cfd85cb3e7076ccbd6c0ea008
+size 721

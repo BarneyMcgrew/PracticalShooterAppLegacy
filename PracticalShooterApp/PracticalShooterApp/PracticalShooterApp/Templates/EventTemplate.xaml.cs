@@ -1,20 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace PracticalShooterApp.Templates
-{
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class EventTemplate
-    {
-        public EventTemplate()
-        {
-            InitializeComponent();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec28ce2fc0803a777d197e02620433206868f45d035386dff668ea302585e28f
+size 402

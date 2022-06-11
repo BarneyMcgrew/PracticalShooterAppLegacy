@@ -1,29 +1,3 @@
-﻿using System.Runtime.Serialization;
-using Newtonsoft.Json;
-
-namespace PracticalShooterApp.Models
-{
-    [DataContract]
-    public class SubRuleModel
-    {
-        [DataMember(Name = "Id")]
-        [JsonProperty(PropertyName = "Id")]
-        public int Id { get; set; }
-        
-        [DataMember(Name = "Name")]
-        [JsonProperty(PropertyName = "Name")]
-        public string Name { get; set; }
-        
-        [DataMember(Name = "Numeric")]
-        [JsonProperty(PropertyName = "Numeric")]
-        public string Numeric { get; set; }
-        
-        [DataMember(Name = "Description")]
-        [JsonProperty(PropertyName = "Description")]
-        public string Description { get; set; }
-        
-        [DataMember(Name = "RuleId")]
-        [JsonProperty(PropertyName = "RuleId")]
-        public int RuleId { get; set; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b3612467d504dbd9e9796176812cc35806e85a6ba59142fd35648155f741226
+size 839

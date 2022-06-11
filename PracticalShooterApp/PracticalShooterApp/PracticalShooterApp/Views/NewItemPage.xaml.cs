@@ -1,21 +1,3 @@
-﻿using PracticalShooterApp.Models;
-using PracticalShooterApp.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace PracticalShooterApp.Views
-{
-    public partial class NewItemPage : ContentPage
-    {
-        public Item Item { get; set; }
-
-        public NewItemPage()
-        {
-            InitializeComponent();
-            BindingContext = new NewItemViewModel();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8166eb6abc55c73661ef906603ae16cda1b44b5ab3d5171852e06eb67092aeaa
+size 479

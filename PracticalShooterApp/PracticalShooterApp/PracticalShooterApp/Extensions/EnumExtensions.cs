@@ -1,22 +1,3 @@
-﻿using System;
-using System.Linq;
-using System.Reflection;
-
-namespace PracticalShooterApp.Extensions
-{
-    public static class EnumExtensions
-    {
-        /// <summary>
-        ///     A generic extension method that aids in reflecting 
-        ///     and retrieving any attribute that is applied to an `Enum`.
-        /// </summary>
-        public static TAttribute GetAttribute<TAttribute>(this Enum enumValue)
-            where TAttribute : Attribute
-        {
-            return enumValue.GetType()
-                .GetMember(enumValue.ToString())
-                .First()
-                .GetCustomAttribute<TAttribute>();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:80e23ddac01baeb6ad1bb76a237c7f334b8b77489f6d5c3bbefb50d9e1656c64
+size 649

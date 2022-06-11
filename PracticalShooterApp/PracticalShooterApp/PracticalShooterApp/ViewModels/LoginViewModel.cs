@@ -1,24 +1,3 @@
-﻿using PracticalShooterApp.Views;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Xamarin.Forms;
-
-namespace PracticalShooterApp.ViewModels
-{
-    public class LoginViewModel : BaseViewModel
-    {
-        public Command LoginCommand { get; }
-
-        public LoginViewModel()
-        {
-            LoginCommand = new Command(OnLoginClicked);
-        }
-
-        private async void OnLoginClicked(object obj)
-        {
-            // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-            await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c1269422eafaa48c73da5238737d8978141e731a3738caff67265ebf7b3a626
+size 641

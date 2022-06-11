@@ -1,20 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace PracticalShooterApp.Templates
-{
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NavigationCalendarTemplate : Grid
-    {
-        public NavigationCalendarTemplate()
-        {
-            InitializeComponent();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f3f83076fa2bebdfb05c3b4b5830caad9fecd1e7a08863bc2145827fb6eaca9f
+size 435

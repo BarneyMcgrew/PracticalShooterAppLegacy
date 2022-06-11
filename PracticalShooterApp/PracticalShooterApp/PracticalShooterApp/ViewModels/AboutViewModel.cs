@@ -1,18 +1,3 @@
-﻿using System;
-using System.Windows.Input;
-using Xamarin.Essentials;
-using Xamarin.Forms;
-
-namespace PracticalShooterApp.ViewModels
-{
-    public class AboutViewModel : BaseViewModel
-    {
-        public AboutViewModel()
-        {
-            Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
-        }
-
-        public ICommand OpenWebCommand { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6813321fa6acffc372c68ae9e72f0401f3022658bedd5c076bef3326144b5b64
+size 443

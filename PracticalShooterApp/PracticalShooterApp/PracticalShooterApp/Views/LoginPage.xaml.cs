@@ -1,21 +1,3 @@
-﻿using PracticalShooterApp.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace PracticalShooterApp.Views
-{
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
-    {
-        public LoginPage()
-        {
-            InitializeComponent();
-            this.BindingContext = new LoginViewModel();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c3d5b7c689769ce1551f4e220ad643fe3365c9bb42d44420199b4010d23ece24
+size 497
