@@ -3,3 +3,4 @@ bin/
 object/
 obj/
 Debug/
+.idea/
