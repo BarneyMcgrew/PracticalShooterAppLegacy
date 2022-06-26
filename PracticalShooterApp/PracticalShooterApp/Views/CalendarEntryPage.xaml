@@ -12,7 +12,7 @@
     BackgroundColor="{StaticResource Primary}"
     NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <ScrollView VerticalScrollBarVisibility="Never">
+        <ScrollView VerticalScrollBarVisibility="Never" x:Name="eventPageScroll">
             <Grid RowDefinitions="Auto, *">
 
                 <!--  Header image  -->
