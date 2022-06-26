@@ -82,6 +82,7 @@ namespace PracticalShooterApp.Views
             if (selectedDiscipline != _settingsClient.CurrentDiscipline)
             {
                 _settingsClient.CurrentDiscipline = selectedDiscipline;
+                _viewModel.RulebookName = _settingsClient.CurrentDiscipline.GetAttribute<DisplayAttribute>().Name;
 
                 _viewModel.Search();
             }

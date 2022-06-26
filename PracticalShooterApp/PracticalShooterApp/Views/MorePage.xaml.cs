@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using PracticalShooterApp.Helpers;
 using PracticalShooterApp.Services;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -25,11 +26,20 @@ namespace PracticalShooterApp.Views
         {
             base.OnAppearing();
             SetHeaderSafeArea();
+            SetVersionLabel();
         }
         
         private void SetHeaderSafeArea()
         {
             mainGrid.Margin = new Thickness(0, _actionBarHelper.GetTopSafeArea(), 0,0);
+        }
+
+        private void SetVersionLabel()
+        {
+            var version = VersionTracking.CurrentVersion;
+            var phase = "Release";
+            
+            VersionLabel.Text = $"v{version} ({phase} Phase)";
         }
 
         private void settingsButton_Clicked(object sender, EventArgs e)
@@ -70,7 +80,7 @@ namespace PracticalShooterApp.Views
 
         private async void developmentBlog_Clicked(object sender, EventArgs e)
         {
-            var uri = new Uri("https://www.barney-mcgrew.com/category/the-practical-shooter-app/");
+            var uri = new Uri("https://trello.com/b/Xe8VJtEe/practical-shooter-app-development-board");
             NavigateToWeb(uri);
         }
 
@@ -98,7 +108,19 @@ namespace PracticalShooterApp.Views
 
         private async void reportABug_Clicked(object sender, EventArgs e)
         {
-            var uri = new Uri("https://www.barney-mcgrew.com/the-practical-shooter-app-feedback-form/");
+            var uri = new Uri("https://www.barney-mcgrew.com/practical-shooter-app-feedback-form/");
+            NavigateToWeb(uri);
+        }
+        
+        private void getInTouch_Clicked(object sender, EventArgs e)
+        {
+            var uri = new Uri("https://www.barney-mcgrew.com/practical-shooter-app-sponsorship-request-form/");
+            NavigateToWeb(uri);
+        }
+        
+        private void calendarRequest_Clicked(object sender, EventArgs e)
+        {
+            var uri = new Uri("https://www.barney-mcgrew.com/practical-shooter-app-calendar-request-form/");
             NavigateToWeb(uri);
         }
 

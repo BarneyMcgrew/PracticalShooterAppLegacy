@@ -107,6 +107,28 @@ namespace PracticalShooterApp.Clients
             }
         }
 
+        public Dictionary<string, bool> SeenInAppMessages
+        {
+            get
+            {
+                var task = Task.Run(async () =>
+                    await _settingsCache.GetOrCreateObject(
+                        nameof(SeenInAppMessages),
+                        () => new Dictionary<string, bool>(),
+                        null));
+
+                return task.Result;
+            }
+            set
+            {
+                Task.Run(async () =>
+                    await _settingsCache.InsertObject(
+                        nameof(SeenInAppMessages),
+                        value,
+                        null));
+            }
+        }
+
         public String LastNavigatedPage
         {
             get

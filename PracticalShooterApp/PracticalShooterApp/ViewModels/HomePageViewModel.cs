@@ -111,7 +111,7 @@ namespace PracticalShooterApp.ViewModels
             switch (contextType)
             {
                 case "PAGE":
-                    await Shell.Current.GoToAsync($"{Shell.Current.CurrentState.Location}/{contextString}", true);
+                    await Shell.Current.GoToAsync($"{contextString}", true);
                     break;
                 case "RSS":
                     await Shell.Current.GoToAsync($"{nameof(RSSPage)}?{nameof(RSSPageViewModel.ContextFeed)}={contextString}", true);

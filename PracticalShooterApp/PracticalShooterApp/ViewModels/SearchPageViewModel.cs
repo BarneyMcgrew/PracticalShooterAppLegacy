@@ -50,7 +50,7 @@ namespace PracticalShooterApp.ViewModels
             UpdateDisciplineName();
         }
 
-        private void UpdateDisciplineName()
+        public void UpdateDisciplineName()
         {
             RulebookName = _settingsClient.CurrentDiscipline.GetAttribute<DisplayAttribute>().Name;
         }
@@ -65,9 +65,6 @@ namespace PracticalShooterApp.ViewModels
 
         public async Task Search()
         {
-            RulebookName = _settingsClient.CurrentDiscipline.GetAttribute<DisplayAttribute>().Name;
-
-            
             // make search parameters
             if (_searchParameters.Length < 3)
                 return;

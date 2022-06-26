@@ -644,5 +644,11 @@
       <DependentUpon>FileExplorerNavigationListTemplate.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Services\InAppMessagesService.cs">
+      <DependentUpon>IInAppMessagesService.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Clients\IAzureApiClient.cs">
+      <DependentUpon>AzureApiClient.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

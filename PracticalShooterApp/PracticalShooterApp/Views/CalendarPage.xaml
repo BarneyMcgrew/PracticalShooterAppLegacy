@@ -40,7 +40,7 @@
                                            FontSize="16"
                                            HorizontalOptions="Center"
                                            HorizontalTextAlignment="Center"
-                                           Text="Select Countries"
+                                           Text="Select Filters"
                                            TextColor="{StaticResource Gray-900}"
                                            VerticalOptions="Center"
                                            VerticalTextAlignment="Start"/>

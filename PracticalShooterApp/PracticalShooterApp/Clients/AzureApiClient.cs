@@ -24,6 +24,22 @@ namespace PracticalShooterApp.Clients
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
+        public async Task<List<InAppMessageModel>> GetInAppMessages()
+        {
+            try
+            {
+                HttpResponseMessage response = await _httpClient.GetAsync("getInAppMessages");
+                var deserializedResponse = JsonConvert.DeserializeObject<List<InAppMessageModel>>(response.Content.ReadAsStringAsync().Result);
+
+                return deserializedResponse;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return new List<InAppMessageModel>();
+            }
+        }
+
         public async Task<List<HomeTilesModel>> GetHomeTiles()
         {
             try

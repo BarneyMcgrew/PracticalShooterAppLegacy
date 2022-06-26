@@ -12,7 +12,6 @@
     xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
     xmlns:syncEffectsView="clr-namespace:Syncfusion.XForms.EffectsView;assembly=Syncfusion.Core.XForms"
     xmlns:template="clr-namespace:PracticalShooterApp.Templates"
-    xmlns:vm="clr-namespace:PracticalShooterApp.ViewModels"
     x:Name="Home"
     Title="{Binding Title}"
     BackgroundColor="{StaticResource Primary}"
@@ -44,7 +43,7 @@
                                            FontSize="16"
                                            HorizontalOptions="Center"
                                            HorizontalTextAlignment="Center"
-                                           Text="Select Regions"
+                                           Text="Select Filters"
                                            TextColor="{StaticResource Gray-900}"
                                            VerticalOptions="Center"
                                            VerticalTextAlignment="Start"/>
@@ -97,6 +96,7 @@
                                 x:Name="mailButton"
                                 Clicked="mailButton_Clicked"
                                 Style="{StaticResource IconButtonStyle}"
+                                TextColor="{StaticResource Gray-100}"
                                 Text="{StaticResource Mail}" />
                         </controls:TitleView.LeadingView>
                     </controls:TitleView>

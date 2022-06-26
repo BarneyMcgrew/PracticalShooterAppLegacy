@@ -167,12 +167,15 @@ namespace PracticalShooterApp.ViewModels
             var fileItem = (FileExplorerModel) selectedItem;
 
             if (fileItem == null)
+            {
                 return;
-            
-            // do navigation to pdf with controls
-            await Shell.Current.GoToAsync(
-                $"{Shell.Current.CurrentState.Location}/{nameof(PDFPage)}?{nameof(PDFPageViewModel.Title)}={fileItem.FileName}&{nameof(PDFPageViewModel.InlineIdentifier)}={fileItem.FileDirectory}&{nameof(PDFPageViewModel.ShowControls)}=True", true);
+            }
 
+            var pageNavigation =
+                $"{Shell.Current.CurrentState.Location}/{nameof(PDFPage)}?{nameof(PDFPageViewModel.Title)}={fileItem.FileName}&{nameof(PDFPageViewModel.InlineIdentifier)}={fileItem.FileDirectory}&{nameof(PDFPageViewModel.ShowControls)}=True";
+
+            // do navigation to pdf with controls
+            await Shell.Current.GoToAsync(pageNavigation, true);
         }
     }
 }
