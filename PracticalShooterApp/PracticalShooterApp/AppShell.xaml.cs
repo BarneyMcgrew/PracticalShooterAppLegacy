@@ -28,6 +28,8 @@ namespace PracticalShooterApp
             
             Routing.RegisterRoute(nameof(PDFPage), typeof(PDFPage));
             
+            Routing.RegisterRoute(nameof(WebPage), typeof(WebPage));
+            
             Routing.RegisterRoute(nameof(FileExplorerPage), typeof(FileExplorerPage));
             
             Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));

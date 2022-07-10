@@ -39,6 +39,10 @@ namespace PracticalShooterApp.Models
         [JsonProperty(PropertyName = "navigationContext")]
         public String NavigationContext { get; set; }
         
+        [DataMember(Name = "buildVersion")]
+        [JsonProperty(PropertyName = "buildVersion")]
+        public String BuildVersion { get; set; }
+        
         [DataMember(Name = "useTileCard")]
         public bool UseTileCard => ItemTypeId == "TileCard";
         

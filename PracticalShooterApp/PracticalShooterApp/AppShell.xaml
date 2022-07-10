@@ -56,6 +56,10 @@
     </TabBar>
     
     <TabBar>
+        <ShellContent ContentTemplate="{DataTemplate local:WebPage}" Route="WebPage"/>
+    </TabBar>
+    
+    <TabBar>
         <ShellContent ContentTemplate="{DataTemplate local:FileExplorerPage}" Route="FileExplorerPage"/>
     </TabBar>
 

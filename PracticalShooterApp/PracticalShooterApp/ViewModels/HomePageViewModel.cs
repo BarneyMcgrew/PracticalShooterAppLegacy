@@ -9,7 +9,9 @@ using PracticalShooterApp.Clients;
 using PracticalShooterApp.Models;
 using PracticalShooterApp.Services;
 using PracticalShooterApp.Views;
+using SQLitePCL;
 using Syncfusion.XForms.Buttons;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using NavigationModel = PracticalShooterApp.Models.NavigationModel;
@@ -102,6 +104,8 @@ namespace PracticalShooterApp.ViewModels
         {
             var homeTile = (HomeTilesModel)selectedItem;
 
+            var title = homeTile.ItemName;
+
             var contextSplit = homeTile.NavigationContext.Split(new String[] { "::" }, StringSplitOptions.RemoveEmptyEntries);
 
             var contextType = contextSplit[0];
@@ -114,20 +118,39 @@ namespace PracticalShooterApp.ViewModels
                     await Shell.Current.GoToAsync($"{contextString}", true);
                     break;
                 case "RSS":
-                    await Shell.Current.GoToAsync($"{nameof(RSSPage)}?{nameof(RSSPageViewModel.ContextFeed)}={contextString}", true);
+                    await Shell.Current.GoToAsync($"{Shell.Current.CurrentState.Location}/{nameof(RSSPage)}?{nameof(RSSPageViewModel.ContextFeed)}={contextString}", true);
                     break;
                 default: // WEB
-                    var uri = new Uri(contextString);
-                    var success = await _browserService.GoToLink(uri);
-                    
-                    if (!success)
-                    {
-                        await Application.Current.MainPage.DisplayAlert("Internet", "Need an internet connection to navigate here!", "Ok");
-                    }
+                    //await NavigateToWebPage(title, contextString);
+                    await NavigateToWebPage(contextString);
                     break;
             }
         }
 
+        private async Task NavigateToWebPage(string title, string url)
+        {
+            var current = Connectivity.NetworkAccess;
+            if (current != NetworkAccess.Internet)
+            {
+                await Application.Current.MainPage.DisplayAlert("Internet", "Need an internet connection to navigate here!", "Ok");
+                return;
+            }
+            
+            await Shell.Current.GoToAsync(
+                $"{Shell.Current.CurrentState.Location}/{nameof(WebPage)}?{nameof(WebPageViewModel.Title)}={title}&{nameof(WebPageViewModel.Url)}={url}");
+        }
+
+        private async Task NavigateToWebPage(string url)
+        {
+            var uri = new Uri(url);
+            var success = await _browserService.GoToLink(uri);
+                    
+            if (!success)
+            {
+                await Application.Current.MainPage.DisplayAlert("Internet", "Need an internet connection to navigate here!", "Ok");
+            }    
+        }
+        
         public async void PopulateHomeTiles()
         {
             IsBusy = true;
@@ -157,7 +180,10 @@ namespace PracticalShooterApp.ViewModels
             
             foreach (var homeTile in tileList.OrderBy(o => o.ItemOrder))
             {
-                _navigationList.Add(homeTile);
+                var buildVersion = VersionTracking.CurrentVersion;
+                
+                if (String.IsNullOrWhiteSpace(homeTile.BuildVersion) || homeTile.BuildVersion == buildVersion)
+                    _navigationList.Add(homeTile);
             }
             
             RefreshRegionUIFilters();

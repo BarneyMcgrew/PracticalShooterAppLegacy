@@ -28,7 +28,8 @@ namespace PracticalShooterApp.Services
                         LaunchMode = BrowserLaunchMode.SystemPreferred,
                         TitleMode = BrowserTitleMode.Show,
                         PreferredToolbarColor = (Color)Application.Current.Resources["PrimaryDark"],
-                        PreferredControlColor = (Color)Application.Current.Resources["Tertiary"]
+                        PreferredControlColor = (Color)Application.Current.Resources["Tertiary"],
+                        Flags = BrowserLaunchFlags.PresentAsPageSheet
                     });
             }
             catch(Exception ex)

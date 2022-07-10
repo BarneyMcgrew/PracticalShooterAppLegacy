@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xForms="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+             xmlns:controls="clr-namespace:PracticalShooterApp.Controls;assembly=PracticalShooterApp"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:viewModels="clr-namespace:PracticalShooterApp.ViewModels;assembly=PracticalShooterApp"
+             BackgroundColor="{StaticResource Primary}"
+             Shell.NavBarIsVisible="False"
+             x:Name="Web"
+             x:Class="PracticalShooterApp.Views.WebPage">
+    <ContentPage.BindingContext>
+        <viewModels:WebPageViewModel/>
+    </ContentPage.BindingContext>
+    <Grid x:Name="webPageView" RowDefinitions="Auto, *">
+            <controls:TitleView Title="{Binding Title}" Grid.Row="0">
+               <controls:TitleView.LeadingView>
+                   <buttons:SfButton
+                       x:Name="backButton"
+                       Command="{Binding BindingContext.BackButtonCommand, Source={x:Reference Web}}"
+                       CommandParameter="{x:Reference backButton}"                        
+                       Style="{StaticResource IconButtonStyle}"
+                       Text="{StaticResource Back}" />
+               </controls:TitleView.LeadingView>
+               <controls:TitleView.TrailingView>
+                   <buttons:SfButton
+                       x:Name="disciplineButton"
+                       Style="{StaticResource IconButtonStyle}"
+                       TextColor="{StaticResource Primary}"
+                       Text="{StaticResource Category}" />
+               </controls:TitleView.TrailingView>
+            </controls:TitleView>
+        
+            <WebView
+                Grid.Row="1"
+                x:Name="webView"/>
+            
+            <busyindicator:SfBusyIndicator x:Name="busyindicator" 
+                                       Grid.Row="1"
+                                       IsBusy="{Binding IsBusy}"
+                                       Title="Loading Page..."
+                                       AnimationType="Box"
+                                       Duration="0.5"
+                                       BackgroundColor="{StaticResource Primary}"
+                                       TextColor="{StaticResource Tertiary}"/>
+        </Grid>
+</ContentPage>
