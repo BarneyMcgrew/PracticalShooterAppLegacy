@@ -11,8 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build and run Firebase Deploy
-      - working-directory: ./CMSPracticalShooterApp/fire-cms
+      - name: Build and run Firebase Deploy      
       - run: yarn build && firebase deploy
       - uses: FirebaseExtended/action-hosting-deploy@v0        
         with:
