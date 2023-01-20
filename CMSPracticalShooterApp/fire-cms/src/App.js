@@ -199,7 +199,7 @@ export default function App() {
     }, []);
 
     return <FirebaseCMSApp
-        name={"My Online Shop"}
+        name={"The Practical Shooter CMS"}
         authentication={myAuthenticator}
         collections={[productsCollection]}
         firebaseConfig={firebaseConfig}
