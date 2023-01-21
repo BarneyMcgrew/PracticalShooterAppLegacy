@@ -7,7 +7,9 @@ import {
 import "typeface-rubik";
 import "@fontsource/ibm-plex-mono";
 
-import { productsCollection } from "./collections/productCollection";
+import logo from "./psa.png";
+import { productsCollection } from "./collections/sample/productCollection";
+import { eventCollection } from "./collections/eventCollection";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -43,7 +45,12 @@ export default function App() {
     return <FirebaseCMSApp
         name={"The Practical Shooter CMS"}
         authentication={myAuthenticator}
-        collections={[productsCollection]}
+        signInOptions={[
+            "password",
+            "google.com"
+        ]}
+        logo={logo}
+        collections={[productsCollection, eventCollection]}
         firebaseConfig={firebaseConfig}
     />;
 }

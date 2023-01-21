@@ -2,15 +2,14 @@ import {
     buildCollection,
     buildProperty
 } from "firecms";
-import { locales } from "../taxonomies/locales";
-import { productCategories } from "../taxonomies/productCategories";
+import { productCategories } from "../../taxonomies/sample/productCategories";
 
 import { localeCollection } from "./localeCollection";
 
 export const productsCollection = buildCollection({
     name: "Products",
     singularName: "Product",
-    group: "Default",
+    group: "Sample",
     path: "products",
     permissions: ({ authController }) => ({
         edit: true,

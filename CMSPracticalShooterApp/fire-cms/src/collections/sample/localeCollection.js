@@ -1,7 +1,7 @@
 import {
     buildCollection,
 } from "firecms";
-import { locales } from "../taxonomies/locales";
+import { locales } from "../../taxonomies/sample/locales";
 
 export const localeCollection = buildCollection({
     path: "locale",
