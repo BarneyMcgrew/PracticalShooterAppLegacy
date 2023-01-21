@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "the-practical-shooter-app"
-  }
+    "default": "the-practical-shooter-app",
+    "live": "the-practical-shooter-app"
+  },
+  "targets": {},
+  "etags": {}
 }
