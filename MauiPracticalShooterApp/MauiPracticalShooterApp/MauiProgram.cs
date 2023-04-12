@@ -1,10 +1,15 @@
-﻿namespace MauiPracticalShooterApp;
+﻿using Syncfusion.Maui.Core.Hosting;
+
+namespace MauiPracticalShooterApp;
 
 public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
 	{
 		var builder = MauiApp.CreateBuilder();
+
+        builder.ConfigureSyncfusionCore();
+
 		builder
 			.UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
@@ -16,6 +21,6 @@ public static class MauiProgram
                 fonts.AddFont("Roboto-Thin.ttf", "RobotoLight");
             });
 
-		return builder.Build();
+        return builder.Build();
 	}
 }

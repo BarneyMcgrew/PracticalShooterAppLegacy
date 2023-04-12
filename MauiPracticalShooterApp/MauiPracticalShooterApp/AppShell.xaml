@@ -3,12 +3,73 @@
     x:Class="MauiPracticalShooterApp.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MauiPracticalShooterApp"
+    xmlns:views="using:MauiPracticalShooterApp.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent 
+            ContentTemplate="{DataTemplate views:OnboardingPage}" 
+            Route="OnboardingPage" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent 
+            ContentTemplate="{DataTemplate views:CalendarEntryPage}" 
+            Route="CalendarEntryPage" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent 
+            ContentTemplate="{DataTemplate views:CalendarPage}" 
+            Route="CalendarPage" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent 
+            ContentTemplate="{DataTemplate views:RulesPage}" 
+            Route="RulesPage" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent 
+            ContentTemplate="{DataTemplate views:SearchPage}" 
+            Route="SearchPage" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent 
+            ContentTemplate="{DataTemplate views:PDFPage}" 
+            Route="PDFPage"/>
+    </TabBar>
+
+    <TabBar>
+        <ShellContent 
+            ContentTemplate="{DataTemplate views:WebPage}" 
+            Route="WebPage"/>
+    </TabBar>
+
+    <TabBar>
+        <ShellContent 
+            ContentTemplate="{DataTemplate views:FileExplorerPage}" 
+            Route="FileExplorerPage"/>
+    </TabBar>
+
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate views:HomePage}"
+            Icon="HomeIcon.png"
+            Route="HomePage" />
+        <ShellContent
+            Title="Learn"
+            ContentTemplate="{DataTemplate views:LearnPage}"
+            Icon="LearnIcon.png"
+            Route="LearnPage" />
+        <ShellContent
+            Title="More"
+            ContentTemplate="{DataTemplate views:MorePage}"
+            Icon="MoreIcon.png"
+            Route="MorePage" />
+    </TabBar>
 
 </Shell>
