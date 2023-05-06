@@ -98,8 +98,11 @@ namespace RulebookConversionLibrary.Helpers
             var lastLineWasSubRule = false;
             var indexReached = false;
 
-            foreach (var line in fileArray)
+            foreach (var rawLine in fileArray)
             {
+                // New bug fix for lines starting with whitespace
+                var line = rawLine.Trim();
+                
                 // Check for Empty Line
 
                 if (string.IsNullOrWhiteSpace(line)) continue;
