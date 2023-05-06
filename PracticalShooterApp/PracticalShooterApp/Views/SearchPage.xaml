@@ -92,7 +92,10 @@
                         SelectedIndexChanged="DisciplinePicker_OnSelectedIndexChanged">
                         <Picker.Items>
                             <x:String>Handgun</x:String>
-                            <x:String>Action Air</x:String>
+                            <x:String>.22LR Handgun</x:String>
+                            <x:String>Action Air Handgun</x:String>
+                            <x:String>Action Air PCC</x:String>
+                            <x:String>Action Air Rifle</x:String>
                             <x:String>Shotgun</x:String>
                             <x:String>Rifle</x:String>
                             <x:String>Mini Rifle</x:String>

@@ -8,15 +8,6 @@ namespace RulebookConversionLibrary.Enums
         [Display(Name = "Action Air Handgun")]
         [Filename("IPSCRulesActionAirHandgun")]
         ActionAirHandgun,
-        [Display(Name = "Action Air PCC")]
-        [Filename("IPSCRulesActionAirPCC")]
-        ActionAirPCC,
-        [Display(Name = "Action Air Rifle")]
-        [Filename("IPSCRulesActionAirRifle")]
-        ActionAirRifle,
-        [Display(Name= ".22LR Handgun")]
-        [Filename("IPSCRules22Handgun")]
-        Handgun22,
         [Display(Name = "Handgun")]
         [Filename("IPSCRulesHandgun")]
         Handgun,
@@ -32,6 +23,18 @@ namespace RulebookConversionLibrary.Enums
         [Display(Name = "Shotgun")]
         [Filename("IPSCRulesShotgun")]
         Shotgun,
+        [Display(Name= ".22LR Handgun")]
+        [Filename("IPSCRules22Handgun")]
+        Handgun22,
+        [Display(Name = "Action Air PCC")]
+        [Filename("IPSCRulesActionAirPCC")]
+        ActionAirPCC,
+        [Display(Name = "Action Air Rifle")]
+        [Filename("IPSCRulesActionAirRifle")]
+        ActionAirRifle,
+        [Display(Name = "Grand Tournament")]
+        [Filename("IPSCRulesGrandTournament")]
+        GrandTournament
         // [Display(Name = "Long Barrel Pistol"]
         // [Filename("UKPSARulesLongBarrelPistol")]
         // LongBarrelPistol

@@ -72,11 +72,20 @@ namespace PracticalShooterApp.Views
             
             switch (selectedDisciplineName)
             {
+                case ".22LR Handgun":
+                    selectedDiscipline = Discipline.Handgun22;
+                    break;
                 case "Handgun":
                     selectedDiscipline = Discipline.Handgun;
                     break;
-                case "Action Air":
-                    selectedDiscipline = Discipline.ActionAir;
+                case "Action Air Handgun":
+                    selectedDiscipline = Discipline.ActionAirHandgun;
+                    break;
+                case "Action Air PCC":
+                    selectedDiscipline = Discipline.ActionAirPCC;
+                    break;
+                case "Action Air Rifle":
+                    selectedDiscipline = Discipline.ActionAirRifle;
                     break;
                 case "Rifle":
                     selectedDiscipline = Discipline.Rifle;
