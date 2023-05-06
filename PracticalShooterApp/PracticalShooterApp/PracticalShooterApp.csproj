@@ -450,9 +450,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <None Remove="FileExplorer\English-IPSCRulesActionAir.pdf" />
-    <EmbeddedResource Include="FileExplorer\English-IPSCRulesActionAir.pdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
     <None Remove="FileExplorer\English-IPSCRulesHandgun.pdf" />
     <EmbeddedResource Include="FileExplorer\English-IPSCRulesHandgun.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -510,6 +507,116 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <None Remove="PracticalShooterApp.ipa" />
+    <EmbeddedResource Remove="Old PDFs\**" />
+    <None Remove="Old PDFs\**" />
+    <None Remove="PDFs\Appendix 107.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 107.pdf" />
+    <None Remove="PDFs\Appendix 108.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 108.pdf" />
+    <None Remove="PDFs\Appendix 109.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 109.pdf" />
+    <None Remove="PDFs\Appendix 110.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 110.pdf" />
+    <None Remove="PDFs\Appendix 111.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 111.pdf" />
+    <None Remove="PDFs\Appendix 112.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 112.pdf" />
+    <None Remove="PDFs\Appendix 113.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 113.pdf" />
+    <None Remove="PDFs\Appendix 114.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 114.pdf" />
+    <None Remove="PDFs\Appendix 115.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 115.pdf" />
+    <None Remove="PDFs\Appendix 116.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 116.pdf" />
+    <None Remove="PDFs\Appendix 117.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 117.pdf" />
+    <None Remove="PDFs\Appendix 118.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 118.pdf" />
+    <None Remove="PDFs\Appendix 119.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 119.pdf" />
+    <None Remove="PDFs\Appendix 120.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 120.pdf" />
+    <None Remove="PDFs\Appendix 121.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 121.pdf" />
+    <None Remove="PDFs\Appendix 122.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 122.pdf" />
+    <None Remove="PDFs\Appendix 123.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 123.pdf" />
+    <None Remove="PDFs\Appendix 124.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 124.pdf" />
+    <None Remove="PDFs\Appendix 125.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 125.pdf" />
+    <None Remove="PDFs\Appendix 126.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 126.pdf" />
+    <None Remove="PDFs\Appendix 127.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 127.pdf" />
+    <None Remove="PDFs\Appendix 128.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 128.pdf" />
+    <None Remove="PDFs\Appendix 129.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 129.pdf" />
+    <None Remove="PDFs\Appendix 130.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 130.pdf" />
+    <None Remove="PDFs\Appendix 131.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 131.pdf" />
+    <None Remove="PDFs\Appendix 132.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 132.pdf" />
+    <None Remove="PDFs\Appendix 133.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 133.pdf" />
+    <None Remove="PDFs\Appendix 134.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 134.pdf" />
+    <None Remove="PDFs\Appendix 135.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 135.pdf" />
+    <None Remove="PDFs\Appendix 136.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 136.pdf" />
+    <None Remove="PDFs\Appendix 137.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 137.pdf" />
+    <None Remove="PDFs\Appendix 138.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 138.pdf" />
+    <None Remove="PDFs\Appendix 139.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 139.pdf" />
+    <None Remove="PDFs\Appendix 140.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 140.pdf" />
+    <None Remove="PDFs\Appendix 141.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 141.pdf" />
+    <None Remove="PDFs\Appendix 142.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 142.pdf" />
+    <None Remove="PDFs\Appendix 143.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 143.pdf" />
+    <None Remove="PDFs\Appendix 144.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 144.pdf" />
+    <None Remove="PDFs\Appendix 145.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 145.pdf" />
+    <None Remove="PDFs\Appendix 146.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 146.pdf" />
+    <None Remove="PDFs\Appendix 147.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 147.pdf" />
+    <None Remove="PDFs\Appendix 148.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 148.pdf" />
+    <None Remove="PDFs\Appendix 149.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 149.pdf" />
+    <None Remove="PDFs\Appendix 150.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 150.pdf" />
+    <None Remove="PDFs\Appendix 151.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 151.pdf" />
+    <None Remove="PDFs\Appendix 152.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 152.pdf" />
+    <None Remove="PDFs\Appendix 153.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 153.pdf" />
+    <None Remove="PDFs\Appendix 154.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 154.pdf" />
+    <None Remove="PDFs\Appendix 155.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 155.pdf" />
+    <None Remove="PDFs\Appendix 156.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 156.pdf" />
+    <None Remove="PDFs\Appendix 157.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 157.pdf" />
+    <None Remove="PDFs\Appendix 158.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 158.pdf" />
+    <None Remove="PDFs\Appendix 159.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 159.pdf" />
+    <None Remove="PDFs\Appendix 160.pdf" />
+    <EmbeddedResource Include="PDFs\Appendix 160.pdf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -650,5 +757,6 @@
     <Compile Update="Clients\IAzureApiClient.cs">
       <DependentUpon>AzureApiClient.cs</DependentUpon>
     </Compile>
+    <Compile Remove="Old PDFs\**" />
   </ItemGroup>
 </Project>

@@ -70,6 +70,7 @@
                             <x:String>Rifle</x:String>
                             <x:String>Mini Rifle</x:String>
                             <x:String>PCC</x:String>
+                            <!-- <x:String>Grand Tournament</x:String> -->
                         </Picker.Items>
                     </Picker>
                     <listView:SfListView

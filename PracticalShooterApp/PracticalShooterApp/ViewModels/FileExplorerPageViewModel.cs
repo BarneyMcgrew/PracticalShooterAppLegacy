@@ -44,38 +44,62 @@ namespace PracticalShooterApp.ViewModels
                 new FileExplorerModel()
                 {
                     FileName = "IPSC Handgun Rulebook",
-                    Description = "This is the main rulebook for IPSC Handgun revised for 2019 onwards.",
+                    Description = "This is the main rulebook for IPSC Handgun revised for 2023 onwards.",
                     FileDirectory = "PracticalShooterApp.FileExplorer.English-IPSCRulesHandgun.pdf"
                 },
                 new FileExplorerModel()
                 {
-                    FileName = "IPSC Action Air Rulebook",
-                    Description = "This is the main rulebook for IPSC Action Air revised for 2019 onwards.",
-                    FileDirectory = "PracticalShooterApp.FileExplorer.English-IPSCRulesActionAir.pdf"
+                    FileName = "IPSC .22LR Handgun Rulebook",
+                    Description = "This is the main rulebook for IPSC .22LR Handgun revised for 2023 onwards.",
+                    FileDirectory = "PracticalShooterApp.FileExplorer.English-IPSCRules22Handgun.pdf"
+                },
+                new FileExplorerModel()
+                {
+                    FileName = "IPSC Action Air Handgun Rulebook",
+                    Description = "This is the main rulebook for IPSC Action Air Handgun revised for 2023 onwards.",
+                    FileDirectory = "PracticalShooterApp.FileExplorer.English-IPSCRulesActionAirHandgun.pdf"
+                },
+                new FileExplorerModel()
+                {
+                    FileName = "IPSC Action Air PCC Rulebook",
+                    Description = "This is the main rulebook for IPSC Action Air PCC revised for 2023 onwards.",
+                    FileDirectory = "PracticalShooterApp.FileExplorer.English-IPSCRulesActionAirPCC.pdf"
+                },
+                new FileExplorerModel()
+                {
+                    FileName = "IPSC Action Air Rifle Rulebook",
+                    Description = "This is the main rulebook for IPSC Action Air Rifle revised for 2023 onwards.",
+                    FileDirectory = "PracticalShooterApp.FileExplorer.English-IPSCRulesActionAirRifle.pdf"
                 },
                 new FileExplorerModel()
                 {
                     FileName = "IPSC Mini Rifle Rulebook",
-                    Description = "This is the main rulebook for IPSC Mini Rifle revised for 2019 onwards.",
+                    Description = "This is the main rulebook for IPSC Mini Rifle revised for 2023 onwards.",
                     FileDirectory = "PracticalShooterApp.FileExplorer.English-IPSCRulesMiniRifle.pdf"
                 },
                 new FileExplorerModel()
                 {
                     FileName = "IPSC Rifle Rulebook",
-                    Description = "This is the main rulebook for IPSC Rifle revised for 2019 onwards.",
+                    Description = "This is the main rulebook for IPSC Rifle revised for 2023 onwards.",
                     FileDirectory = "PracticalShooterApp.FileExplorer.English-IPSCRulesRifle.pdf"
                 },
                 new FileExplorerModel()
                 {
                     FileName = "IPSC Shotgun Rulebook",
-                    Description = "This is the main rulebook for IPSC Shotgun revised for 2019 onwards.",
+                    Description = "This is the main rulebook for IPSC Shotgun revised for 2023 onwards.",
                     FileDirectory = "PracticalShooterApp.FileExplorer.English-IPSCRulesShotgun.pdf"
                 },
                 new FileExplorerModel()
                 {
                     FileName = "IPSC Pistol Calibre Carbine Rulebook",
-                    Description = "This is the main rulebook for IPSC Pistol Calibre Carbine for 2019 onwards.",
+                    Description = "This is the main rulebook for IPSC Pistol Calibre Carbine for 2023 onwards.",
                     FileDirectory = "PracticalShooterApp.FileExplorer.Englihs-IPSCRulesPCC.pdf"
+                },
+                new FileExplorerModel()
+                {
+                    FileName = "IPSC Grand Tournament Rulebook",
+                    Description = "This is the main rulebook for IPSC Grand Tournament for 2023 onwards.",
+                    FileDirectory = "PracticalShooterApp.FileExplorer.Englihs-IPSCRulesGrandTournament.pdf"
                 },
                 new FileExplorerModel()
                 {

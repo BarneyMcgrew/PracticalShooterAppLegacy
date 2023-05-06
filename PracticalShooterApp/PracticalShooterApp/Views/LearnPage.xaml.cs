@@ -109,6 +109,9 @@ namespace PracticalShooterApp.Views
                 case "PCC":
                     selectedDiscipline = Discipline.Pcc;
                     break;
+                case "Grand Tournament":
+                    selectedDiscipline = Discipline.GrandTournament;
+                    break;
             }
 
             _settingsClient.CurrentDiscipline = selectedDiscipline;
