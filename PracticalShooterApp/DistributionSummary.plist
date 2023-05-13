@@ -12,7 +12,7 @@
 			<key>bitcode</key>
 			<false/>
 			<key>buildNumber</key>
-			<string>2.7</string>
+			<string>2.6</string>
 			<key>certificate</key>
 			<dict>
 				<key>SHA1</key>
@@ -60,7 +60,7 @@
 			<key>entitlements</key>
 			<dict>
 				<key>application-identifier</key>
-				<string>ZW4GZHHQL3.com.barneymcgrew.practicalshooter</string>
+				<string>ZW4GZHHQL3.com.barneymcgrew.practicalshooterapp</string>
 				<key>beta-reports-active</key>
 				<true/>
 				<key>com.apple.developer.team-identifier</key>
@@ -73,7 +73,7 @@
 			<key>profile</key>
 			<dict>
 				<key>UUID</key>
-				<string>a4a5d95a-f891-4b55-90a2-44d111aab920</string>
+				<string>d9d9b7f4-176d-4b6f-93bf-4cadf596fb64</string>
 				<key>dateExpires</key>
 				<string>12/05/2024</string>
 				<key>name</key>
@@ -89,7 +89,7 @@
 				<string></string>
 			</dict>
 			<key>versionNumber</key>
-			<string>27</string>
+			<string>26</string>
 		</dict>
 	</array>
 </dict>

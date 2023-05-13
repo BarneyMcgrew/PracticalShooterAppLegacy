@@ -10,8 +10,8 @@
 	<string>app-store</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.barneymcgrew.practicalshooter</key>
-		<string>a4a5d95a-f891-4b55-90a2-44d111aab920</string>
+		<key>com.barneymcgrew.practicalshooterapp</key>
+		<string>d9d9b7f4-176d-4b6f-93bf-4cadf596fb64</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>Apple Distribution: Barney Mcgrew Ltd. (ZW4GZHHQL3)</string>

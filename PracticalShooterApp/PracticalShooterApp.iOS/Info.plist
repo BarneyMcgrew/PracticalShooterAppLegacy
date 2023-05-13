@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Practical Shooter App</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.barneymcgrew.practicalshooter</string>
+	<string>com.barneymcgrew.practicalshooterapp</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
@@ -33,8 +33,8 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>CFBundleVersion</key>
-	<string>2.7</string>
+	<string>2.6</string>
 	<key>CFBundleShortVersionString</key>
-	<string>27</string>
+	<string>26</string>
 </dict>
 </plist>
