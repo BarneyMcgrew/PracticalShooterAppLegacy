@@ -617,6 +617,16 @@
     <EmbeddedResource Include="PDFs\Appendix 159.pdf" />
     <None Remove="PDFs\Appendix 160.pdf" />
     <EmbeddedResource Include="PDFs\Appendix 160.pdf" />
+    <None Remove="FileExplorer\English-IPSCRules22Handgun.pdf" />
+    <EmbeddedResource Include="FileExplorer\English-IPSCRules22Handgun.pdf" />
+    <None Remove="FileExplorer\English-IPSCRulesActionAirHandgun.pdf" />
+    <EmbeddedResource Include="FileExplorer\English-IPSCRulesActionAirHandgun.pdf" />
+    <None Remove="FileExplorer\English-IPSCRulesActionAirPCC.pdf" />
+    <EmbeddedResource Include="FileExplorer\English-IPSCRulesActionAirPCC.pdf" />
+    <None Remove="FileExplorer\English-IPSCRulesActionAirRifle.pdf" />
+    <EmbeddedResource Include="FileExplorer\English-IPSCRulesActionAirRifle.pdf" />
+    <None Remove="FileExplorer\English-IPSCRulesGrandTournament.pdf" />
+    <EmbeddedResource Include="FileExplorer\English-IPSCRulesGrandTournament.pdf" />
   </ItemGroup>
 
   <ItemGroup>
