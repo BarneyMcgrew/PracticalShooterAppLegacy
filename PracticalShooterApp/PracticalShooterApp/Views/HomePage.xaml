@@ -145,7 +145,34 @@
                                                 </syncEffectsView:SfEffectsView>
 
                                             </controls:CustomShadowFrame>
+                                            
+                                            <!--  View of each card item  -->
+                                            <controls:CustomShadowFrame
+                                                Margin="5,2,5,5"
+                                                Padding="0"
+                                                BackgroundColor="{DynamicResource PrimaryDark}"
+                                                BorderColor="{DynamicResource PrimaryDark}"
+                                                BorderWidth="1"
+                                                CornerRadius="4"
+                                                HasShadow="False"
+                                                HorizontalOptions="FillAndExpand"
+                                                IsVisible="{Binding UseAdCard}"
+                                                Radius="4"
+                                                VerticalOptions="FillAndExpand">
 
+                                                <syncEffectsView:SfEffectsView
+                                                    RippleColor="{DynamicResource Gray-300}">
+
+                                                    <border:SfBorder
+                                                        BorderColor="Transparent"
+                                                        BorderWidth="0"
+                                                        CornerRadius="4">
+                                                        <template:NavigationTileAdTemplate />
+                                                    </border:SfBorder>
+
+                                                </syncEffectsView:SfEffectsView>
+                                            </controls:CustomShadowFrame>
+                                            
                                             <!--  View of each card item  -->
                                             <controls:CustomShadowFrame
                                                 Margin="5,2,5,5"

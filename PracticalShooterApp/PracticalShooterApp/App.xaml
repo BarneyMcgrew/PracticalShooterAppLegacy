@@ -3,7 +3,8 @@
     x:Class="PracticalShooterApp.App"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:styles="clr-namespace:PracticalShooterApp.Styles">
+    xmlns:styles="clr-namespace:PracticalShooterApp.Styles"
+    xmlns:controls="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob">
     <!--
         Define global resources and styles here, that apply to all pages in your app.
     -->
@@ -60,6 +61,13 @@
                             </VisualState>
                         </VisualStateGroup>
                     </VisualStateGroupList>
+                </Setter>
+            </Style>
+            <Style TargetType="controls:MTAdView">
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <x:OnIdiom Phone="50" Tablet="90"></x:OnIdiom>
+                    </Setter.Value>
                 </Setter>
             </Style>
 

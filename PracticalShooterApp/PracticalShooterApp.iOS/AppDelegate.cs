@@ -16,6 +16,8 @@ using Syncfusion.XForms.iOS.Graphics;
 using Syncfusion.XForms.iOS.ProgressBar;
 using Syncfusion.XForms.iOS.TextInputLayout;
 using Xamarin;
+using GameKit;
+using Google.MobileAds;
 
 namespace PracticalShooterApp.iOS
 {
@@ -57,10 +59,14 @@ namespace PracticalShooterApp.iOS
 
             IQKeyboardManager.SharedManager.Enable = true;
 
+            MobileAds.SharedInstance.Start(CompletionHandler);
+
             LoadApplication(new App());
             app.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
 
             return base.FinishedLaunching(app, options);
         }
+
+        private void CompletionHandler(InitializationStatus status) { }
     }
 }

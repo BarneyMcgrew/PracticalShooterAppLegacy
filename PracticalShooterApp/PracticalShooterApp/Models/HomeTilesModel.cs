@@ -48,5 +48,8 @@ namespace PracticalShooterApp.Models
         
         [DataMember(Name = "useListCard")]
         public bool UseListCard => ItemTypeId == "ListCard";
+
+        [DataMember(Name = "useAdCard")] 
+        public bool UseAdCard => ItemTypeId == "AdCard";
     }
 }

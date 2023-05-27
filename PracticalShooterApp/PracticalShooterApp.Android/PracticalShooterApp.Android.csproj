@@ -71,6 +71,7 @@
     <PackageReference Include="akavache">
       <Version>8.1.1</Version>
     </PackageReference>
+    <PackageReference Include="MarcTron.Admob" Version="1.9.0.6" />
     <PackageReference Include="Plugin.CurrentActivity" Version="2.1.0.4" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="20.1.0.57" />
