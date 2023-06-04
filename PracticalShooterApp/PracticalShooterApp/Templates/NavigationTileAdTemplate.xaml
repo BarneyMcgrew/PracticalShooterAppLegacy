@@ -8,12 +8,13 @@
     xmlns:viewModel="clr-namespace:PracticalShooterApp.ViewModels">
 
     <Grid
-        BackgroundColor="{StaticResource PrimaryDark}"
+        BackgroundColor="White"
         ColumnSpacing="0"
-        RowDefinitions="150, *"
         RowSpacing="0">
-
-        <Label>This is an ad</Label>
-        <controls:MTAdView AdSize="Banner" AdsId="xxx"/>
+        
+        <controls:MTAdView AdSize="LargeBanner" 
+                           VerticalOptions="FillAndExpand" 
+                           HorizontalOptions="FillAndExpand"
+                           AdsId="{Binding ItemName}"/>
     </Grid>
 </Grid>

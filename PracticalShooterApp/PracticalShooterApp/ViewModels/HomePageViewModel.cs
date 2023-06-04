@@ -177,7 +177,13 @@ namespace PracticalShooterApp.ViewModels
         private void UpdateTileList(List<HomeTilesModel> tileList)
         {
             _navigationList.Clear();
-            
+
+            var current = Connectivity.NetworkAccess;
+            if (current != NetworkAccess.Internet)
+            {
+                tileList.RemoveAll(o => o.UseAdCard);
+            }
+
             foreach (var homeTile in tileList.OrderBy(o => o.ItemOrder))
             {
                 var buildVersion = VersionTracking.CurrentVersion;
