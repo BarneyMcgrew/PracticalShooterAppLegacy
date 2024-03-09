@@ -7,7 +7,7 @@ export const userCollection = buildCollection({
     singularName: "User",
     group: "Account Management",
     path: "users",
-    permissions: ({}) => ({
+    permissions: ({ authController}) => ({
         edit: true,
         create: false,
         delete: true
