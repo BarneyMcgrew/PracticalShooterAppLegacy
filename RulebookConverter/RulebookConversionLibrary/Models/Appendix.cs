@@ -14,6 +14,7 @@ namespace RulebookConversionLibrary.Models
         public string Name;
         public string Description;
         public string MetaDesciption;
+        public string ImageFileName;
 
         public DataModels.Appendix ToDataModel(int rulebookId)
         {
@@ -23,6 +24,7 @@ namespace RulebookConversionLibrary.Models
                 Name = this.Name,
                 Description = this.Description,
                 MetaDescription = this.MetaDesciption,
+                ImageFileName = this.ImageFileName,
                 RulebookId = rulebookId
             };
         }

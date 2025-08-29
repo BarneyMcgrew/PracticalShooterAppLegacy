@@ -6,10 +6,14 @@ using System.IO;
 using System.Reflection;
 using System.Reflection.Metadata;
 using System.Text.RegularExpressions;
+using System.Linq;
+using System.Drawing.Imaging;
 using RulebookConversionLibrary.Enums;
 using RulebookConversionLibrary.Enums.Attributes;
 using RulebookConversionLibrary.Extensions;
+using RulebookConversionLibrary.Models;
 using UglyToad.PdfPig;
+using UglyToad.PdfPig.Rendering;
 
 namespace RulebookConversionLibrary.Helpers
 {
@@ -63,6 +67,47 @@ namespace RulebookConversionLibrary.Helpers
                 revisionDict[revisionCode] = textList.ToArray();
             }
             return revisionDict;
+        }
+
+        public static void SaveAppendixPagesAsImages(Discipline discipline, Language language, string revisionCode, IEnumerable<Models.Appendix> appendices)
+        {
+            var rulebookName = discipline.GetAttribute<FilenameAttribute>().FileName;
+            var binFolder = Directory.GetCurrentDirectory();
+            var rootFolder = Path.GetFullPath(Path.Combine(binFolder, @"..\..\..\..\..\"));
+            var pdfFolder = Path.Combine(rootFolder, "Rulebooks", "Original PDF");
+            var pdfFile = Path.Combine(pdfFolder, $"{language}-{rulebookName}-{revisionCode}.pdf");
+
+            var imageFolder = Path.Combine(rootFolder, "Rulebooks", "AppendixImages", $"{language}-{rulebookName}-{revisionCode}");
+            Directory.CreateDirectory(imageFolder);
+
+            var appendixDict = appendices.ToDictionary(a => a.Name, a => a);
+
+            using (var document = PdfDocument.Open(pdfFile))
+            {
+                var renderer = new PdfRenderer(document);
+                foreach (var page in document.GetPages())
+                {
+                    foreach (var key in appendixDict.Keys.ToList())
+                    {
+                        var header = $"APPENDIX {key}";
+                        if (page.Text.Contains(header))
+                        {
+                            var fileName = $"{key}.png";
+                            var outputPath = Path.Combine(imageFolder, fileName);
+                            using (var img = renderer.RenderPage(page.Number, 300))
+                            {
+                                img.Save(outputPath, ImageFormat.Png);
+                            }
+                            appendixDict[key].ImageFileName = fileName;
+                            appendixDict.Remove(key);
+                        }
+                    }
+                    if (appendixDict.Count == 0)
+                    {
+                        break;
+                    }
+                }
+            }
         }
     }
 }
