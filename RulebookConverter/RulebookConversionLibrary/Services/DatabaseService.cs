@@ -69,6 +69,7 @@ namespace RulebookConversionLibrary.Services
                         Name varchar,
                         Description varchar,
                         MetaDescription varchar,
+                        ImageFileName varchar,
                         RulebookId integer,
                         PRIMARY KEY (Id),
                         FOREIGN KEY (RulebookId) REFERENCES Rulebook(Id)

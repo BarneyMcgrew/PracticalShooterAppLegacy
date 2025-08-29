@@ -76,6 +76,7 @@ namespace RulebookConversionLibrary.Services
                             Glossaries = rules.Glossaries,
                             Indices = rules.Indices
                         };
+                        PdfPigHelper.SaveAppendixPagesAsImages(rulebook, language, revisionCode, rb.Appendices);
                         rulebooks.Add(rb);
                     }
                 }

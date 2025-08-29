@@ -10,6 +10,8 @@ namespace RulebookConversionLibrary.DataModels
         public string Description { get; set; }
         public string MetaDescription { get; set; }
 
+        public string ImageFileName { get; set; }
+
         public int RulebookId { get; set; }
     }
 }
