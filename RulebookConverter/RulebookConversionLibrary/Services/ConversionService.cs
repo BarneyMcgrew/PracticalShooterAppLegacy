@@ -19,34 +19,65 @@ namespace RulebookConversionLibrary.Services
         public void ConvertAllRulebooks()
         {
             Console.WriteLine("Converting rules from PDF to Text...");
-            
-            var rulesTextDictionary = new Dictionary<Language, Dictionary<Discipline, string[]>>();
+
+            // Language -> Discipline -> Revision -> string[]
+            var rulesTextDictionary = new Dictionary<Language, Dictionary<Discipline, Dictionary<string, string[]>>>();
 
             foreach (Language language in Enum.GetValues(typeof(Language)))
             {
-                rulesTextDictionary.Add(language, new Dictionary<Discipline, string[]>());
-                
+                rulesTextDictionary.Add(language, new Dictionary<Discipline, Dictionary<string, string[]>>());
+
                 foreach (Discipline rulebook in Enum.GetValues(typeof(Discipline)))
                 {
-                    var text = PdfPigHelper.ConvertRulesPdfToText(rulebook, language);
-                
-                    rulesTextDictionary[language].Add(rulebook, text);
+                    // Get all revisions for this rulebook/language
+                    var revisionTexts = PdfPigHelper.ConvertRulesPdfToText(rulebook, language); // returns Dictionary<string, string[]>
+                    rulesTextDictionary[language].Add(rulebook, revisionTexts);
                 }
             }
-            
+
             Console.WriteLine("Converting Text to Object Rules...");
 
             var rulebooks = new List<Models.Rulebook>();
+            var revisionDict = new Dictionary<string, int>(); // revisionCode -> RevisionId
+            var revisions = new List<DataModels.Revision>();
+            int nextRevisionId = 1;
 
             foreach (var language in rulesTextDictionary.Keys)
             {
                 foreach (var rulebook in rulesTextDictionary[language].Keys)
                 {
-                    var text = rulesTextDictionary[language][rulebook];
-
-                    var rules = RulesHelper.ConvertRulesFromText(rulebook, language, text);
-                    
-                    rulebooks.Add(rules);
+                    foreach (var revisionCode in rulesTextDictionary[language][rulebook].Keys)
+                    {
+                        // Parse revisionCode (MMYYYY) to DateTime (first day of month)
+                        int month = int.Parse(revisionCode.Substring(0, 2));
+                        int year = int.Parse(revisionCode.Substring(2, 4));
+                        var revisionDate = new DateTime(year, month, 1);
+                        if (!revisionDict.ContainsKey(revisionCode))
+                        {
+                            var revision = new DataModels.Revision
+                            {
+                                Id = nextRevisionId,
+                                Code = revisionCode,
+                                Date = revisionDate
+                            };
+                            revisions.Add(revision);
+                            revisionDict[revisionCode] = nextRevisionId;
+                            nextRevisionId++;
+                        }
+                        var text = rulesTextDictionary[language][rulebook][revisionCode];
+                        var rules = RulesHelper.ConvertRulesFromText(rulebook, language, text);
+                        var rb = new Models.Rulebook
+                        {
+                            Discipline = rulebook,
+                            Language = language,
+                            RevisionId = revisionDict[revisionCode],
+                            Chapters = rules.Chapters,
+                            Appendices = rules.Appendices,
+                            Glossaries = rules.Glossaries,
+                            Indices = rules.Indices
+                        };
+                        rulebooks.Add(rb);
+                    }
                 }
             }
 
@@ -56,8 +87,7 @@ namespace RulebookConversionLibrary.Services
             _databaseService.CreateDefaultViews();
             
             Console.WriteLine("Populating SqLite Database...");
-            
-            _databaseService.PopulateDatabaseTables(rulebooks);
+            _databaseService.PopulateDatabaseTables(rulebooks, revisions);
             
             Console.WriteLine("Creating Website Preview...");
 

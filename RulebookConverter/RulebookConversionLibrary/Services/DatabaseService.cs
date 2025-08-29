@@ -29,11 +29,37 @@ namespace RulebookConversionLibrary.Services
             using (var con = new SQLiteConnection(_databaseName))
             {
                 con.Execute(@"
+                    CREATE TABLE Revision (
+                        Id integer PRIMARY KEY,
+                        Code varchar,
+                        Date date
+                    );
+                ");
+
+                con.Execute(@"
+                    CREATE TABLE Discipline (
+                        Id integer PRIMARY KEY,
+                        Name varchar
+                    );
+                ");
+
+                con.Execute(@"
+                    CREATE TABLE Language (
+                        Id integer PRIMARY KEY,
+                        Name varchar
+                    );
+                ");
+
+                con.Execute(@"
                     CREATE TABLE Rulebook (
                         Id integer,
-                        Discipline integer,
-                        Language integer,
-                        PRIMARY KEY (Id)                        
+                        DisciplineId integer,
+                        LanguageId integer,
+                        RevisionId integer,
+                        PRIMARY KEY (Id),
+                        FOREIGN KEY (DisciplineId) REFERENCES Discipline(Id),
+                        FOREIGN KEY (LanguageId) REFERENCES Language(Id),
+                        FOREIGN KEY (RevisionId) REFERENCES Revision(Id)
                     );
                 ");
 
@@ -107,6 +133,22 @@ namespace RulebookConversionLibrary.Services
                         FOREIGN KEY (RuleId) REFERENCES Rule(Id)
                     );
                 ");
+
+                // Insert Disciplines
+                var disciplineValues = System.Enum.GetValues(typeof(Enums.Discipline));
+                foreach (var discipline in disciplineValues)
+                {
+                    var name = ((System.Enum)discipline).ToString();
+                    con.Execute($"INSERT INTO Discipline (Id, Name) VALUES ({(int)discipline}, '{name}')");
+                }
+
+                // Insert Languages
+                var languageValues = System.Enum.GetValues(typeof(Enums.Language));
+                foreach (var language in languageValues)
+                {
+                    var name = ((System.Enum)language).ToString();
+                    con.Execute($"INSERT INTO Language (Id, Name) VALUES ({(int)language}, '{name}')");
+                }
             }
         }
 
@@ -115,7 +157,7 @@ namespace RulebookConversionLibrary.Services
             
         }
 
-        public void PopulateDatabaseTables(List<Models.Rulebook> rulebooks)
+        public void PopulateDatabaseTables(List<Models.Rulebook> rulebooks, List<DataModels.Revision> revisions)
         {
             var rulebookList = new List<DataModels.Rulebook>();
             var glossaryList = new List<DataModels.Glossary>();
@@ -162,6 +204,7 @@ namespace RulebookConversionLibrary.Services
 
             using (var con = new SQLiteConnection(_databaseName))
             {
+                con.InsertAll(revisions);
                 con.InsertAll(rulebookList);
                 con.InsertAll(chapterList);
                 con.InsertAll(glossaryList);

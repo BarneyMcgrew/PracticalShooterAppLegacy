@@ -18,6 +18,7 @@ namespace RulebookConversionLibrary.Models
         public int Id;
         public Enums.Discipline Discipline;
         public Enums.Language Language;
+        public int RevisionId;
 
         public List<Chapter> Chapters;
         public List<Appendix> Appendices;
@@ -29,8 +30,9 @@ namespace RulebookConversionLibrary.Models
             return new DataModels.Rulebook()
             {
                 Id = this.Id,
-                Language = this.Language,
-                Discipline = this.Discipline
+                DisciplineId = (int)this.Discipline,
+                LanguageId = (int)this.Language,
+                RevisionId = this.RevisionId
             };
         }
     }

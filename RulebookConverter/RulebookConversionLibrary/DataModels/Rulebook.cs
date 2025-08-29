@@ -6,7 +6,8 @@ namespace RulebookConversionLibrary.DataModels
 {
     public class Rulebook : DataModelBase
     {
-        public Enums.Discipline Discipline { get; set; }
-        public Enums.Language Language { get; set; }
+        public int DisciplineId { get; set; }
+        public int LanguageId { get; set; }
+        public int RevisionId { get; set; }
     }
 }

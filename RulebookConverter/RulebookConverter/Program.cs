@@ -11,7 +11,8 @@ namespace ConsoleUI
     {
         private static void Main(string[] args)
         {
-            var dbPath = $@"{Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\..\\..\\"))}sqLite\rulesData.db";
+            var dateTimePostfix = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+            var dbPath = $@"{Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\..\\..\\"))}sqLite\\rulesData_{dateTimePostfix}.db";
             
             var conversionService = new ConversionService(dbPath);
             conversionService.ConvertAllRulebooks();
